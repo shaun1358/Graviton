@@ -1,2 +1,1 @@
-/// @description 여기에 설명 삽입
-// 이 에디터에 코드를 작성할 수 있습니다
+sample_text = "This is sample text; If you watch this, you did a great job!"
