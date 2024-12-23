@@ -1,0 +1,4 @@
+//global variable을 정의할 때 여기에 설명을 적어주세요
+//예시
+//global.heart : 현재 남은 목숨의 개수
+
