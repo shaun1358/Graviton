@@ -34,8 +34,9 @@
   },
   "name":"Graviton",
   "resources":[
+    {"id":{"name":"god_seon_ho","path":"notes/god_seon_ho/god_seon_ho.yy",},},
     {"id":{"name":"note_global.txt","path":"notes/note_global.txt/note_global.txt.yy",},},
-    {"id":{"name":"Wa_SANS.txt","path":"notes/Wa_SANS.txt/Wa_SANS.txt.yy",},},
+    {"id":{"name":"note_papyrus","path":"notes/note_papyrus/note_papyrus.yy",},},
     {"id":{"name":"obj_test","path":"objects/obj_test/obj_test.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],

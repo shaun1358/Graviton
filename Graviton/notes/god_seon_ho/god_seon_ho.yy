@@ -1,7 +1,7 @@
 {
   "$GMNotes":"",
-  "%Name":"Wa_SANS.txt",
-  "name":"Wa_SANS.txt",
+  "%Name":"god_seon_ho",
+  "name":"god_seon_ho",
   "parent":{
     "name":"Notes",
     "path":"folders/Notes.yy",

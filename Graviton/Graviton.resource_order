@@ -17,6 +17,7 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
-    {"name":"Wa_SANS.txt","order":1,"path":"notes/Wa_SANS.txt/Wa_SANS.txt.yy",},
+    {"name":"god_seon_ho","order":2,"path":"notes/god_seon_ho/god_seon_ho.yy",},
+    {"name":"note_papyrus","order":1,"path":"notes/note_papyrus/note_papyrus.yy",},
   ],
 }
