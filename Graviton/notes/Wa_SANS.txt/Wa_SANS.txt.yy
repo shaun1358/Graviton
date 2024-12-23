@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"",
+  "%Name":"Wa_SANS.txt",
+  "name":"Wa_SANS.txt",
+  "parent":{
+    "name":"Notes",
+    "path":"folders/Notes.yy",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}
