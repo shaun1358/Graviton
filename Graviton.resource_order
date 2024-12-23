@@ -20,5 +20,6 @@
     {"name":"note_papyrus","order":1,"path":"notes/note_papyrus/note_papyrus.yy",},
     {"name":"Obj1","order":1,"path":"objects/Obj1/Obj1.yy",},
     {"name":"Obj3","order":2,"path":"objects/Obj3/Obj3.yy",},
+    {"name":"Obj5","order":3,"path":"objects/Obj5/Obj5.yy",},
   ],
 }

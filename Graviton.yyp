@@ -39,6 +39,7 @@
     {"id":{"name":"obj_test","path":"objects/obj_test/obj_test.yy",},},
     {"id":{"name":"Obj1","path":"objects/Obj1/Obj1.yy",},},
     {"id":{"name":"Obj3","path":"objects/Obj3/Obj3.yy",},},
+    {"id":{"name":"Obj5","path":"objects/Obj5/Obj5.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "resourceType":"GMProject",
