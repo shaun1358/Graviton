@@ -18,5 +18,6 @@
   ],
   "ResourceOrderSettings":[
     {"name":"note_papyrus","order":1,"path":"notes/note_papyrus/note_papyrus.yy",},
+    {"name":"Obj1","order":1,"path":"objects/Obj1/Obj1.yy",},
   ],
 }
