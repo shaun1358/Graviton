@@ -16,5 +16,7 @@
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
-  "ResourceOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"Wa Sans.txt","order":1,"path":"notes/Wa Sans.txt/Wa Sans.txt.yy",},
+  ],
 }

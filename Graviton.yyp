@@ -30,11 +30,12 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.11.0.179",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"Graviton",
   "resources":[
     {"id":{"name":"note_global.txt","path":"notes/note_global.txt/note_global.txt.yy",},},
+    {"id":{"name":"Wa Sans.txt","path":"notes/Wa Sans.txt/Wa Sans.txt.yy",},},
     {"id":{"name":"obj_test","path":"objects/obj_test/obj_test.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
