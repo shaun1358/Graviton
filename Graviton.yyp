@@ -42,14 +42,10 @@
     {"id":{"name":"Obj1","path":"objects/Obj1/Obj1.yy",},},
     {"id":{"name":"Obj3","path":"objects/Obj3/Obj3.yy",},},
     {"id":{"name":"Obj5","path":"objects/Obj5/Obj5.yy",},},
-<<<<<<< HEAD
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
-=======
     {"id":{"name":"room_title","path":"rooms/room_title/room_title.yy",},},
     {"id":{"name":"scr_globalLoad","path":"scripts/scr_globalLoad/scr_globalLoad.yy",},},
     {"id":{"name":"scr_globalReset","path":"scripts/scr_globalReset/scr_globalReset.yy",},},
     {"id":{"name":"spr_backgroundDebug","path":"sprites/spr_backgroundDebug/spr_backgroundDebug.yy",},},
->>>>>>> shaun1358
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

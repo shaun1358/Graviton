@@ -6,13 +6,8 @@
   "name":"Obj5",
   "overriddenProperties":[],
   "parent":{
-<<<<<<< HEAD
-    "name":"Objects",
-    "path":"folders/Objects.yy",
-=======
     "name":"dummy",
     "path":"folders/Objects/dummy.yy",
->>>>>>> shaun1358
   },
   "parentObjectId":null,
   "persistent":false,
