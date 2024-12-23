@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"",
+  "%Name":"note_papyrus",
+  "name":"note_papyrus",
+  "parent":{
+    "name":"Notes",
+    "path":"folders/Notes.yy",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}
