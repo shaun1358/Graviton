@@ -19,10 +19,15 @@
   ],
   "ResourceOrderSettings":[
     {"name":"note_papyrus","order":1,"path":"notes/note_papyrus/note_papyrus.yy",},
+    {"name":"obj_camera","order":6,"path":"objects/obj_camera/obj_camera.yy",},
+    {"name":"obj_optionButton","order":7,"path":"objects/obj_optionButton/obj_optionButton.yy",},
     {"name":"obj_title","order":5,"path":"objects/obj_title/obj_title.yy",},
     {"name":"Obj1","order":1,"path":"objects/Obj1/Obj1.yy",},
     {"name":"Obj3","order":2,"path":"objects/Obj3/Obj3.yy",},
     {"name":"Obj5","order":3,"path":"objects/Obj5/Obj5.yy",},
+    {"name":"room_game","order":1,"path":"rooms/room_game/room_game.yy",},
     {"name":"scr_globalLoad","order":1,"path":"scripts/scr_globalLoad/scr_globalLoad.yy",},
+    {"name":"spr_optionPNG","order":1,"path":"sprites/spr_optionPNG/spr_optionPNG.yy",},
+    {"name":"spr_startGamePNG","order":2,"path":"sprites/spr_startGamePNG/spr_startGamePNG.yy",},
   ],
 }

@@ -27,7 +27,9 @@
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
-  "IncludedFiles":[],
+  "IncludedFiles":[
+    {"$GMIncludedFile":"","%Name":"iconset.eps","CopyToMask":-1,"filePath":"datafiles","name":"iconset.eps","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+  ],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
@@ -37,20 +39,26 @@
   "resources":[
     {"id":{"name":"note_global.txt","path":"notes/note_global.txt/note_global.txt.yy",},},
     {"id":{"name":"note_papyrus","path":"notes/note_papyrus/note_papyrus.yy",},},
+    {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
+    {"id":{"name":"obj_optionButton","path":"objects/obj_optionButton/obj_optionButton.yy",},},
     {"id":{"name":"obj_test","path":"objects/obj_test/obj_test.yy",},},
     {"id":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},},
     {"id":{"name":"Obj1","path":"objects/Obj1/Obj1.yy",},},
     {"id":{"name":"Obj3","path":"objects/Obj3/Obj3.yy",},},
     {"id":{"name":"Obj5","path":"objects/Obj5/Obj5.yy",},},
+    {"id":{"name":"room_game","path":"rooms/room_game/room_game.yy",},},
     {"id":{"name":"room_title","path":"rooms/room_title/room_title.yy",},},
     {"id":{"name":"scr_globalLoad","path":"scripts/scr_globalLoad/scr_globalLoad.yy",},},
     {"id":{"name":"scr_globalReset","path":"scripts/scr_globalReset/scr_globalReset.yy",},},
     {"id":{"name":"spr_backgroundDebug","path":"sprites/spr_backgroundDebug/spr_backgroundDebug.yy",},},
+    {"id":{"name":"spr_optionPNG","path":"sprites/spr_optionPNG/spr_optionPNG.yy",},},
+    {"id":{"name":"spr_startGamePNG","path":"sprites/spr_startGamePNG/spr_startGamePNG.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"room_title","path":"rooms/room_title/room_title.yy",},},
+    {"roomId":{"name":"room_game","path":"rooms/room_game/room_game.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
