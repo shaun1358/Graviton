@@ -1,6 +1,8 @@
 //camara[0] 이용
 cam = view_camera[0];
-//camera_
+
+view_enabled = true;
+view_visible[0] = true;
 
 camX = camera_get_view_x(cam);
 camY = camera_get_view_y(cam);
@@ -13,6 +15,9 @@ else {
 	cameraWidth = 1920;
 	camearHeight = 1080;
 }
+
+view_wport[0] = cameraWidth;
+view_hport[0] = cameraHeight;
 
 camera_set_view_size(cam, cameraWidth, cameraHeight);
 //camera_set_view_size(cam, 500, 1200);
