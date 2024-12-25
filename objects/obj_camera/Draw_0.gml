@@ -1,0 +1,1 @@
+draw_text_transformed(100, 100, cameraHeight, 10, 10, 0)

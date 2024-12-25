@@ -19,6 +19,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"note_papyrus","order":1,"path":"notes/note_papyrus/note_papyrus.yy",},
+    {"name":"obj_camera","order":6,"path":"objects/obj_camera/obj_camera.yy",},
     {"name":"obj_title","order":5,"path":"objects/obj_title/obj_title.yy",},
     {"name":"Obj1","order":1,"path":"objects/Obj1/Obj1.yy",},
     {"name":"Obj3","order":2,"path":"objects/Obj3/Obj3.yy",},
