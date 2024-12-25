@@ -10,6 +10,8 @@ windowWidth = display_get_width();
 windowHeight = display_get_height();
 
 //디버깅을 위해 임의로 windowWidth와 windowHeight값 설정하기 위한 코드; 나중에 게임 출시할 때 코드 삭제해야함
-windowWidth = 800
-windowHeight = 1200
-//window_set_size(windowWidth, windowHeight)
+//----------여기서부터...
+windowWidth = 1200
+windowHeight = 800
+window_set_size(windowWidth, windowHeight)
+//----------...여기까지!
