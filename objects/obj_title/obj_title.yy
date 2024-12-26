@@ -31,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_titleDebug",
-    "path":"sprites/spr_titleDebug/spr_titleDebug.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
