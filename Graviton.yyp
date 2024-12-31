@@ -47,6 +47,8 @@
     {"id":{"name":"scr_globalLoad","path":"scripts/scr_globalLoad/scr_globalLoad.yy",},},
     {"id":{"name":"scr_globalReset","path":"scripts/scr_globalReset/scr_globalReset.yy",},},
     {"id":{"name":"spr_backgroundDebug","path":"sprites/spr_backgroundDebug/spr_backgroundDebug.yy",},},
+    {"id":{"name":"spr_settingDebug","path":"sprites/spr_settingDebug/spr_settingDebug.yy",},},
+    {"id":{"name":"spr_titleDebug","path":"sprites/spr_titleDebug/spr_titleDebug.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
