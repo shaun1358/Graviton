@@ -27,7 +27,7 @@
     {"name":"Obj1","order":1,"path":"objects/Obj1/Obj1.yy",},
     {"name":"Obj3","order":2,"path":"objects/Obj3/Obj3.yy",},
     {"name":"Obj5","order":3,"path":"objects/Obj5/Obj5.yy",},
-    {"name":"Room2","order":1,"path":"rooms/Room2/Room2.yy",},
+    {"name":"room_gameOrigin","order":1,"path":"rooms/room_gameOrigin/room_gameOrigin.yy",},
     {"name":"scr_globalLoad","order":1,"path":"scripts/scr_globalLoad/scr_globalLoad.yy",},
     {"name":"spr_ball","order":4,"path":"sprites/spr_ball/spr_ball.yy",},
     {"name":"spr_brickSquare","order":5,"path":"sprites/spr_brickSquare/spr_brickSquare.yy",},
