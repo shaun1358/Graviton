@@ -1,1 +1,1 @@
-physics_apply_impulse(x, y, 20, 50)
+//physics_apply_impulse(x, y, 20, 50)

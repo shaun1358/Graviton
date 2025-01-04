@@ -3,9 +3,10 @@
 ballCount = 0;
 ballDelay = 9;
 
-//공 발사용 타이머
+////ballTimer = 공 발사용 타이머, ballDirection 공의 초기 속도의 방향, ballSpeed 공의 초기 속도의 크기
 ballTimer = 0;
 ballDirection = 0;
 ballSpeed = 1000;
 
+//화살표(공이 튕기는 방향)의 표시 여부
 drawArrow = 0;

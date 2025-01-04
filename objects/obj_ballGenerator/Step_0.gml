@@ -1,3 +1,4 @@
+////obj_ballGenerator의 표시 여부, 공이 전부 발사되면 안보임
 if (obj_gameOrigin.state == 0) visible = 1;
 else if (ballCount <= 0) visible = 0;
 

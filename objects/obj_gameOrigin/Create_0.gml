@@ -14,7 +14,7 @@ controlReleasing = 0;
 //공의 발사 방향 조정을 위한 변수
 //(x0, y0) = obj_ballGenerator의 좌표
 //(x1, y1) = 마우스 or 손가락의 좌표
-//(x0, y0)는 step에서, (x1, y1)은 Left Down이나 Drag Start에서 설정됨
+//(x0, y0)와 (x1, y1) 모두 step 코드에서 설정됨
 x0 = 0;
 y0 = 0;
 x1 = 0;
