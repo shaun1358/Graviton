@@ -1,0 +1,1 @@
+other.hit = 1;
