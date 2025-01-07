@@ -9,3 +9,6 @@ if (hp <= 0) {
 	//나중에 particle과 파괴음도 추가 예정
 	instance_destroy();
 }
+
+phy_position_x = scr_get_x_coordinate(column);
+//phy_position_y = scr_get_y_coordinate(row);

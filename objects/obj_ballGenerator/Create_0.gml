@@ -1,3 +1,12 @@
+if instance_exists(obj_camera) {
+	x = obj_camera.cameraWidth / 2;
+	y = obj_camera.cameraMarginY + 100;
+}
+else {
+	x = 540;
+	y = 100;
+}
+
 //ballCount = 현재 보유하고 있는 공의 개수. ballDelay = 공 발사까지 걸리는 시간
 //ballCount는 obj_gameOrigin에서 받아옴
 ballCount = 0;

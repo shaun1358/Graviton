@@ -24,11 +24,11 @@ y1 = 0;
 #macro MAX_ROW 7
 #macro BLOCK_HEIGHT 100
 #macro BLOCK_HEIGHT_MARGIN 40
-#macro SCREEN_HEIGHT 1600
+#macro SCREEN_HEIGHT 1920
 #macro MAX_COLUMN 6
 #macro BLOCK_WIDTH 130
 #macro BLOCK_WIDTH_MARGIN 20
-#macro SCREEN_WIDTH 900
+#macro SCREEN_WIDTH 1080
 
 // using state as macros
 #macro BALL_STATE_0_IDLE 0

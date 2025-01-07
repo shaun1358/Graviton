@@ -18,11 +18,11 @@ function scr_tileElevate() {
                 any_animating = true; // Block is still moving
             } else {
                 // Snap to the target position and decrement row
+				any_animating = false;
                 phy_position_y = target_y;
                 row = row - 1; // Update row when target reached
-                 }
+            }
         }
     }
-
     return any_animating; // Return whether any blocks are still animating
 }

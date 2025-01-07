@@ -3,3 +3,4 @@ draw_self();
 
 draw_set_color(c_red);
 draw_text(x + 50, y + 50, hp);
+draw_text(x + 50, y + 100, column);

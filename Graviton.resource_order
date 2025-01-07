@@ -38,6 +38,7 @@
     {"name":"scr_tileElevate","order":5,"path":"scripts/scr_tileElevate/scr_tileElevate.yy",},
     {"name":"spr_arrow","order":6,"path":"sprites/spr_arrow/spr_arrow.yy",},
     {"name":"spr_ball","order":4,"path":"sprites/spr_ball/spr_ball.yy",},
+    {"name":"spr_borderDebug","order":8,"path":"sprites/spr_borderDebug/spr_borderDebug.yy",},
     {"name":"spr_brickSquare","order":5,"path":"sprites/spr_brickSquare/spr_brickSquare.yy",},
     {"name":"spr_gameover","order":7,"path":"sprites/spr_gameover/spr_gameover.yy",},
     {"name":"spr_settingDebug","order":1,"path":"sprites/spr_settingDebug/spr_settingDebug.yy",},

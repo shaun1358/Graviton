@@ -10,6 +10,8 @@ windowHeight = 1600;
 window_set_size(windowWidth, windowHeight);
 //----------...여기까지!
 
+windowRatio = windowHeight / windowWidth;
+
 //세이브 파일이 없으면 해당 파일에서 글로벌 변수값 가져오기, 없으면 0으로 설정
 hasSave = 0;
 
