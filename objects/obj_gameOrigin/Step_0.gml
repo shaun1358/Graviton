@@ -12,7 +12,6 @@ else if device_mouse_check_button_released(0, mb_left) {
 	controlReleasing = 1;
 }
 
-
 switch(state) {
 	//공 발사전
 	case BALL_STATE_0_IDLE :
@@ -50,17 +49,61 @@ switch(state) {
 		controlReleasing = 0;
 		
 		//공 전부 소모시 현재 상태를 '공 발사후'로 바꿈
-		if (!instance_exists(obj_ball) && obj_ballGenerator.ballCount == 0) state = 2;
+		if (!instance_exists(obj_ball) && obj_ballGenerator.ballCount == 0){
+			state = BALL_STATE_2_FINISHED;
+			global.easing_active = true;
+			ballCount += 1;
+	        global.stage++;
+	        // Create new tiles
+	        scr_tileCreate(global.stage, MAX_ROW);
+		}
 		break;
 		
 	//공 발사후
-	case BALL_STATE_2_FINISHED :
-		//공 보유 개수 증가
-		ballCount += 1;
-		
-		//나중에 brick layer level을 올리고, 스코어를 올리는 등의 코드 추가해야함
-		scr_tileCreate();
-		//현재 상태를 '공 발사전'으로 바꿈
-		state = BALL_STATE_0_IDLE;
-		break;
+	case BALL_STATE_2_FINISHED:
+	    var isGameover = false;
+
+	    // Check each obj_brickParent instance
+	    with (obj_brickParent) {
+	        if (row == 0) {
+	            isGameover = true;
+	        }
+	    }
+
+	    // If game over condition is detected, handle it immediately
+	    if (isGameover) {
+	        state = BALL_STATE_3_GAMEOVER;
+	        break;
+	    }
+
+	    // Check if any blocks are still animating
+	    var animating = scr_tileElevate();
+
+	    // If all blocks have finished animating
+	    if (!animating) {
+	        // Change state back to 'Ball Before Launch'
+	        state = BALL_STATE_0_IDLE;
+	    }
+	    break;
+
+	case BALL_STATE_3_GAMEOVER:
+	    // Clean up any necessary game objects or variables
+	    with (obj_ball) {
+	        instance_destroy(); // Destroy remaining balls
+	    }
+	    with (obj_brickParent) {
+	        instance_destroy(); // Destroy remaining bricks
+	    }
+
+	    // Reset important global variables
+	    global.easing_active = false;
+	    global.ballCount = 0;
+
+	    // Transition to the game-over room
+	    room_goto(room_gameover);
+
+	    // Break to ensure no further code is executed in this state
+	    break;
+
+	
 }

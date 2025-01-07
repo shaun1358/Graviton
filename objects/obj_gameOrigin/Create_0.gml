@@ -21,16 +21,35 @@ x1 = 0;
 y1 = 0;
 
 // used to config coordinates
-#macro MAX_ROW 16
+#macro MAX_ROW 7
 #macro BLOCK_HEIGHT 100
-#macro BLOCK_HEIGHT_MARGIN 0
+#macro BLOCK_HEIGHT_MARGIN 40
 #macro SCREEN_HEIGHT 1600
-#macro MAX_COLUMN 7
+#macro MAX_COLUMN 6
 #macro BLOCK_WIDTH 130
-#macro BLOCK_WIDTH_MARGIN 0
+#macro BLOCK_WIDTH_MARGIN 20
 #macro SCREEN_WIDTH 900
 
 // using state as macros
 #macro BALL_STATE_0_IDLE 0
 #macro BALL_STATE_1_FIRING 1
 #macro BALL_STATE_2_FINISHED 2
+#macro BALL_STATE_3_GAMEOVER 3
+
+global.const_STAGE_CONFIG_CLASSIC = [
+	{ stage: 1, min_blocks: 1, max_blocks: 1 },
+	{ stage: 4, min_blocks: 1, max_blocks: 4 },
+	{ stage: 21, min_blocks: 2, max_blocks: 4 },
+	{ stage: 41, min_blocks: 2, max_blocks: 5 },
+	{ stage: 61, min_blocks: 3, max_blocks: 5 },
+	{ stage: 81, min_blocks: 3, max_blocks: 6 },
+	{ stage: 101, min_blocks: 4, max_blocks: 6 },
+	{ stage: 151, min_blocks: 5, max_blocks: 6 },
+	{ stage: 201, min_blocks: 6, max_blocks: 6 }
+];
+
+global.stage = 1;
+
+global.tile_order = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+global.easing_active = false;
+scr_tileCreate(global.stage, MAX_ROW-1);

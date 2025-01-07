@@ -52,6 +52,7 @@
     {"id":{"name":"Obj3","path":"objects/Obj3/Obj3.yy",},},
     {"id":{"name":"Obj5","path":"objects/Obj5/Obj5.yy",},},
     {"id":{"name":"room_gameOrigin","path":"rooms/room_gameOrigin/room_gameOrigin.yy",},},
+    {"id":{"name":"room_gameover","path":"rooms/room_gameover/room_gameover.yy",},},
     {"id":{"name":"room_title","path":"rooms/room_title/room_title.yy",},},
     {"id":{"name":"scr_get_x_coordinate","path":"scripts/scr_get_x_coordinate/scr_get_x_coordinate.yy",},},
     {"id":{"name":"scr_get_y_coordinate","path":"scripts/scr_get_y_coordinate/scr_get_y_coordinate.yy",},},
@@ -63,6 +64,7 @@
     {"id":{"name":"spr_backgroundDebug","path":"sprites/spr_backgroundDebug/spr_backgroundDebug.yy",},},
     {"id":{"name":"spr_ball","path":"sprites/spr_ball/spr_ball.yy",},},
     {"id":{"name":"spr_brickSquare","path":"sprites/spr_brickSquare/spr_brickSquare.yy",},},
+    {"id":{"name":"spr_gameover","path":"sprites/spr_gameover/spr_gameover.yy",},},
     {"id":{"name":"spr_settingDebug","path":"sprites/spr_settingDebug/spr_settingDebug.yy",},},
     {"id":{"name":"spr_startButton","path":"sprites/spr_startButton/spr_startButton.yy",},},
     {"id":{"name":"spr_titleDebug","path":"sprites/spr_titleDebug/spr_titleDebug.yy",},},
@@ -72,6 +74,7 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"room_title","path":"rooms/room_title/room_title.yy",},},
     {"roomId":{"name":"room_gameOrigin","path":"rooms/room_gameOrigin/room_gameOrigin.yy",},},
+    {"roomId":{"name":"room_gameover","path":"rooms/room_gameover/room_gameover.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
