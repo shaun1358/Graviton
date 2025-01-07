@@ -19,3 +19,18 @@ x0 = 0;
 y0 = 0;
 x1 = 0;
 y1 = 0;
+
+// used to config coordinates
+#macro MAX_ROW 16
+#macro BLOCK_HEIGHT 100
+#macro BLOCK_HEIGHT_MARGIN 0
+#macro SCREEN_HEIGHT 1600
+#macro MAX_COLUMN 7
+#macro BLOCK_WIDTH 130
+#macro BLOCK_WIDTH_MARGIN 0
+#macro SCREEN_WIDTH 900
+
+// using state as macros
+#macro BALL_STATE_0_IDLE 0
+#macro BALL_STATE_1_FIRING 1
+#macro BALL_STATE_2_FINISHED 2

@@ -15,7 +15,7 @@ else if device_mouse_check_button_released(0, mb_left) {
 
 switch(state) {
 	//공 발사전
-	case 0 :
+	case BALL_STATE_0_IDLE :
 		//마우스 or 손가락을 누르고 있으면
 		if (controlPressing) {
 			//(x0, y0) 계산
@@ -39,12 +39,12 @@ switch(state) {
 			}
 
 			//현재 상태를 '공 발사중'으로 바꿈
-			state = 1;
+			state = BALL_STATE_1_FIRING;
 		}
 		break;
 		
 	//공 발사중
-	case 1 :
+	case BALL_STATE_1_FIRING :
 		//state == 0에서 썼던 변수 초기화
 		controlPressing = 0;
 		controlReleasing = 0;
@@ -54,13 +54,13 @@ switch(state) {
 		break;
 		
 	//공 발사후
-	case 2 :
+	case BALL_STATE_2_FINISHED :
 		//공 보유 개수 증가
 		ballCount += 1;
 		
 		//나중에 brick layer level을 올리고, 스코어를 올리는 등의 코드 추가해야함
-		
+		scr_tileCreate();
 		//현재 상태를 '공 발사전'으로 바꿈
-		state = 0;
+		state = BALL_STATE_0_IDLE;
 		break;
 }
