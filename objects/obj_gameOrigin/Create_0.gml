@@ -27,7 +27,7 @@ y1 = 0;
 #macro SCREEN_HEIGHT 1920
 #macro MAX_COLUMN 6
 #macro BLOCK_WIDTH 130
-#macro BLOCK_WIDTH_MARGIN 20
+#macro BLOCK_WIDTH_MARGIN 40
 #macro SCREEN_WIDTH 1080
 
 // using state as macros
@@ -35,6 +35,12 @@ y1 = 0;
 #macro BALL_STATE_1_FIRING 1
 #macro BALL_STATE_2_FINISHED 2
 #macro BALL_STATE_3_GAMEOVER 3
+
+// u
+#macro SHAPE_3_CIRCLE 3
+#macro SHAPE_2_DIAMOND 2
+#macro SHAPE_1_TRIANGLE 1
+#macro SHAPE_0_SQUARE 0
 
 global.const_STAGE_CONFIG_CLASSIC = [
 	{ stage: 1, min_blocks: 1, max_blocks: 1 },
@@ -46,6 +52,48 @@ global.const_STAGE_CONFIG_CLASSIC = [
 	{ stage: 101, min_blocks: 4, max_blocks: 6 },
 	{ stage: 151, min_blocks: 5, max_blocks: 6 },
 	{ stage: 201, min_blocks: 6, max_blocks: 6 }
+];
+
+
+global.const_SEED_SHAPE_CLASSIC = [
+	// Stage 1+
+	{ circle: 0, diamond: 0, triangle: 0, weight: 1 },
+	
+	// Stage 10+
+	{ circle: 0, diamond: 0, triangle: 1, weight: 3 },
+	{ circle: 0, diamond: 0, triangle: 2, weight: 1 },
+	
+	// Stage 30+
+	{ circle: 0, diamond: 1, triangle: 0, weight: 3 },
+	{ circle: 0, diamond: 1, triangle: 1, weight: 1 },
+	{ circle: 0, diamond: 0, triangle: 3, weight: 1 },
+
+	// Stage 60+
+	{ circle: 1, diamond: 0, triangle: 0, weight: 3 },
+	{ circle: 1, diamond: 1, triangle: 0, weight: 1 },
+	{ circle: 1, diamond: 0, triangle: 1, weight: 1 },
+	{ circle: 1, diamond: 1, triangle: 1, weight: 1 },
+	{ circle: 1, diamond: 0, triangle: 2, weight: 1 },
+
+	// Stage 100+
+	{ circle: 2, diamond: 0, triangle: 0, weight: 1 },
+	{ circle: 3, diamond: 0, triangle: 0, weight: 1 },
+	{ circle: 2, diamond: 1, triangle: 0, weight: 1 },
+	{ circle: 0, diamond: 2, triangle: 0, weight: 1 },
+	{ circle: 1, diamond: 2, triangle: 0, weight: 1 },
+	{ circle: 0, diamond: 3, triangle: 0, weight: 1 },
+	{ circle: 2, diamond: 0, triangle: 1, weight: 1 },
+	{ circle: 0, diamond: 2, triangle: 1, weight: 1 },
+	{ circle: 0, diamond: 1, triangle: 2, weight: 1 }
+];
+
+
+global.const_SEED_STAGE_classic = [
+	{ stage:   1, seed_start:  0, seed_end:  0 },
+	{ stage:  10, seed_start:  1, seed_end:  2 },
+	{ stage:  30, seed_start:  3, seed_end:  5 },
+	{ stage:  60, seed_start:  6, seed_end: 10 },
+	{ stage: 100, seed_start: 11, seed_end: 19 },
 ];
 
 global.stage = 1;
