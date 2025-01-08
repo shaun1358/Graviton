@@ -13,3 +13,5 @@ isRiseable = true;
 //brick location
 row = 0;
 column = 0;
+
+isRiseable = true;
