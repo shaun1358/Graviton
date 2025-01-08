@@ -22,7 +22,6 @@ function scr_tileCreate(level, block_layer)	{
 	    // Perform actions for each (r, c) pair
 		cur_x = scr_get_x_coordinate(global.tile_order[c]);
 		cur_y = scr_get_y_coordinate(block_layer);
-		
 		var new_object = instance_create_layer(cur_x, cur_y, "Instances", obj_brickSquare);
 		// linking stage = hp
 		new_object.hp = global.stage;
