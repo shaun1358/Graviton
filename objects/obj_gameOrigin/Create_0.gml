@@ -101,3 +101,6 @@ global.stage = 1;
 global.tile_order = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 global.easing_active = false;
 scr_tileCreate(global.stage, MAX_ROW-1);
+
+//create obj_border
+instance_create_layer(1080,0, "Instances", obj_border);

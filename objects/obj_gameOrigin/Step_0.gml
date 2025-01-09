@@ -95,6 +95,8 @@ switch(state) {
 	        instance_destroy(); // Destroy remaining bricks
 	    }
 
+		instance_destroy(obj_border); //Destroy border
+
 	    // Reset important global variables
 	    global.easing_active = false;
 	    global.ballCount = 0;

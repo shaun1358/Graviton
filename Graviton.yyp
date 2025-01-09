@@ -42,6 +42,7 @@
     {"id":{"name":"note_papyrus","path":"notes/note_papyrus/note_papyrus.yy",},},
     {"id":{"name":"obj_ball","path":"objects/obj_ball/obj_ball.yy",},},
     {"id":{"name":"obj_ballGenerator","path":"objects/obj_ballGenerator/obj_ballGenerator.yy",},},
+    {"id":{"name":"obj_border","path":"objects/obj_border/obj_border.yy",},},
     {"id":{"name":"obj_brickCircle","path":"objects/obj_brickCircle/obj_brickCircle.yy",},},
     {"id":{"name":"obj_brickDiamond","path":"objects/obj_brickDiamond/obj_brickDiamond.yy",},},
     {"id":{"name":"obj_brickParent","path":"objects/obj_brickParent/obj_brickParent.yy",},},

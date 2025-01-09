@@ -22,6 +22,7 @@
     {"name":"note_papyrus","order":1,"path":"notes/note_papyrus/note_papyrus.yy",},
     {"name":"obj_ball","order":4,"path":"objects/obj_ball/obj_ball.yy",},
     {"name":"obj_ballGenerator","order":8,"path":"objects/obj_ballGenerator/obj_ballGenerator.yy",},
+    {"name":"obj_border","order":9,"path":"objects/obj_border/obj_border.yy",},
     {"name":"obj_brickCircle","order":4,"path":"objects/obj_brickCircle/obj_brickCircle.yy",},
     {"name":"obj_brickDiamond","order":3,"path":"objects/obj_brickDiamond/obj_brickDiamond.yy",},
     {"name":"obj_brickParent","order":1,"path":"objects/obj_brickParent/obj_brickParent.yy",},
