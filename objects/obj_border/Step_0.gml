@@ -1,3 +1,16 @@
+if instance_exists(obj_camera) {
+	if (state == -1) phy_position_x = obj_camera.cameraMarginX - 100;
+	if (state == 0)  phy_position_x = obj_camera.cameraMarginX + 1080;
+	phy_position_y = obj_camera.cameraMarginY;
+}
+else {
+	if (state == -1) phy_position_x = -100;
+	if (state == 0)  phy_position_x = 1080;
+	phy_position_y = 0;
+}
+
+
+/*
 with (obj_ball) {
     var ball_radius = sprite_get_height(spr_ball) / 2;
     

@@ -44,6 +44,7 @@
     {"name":"spr_arrow","order":6,"path":"sprites/spr_arrow/spr_arrow.yy",},
     {"name":"spr_backgroundDebug_1","order":13,"path":"sprites/spr_backgroundDebug_1/spr_backgroundDebug_1.yy",},
     {"name":"spr_ball","order":4,"path":"sprites/spr_ball/spr_ball.yy",},
+    {"name":"spr_border","order":14,"path":"sprites/spr_border/spr_border.yy",},
     {"name":"spr_borderDebug","order":8,"path":"sprites/spr_borderDebug/spr_borderDebug.yy",},
     {"name":"spr_brickCircle","order":11,"path":"sprites/spr_brickCircle/spr_brickCircle.yy",},
     {"name":"spr_brickDiamond","order":12,"path":"sprites/spr_brickDiamond/spr_brickDiamond.yy",},

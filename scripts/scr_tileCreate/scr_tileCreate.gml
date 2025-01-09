@@ -2,6 +2,7 @@
 * Creates tile at the bottom most level
 */
 function scr_tileCreate(level, block_layer)	{
+	randomize();
 	// level portion
 	// Hardcoded stage configuration using structs
 	

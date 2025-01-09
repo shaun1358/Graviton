@@ -70,6 +70,7 @@
     {"id":{"name":"spr_backgroundDebug_1","path":"sprites/spr_backgroundDebug_1/spr_backgroundDebug_1.yy",},},
     {"id":{"name":"spr_backgroundDebug","path":"sprites/spr_backgroundDebug/spr_backgroundDebug.yy",},},
     {"id":{"name":"spr_ball","path":"sprites/spr_ball/spr_ball.yy",},},
+    {"id":{"name":"spr_border","path":"sprites/spr_border/spr_border.yy",},},
     {"id":{"name":"spr_borderDebug","path":"sprites/spr_borderDebug/spr_borderDebug.yy",},},
     {"id":{"name":"spr_brickCircle","path":"sprites/spr_brickCircle/spr_brickCircle.yy",},},
     {"id":{"name":"spr_brickDiamond","path":"sprites/spr_brickDiamond/spr_brickDiamond.yy",},},
