@@ -103,4 +103,4 @@ global.easing_active = false;
 scr_tileCreate(global.stage, MAX_ROW-1);
 
 //create obj_border
-instance_create_layer(1080,0, "Instances", obj_border);
+instance_create_layer(obj_camera.cameraMarginX,0, "Instances", obj_border);
