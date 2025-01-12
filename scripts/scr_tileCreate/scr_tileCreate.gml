@@ -25,7 +25,8 @@ function scr_tileCreate(level, block_layer)	{
 	// first few block inputs
 	var my_queue = ds_queue_create();
 	
-
+	
+	
 	for(var i=0; i<global.const_SEED_SHAPE_CLASSIC[seed].circle; i++)
 		ds_queue_enqueue(my_queue, SHAPE_3_CIRCLE);		// circle 
 	for(var i=0; i<global.const_SEED_SHAPE_CLASSIC[seed].diamond; i++)
@@ -33,7 +34,7 @@ function scr_tileCreate(level, block_layer)	{
 	for(var i=0; i<global.const_SEED_SHAPE_CLASSIC[seed].triangle; i++)
 		ds_queue_enqueue(my_queue, SHAPE_1_TRIANGLE);	// triangle
 	for(var i=0; i<MAX_COLUMN; i++)
-		ds_queue_enqueue(my_queue, SHAPE_0_SQUARE);		// square
+		ds_queue_enqueue(my_queue, SHAPE_1_TRIANGLE);		// square
 	
 	
 	for (var c = 0; c < block_cnt; c++) {

@@ -23,8 +23,16 @@ else {
 	physics_fixture_add_point(fix_triangle, -65, -50);
 
 }
+physics_fixture_set_density(fix_triangle, 0);
+physics_fixture_set_restitution(fix_triangle, 1);
+physics_fixture_set_collision_group(fix_triangle, 1);
+physics_fixture_set_linear_damping(fix_triangle, 0);
+physics_fixture_set_angular_damping(fix_triangle, 0);
+physics_fixture_set_friction(fix_triangle, 0);
+
 physics_fixture_bind(fix_triangle, id);
 physics_fixture_delete(fix_triangle);
+
 
 phy_rotation = choose(0, 180)
 /*

@@ -22,7 +22,7 @@ with (obj_ball) {
     
     // 현재 속도 저장
     var vx = phy_linear_velocity_x;
-    var vy = phy_linear_velocity_y;
+    var vy = phy0000000000000_linear_velocity_y;
     
     // 왼쪽 경계 체크
     if (phy_position_x - ball_radius <= border_left) {
