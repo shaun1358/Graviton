@@ -3,7 +3,7 @@
 // Ensure the room is the title room
 if (room == room_title) {
     // Draw the title sprite with dynamic scaling
-    draw_sprite_ext(spr_titleDebug, 0, windowWidth / 2, windowHeight / 4, global.sizeRatio, global.sizeRatio, 0, c_white, 1);
+    draw_sprite_ext(spr_title, 0, windowWidth / 2, windowHeight / 4, global.sizeRatio, global.sizeRatio, 0, c_white, 1);
 
     // Calculate the position for the start button
     var startButton_x = windowWidth / 2; // Center horizontally

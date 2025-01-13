@@ -54,6 +54,7 @@
     {"name":"spr_gameover","order":7,"path":"sprites/spr_gameover/spr_gameover.yy",},
     {"name":"spr_settingDebug","order":1,"path":"sprites/spr_settingDebug/spr_settingDebug.yy",},
     {"name":"spr_startButton","order":3,"path":"sprites/spr_startButton/spr_startButton.yy",},
+    {"name":"spr_title","order":15,"path":"sprites/spr_title/spr_title.yy",},
     {"name":"spr_titleDebug","order":2,"path":"sprites/spr_titleDebug/spr_titleDebug.yy",},
   ],
 }
