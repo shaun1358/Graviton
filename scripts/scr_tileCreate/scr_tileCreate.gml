@@ -34,7 +34,7 @@ function scr_tileCreate(level, block_layer)	{
 	for(var i=0; i<global.const_SEED_SHAPE_CLASSIC[seed].triangle; i++)
 		ds_queue_enqueue(my_queue, SHAPE_1_TRIANGLE);	// triangle
 	for(var i=0; i<MAX_COLUMN; i++)
-		ds_queue_enqueue(my_queue, SHAPE_1_TRIANGLE);		// square
+		ds_queue_enqueue(my_queue, SHAPE_0_SQUARE);		// square
 	
 	
 	for (var c = 0; c < block_cnt; c++) {
