@@ -18,3 +18,5 @@ isRiseable = true;
 
 yspd = 0;
 yspdAcc = 0;
+
+brickScore = 0;

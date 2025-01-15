@@ -1,6 +1,6 @@
 //디버그용 hp 표시 코드
 draw_self();
-draw_set_font(MapleStory);
+draw_set_font(fnt_maple);
 
 // drop shadow
 draw_set_color(c_black); 

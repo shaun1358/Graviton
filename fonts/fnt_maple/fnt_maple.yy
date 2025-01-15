@@ -1,6 +1,6 @@
 {
   "$GMFont":"",
-  "%Name":"MapleStory",
+  "%Name":"fnt_maple",
   "AntiAlias":1,
   "applyKerning":0,
   "ascender":34,
@@ -747,7 +747,7 @@
   "last":0,
   "lineHeight":45,
   "maintainGms1Font":false,
-  "name":"MapleStory",
+  "name":"fnt_maple",
   "parent":{
     "name":"Fonts",
     "path":"folders/Fonts.yy",
