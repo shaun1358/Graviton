@@ -15,3 +15,6 @@ row = 0;
 column = 0;
 
 isRiseable = true;
+
+yspd = 0;
+yspdAcc = 0;
