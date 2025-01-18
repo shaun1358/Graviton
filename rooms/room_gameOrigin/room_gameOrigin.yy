@@ -6,10 +6,10 @@
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_3E1CCF55","path":"rooms/room_gameOrigin/room_gameOrigin.yy",},
     {"name":"inst_3A4E2A53","path":"rooms/room_gameOrigin/room_gameOrigin.yy",},
     {"name":"inst_79878A4A","path":"rooms/room_gameOrigin/room_gameOrigin.yy",},
     {"name":"inst_40B15CC9","path":"rooms/room_gameOrigin/room_gameOrigin.yy",},
+    {"name":"inst_3E1CCF55","path":"rooms/room_gameOrigin/room_gameOrigin.yy",},
   ],
   "isDnd":false,
   "layers":[

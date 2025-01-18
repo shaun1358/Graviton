@@ -91,21 +91,26 @@ switch(state) {
 	    with (obj_ball) {
 	        instance_destroy(); // Destroy remaining balls
 	    }
-	    with (obj_brickParent) {
-	        instance_destroy(); // Destroy remaining bricks
-	    }
-
-		instance_destroy(obj_border); //Destroy border
 
 	    // Reset important global variables
 	    global.easing_active = false;
 	    global.ballCount = 0;
+		
+		// high score controlled by gameover when resetting
+		
 
-	    // Transition to the game-over room
-	    room_goto(room_gameover);
+	    // Create the GUI instance for the game-over screen
+	    if (!instance_exists(obj_gameover)) { // Ensure only one instance is created
+			var gui_x = display_get_gui_width() / 2;
+			var gui_y = display_get_gui_height() / 2;
+
+			var instance = instance_create_layer(gui_x, gui_y, "instances", obj_gameover);
+			instance.depth = -100;
+		}
 
 	    // Break to ensure no further code is executed in this state
 	    break;
+
 
 	
 }
