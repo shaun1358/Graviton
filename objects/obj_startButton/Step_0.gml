@@ -11,7 +11,7 @@ if instance_exists(obj_camera) {
 
 
 switch(target) {
-	case room_gameOrigin :
+	case room_gameClassic :
 		sprite_index = spr_modeClassic;
 		if (instance_exists(obj_camera)) {
 			x = _marginX + (1080 / 2);

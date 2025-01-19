@@ -2,7 +2,7 @@ var final_score = global.scoreGame;
 isHighScore = false;
  
 // score update logic
-if(room==room_gameOrigin){
+if(room==room_gameClassic){
 	if(global.scoreGame > global.scoreClassic){
 		global.scoreClassic = global.scoreGame;	
 		isHighScore = true;

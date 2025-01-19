@@ -1,1 +1,1 @@
-target = room_gameOrigin;
+target = room_gameClassic;
