@@ -40,7 +40,7 @@ if (count_ball<=ballCount) {
 // gameover mech with y axis, and creation with modulus count.
 with (obj_brickParent) {
 	// Only process blocks with the riseable trait
-	if (isRiseable) {
+	if (isRiseable && !global.isFreeze) {
 
 	    // Smoothly move toward the target position
 	    phy_position_y -= RISING_SPEED
@@ -50,7 +50,16 @@ with (obj_brickParent) {
 		}
 	}
 }
-incr_cnt++;
+with (obj_itemParent) {
+	if(!global.isFreeze && obj_itemParent.obtained == 0) {
+		y -= RISING_SPEED;
+		if(y < THRESHOLD_Y){
+			instance_destroy();
+		}
+	}
+}
+	
+if(!global.isFreeze) incr_cnt++;
 if(incr_cnt==tileCreationCnt){
 	scr_tileCreate(global.stage, MAX_ROW);
 	global.stage++;

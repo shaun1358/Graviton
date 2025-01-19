@@ -32,13 +32,14 @@ if (room == room_gameClassic) {
 } 
 else if (room == room_gameElevator) {
     // Logic for gamemode 2
+	/*
     if (instance_exists(obj_camera)) {
         x = obj_camera.cameraWidth / 4;
         y = obj_camera.cameraMarginY + 50;
     } else {
         x = 640;
         y = 120;
-    }
+    } */
 
     if (obj_gameElevator.state == BALL_STATE_0_IDLE) visible = 1;
     else if (ballCount <= 0) visible = 0;

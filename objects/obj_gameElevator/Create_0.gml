@@ -85,6 +85,8 @@ global.stage = 1;
 global.scoreGame = 0; //init score
 global.tile_order = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 global.easing_active = false;
+global.damage = 1;
+global.isFreeze = false;
 count_ball=0;
 total_destruction=0;
 scr_tileCreate(global.stage, MAX_ROW-1);

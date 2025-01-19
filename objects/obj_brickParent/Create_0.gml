@@ -21,3 +21,5 @@ yspd = 0;
 yspdAcc = 0;
 
 brickScore = 0;
+//item이 무엇이 나올지 계산할 때 씀
+item = 0;
