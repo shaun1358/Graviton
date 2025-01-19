@@ -67,6 +67,7 @@
     {"name":"spr_modeClassic","order":2,"path":"sprites/spr_modeClassic/spr_modeClassic.yy",},
     {"name":"spr_modeElevator","order":3,"path":"sprites/spr_modeElevator/spr_modeElevator.yy",},
     {"name":"spr_option","order":5,"path":"sprites/spr_option/spr_option.yy",},
+    {"name":"spr_optionTitle","order":7,"path":"sprites/spr_optionTitle/spr_optionTitle.yy",},
     {"name":"spr_settingDebug","order":6,"path":"sprites/spr_settingDebug/spr_settingDebug.yy",},
     {"name":"spr_title","order":1,"path":"sprites/spr_title/spr_title.yy",},
     {"name":"spr_titleDebug","order":4,"path":"sprites/spr_titleDebug/spr_titleDebug.yy",},

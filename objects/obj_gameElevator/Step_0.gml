@@ -61,16 +61,11 @@ if(incr_cnt==tileCreationCnt){
 switch(state) {
 	//공 발사전
 	case BALL_STATE_0_IDLE :
-		//마우스 or 손가락을 누르고 있으면
-		
-		//마우스 or 손가락을 눌렀다가 놓으면
-		
-			state = BALL_STATE_1_FIRING;
+		state = BALL_STATE_1_FIRING;
 		break;
 		
 	//공 발사중
 	case BALL_STATE_1_FIRING :
-		//state == 0에서 썼던 변수 초기화
 		controlPressing = 0;
 		controlReleasing = 0;
 		

@@ -34,6 +34,7 @@ switch(state) {
 			//동시에 화살표 다시 지우도록 지시
 			with (obj_ballGenerator) {
 				ballCount = other.ballCount;
+				ballDelay = max(9 - floor(other.ballCount / 10), 3);
 				drawArrow = 0;
 			}
 
