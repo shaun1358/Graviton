@@ -1,7 +1,8 @@
 //피격될 경우
 if (hit == 1) {
 	//나중에 flash와 피격음도 추가 예정
-	if (breakable == 1) hp--;
+	if (breakable == 1) hp -= damage;
+	damage = 0;
 	hit = 0;
 }
 
