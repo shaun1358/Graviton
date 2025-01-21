@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_globalLoad",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"global",
+    "path":"folders/Scripts/global.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_get_x_coordinate",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"bricks",
+    "path":"folders/Scripts/bricks.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

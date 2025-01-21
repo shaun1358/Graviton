@@ -1,5 +1,11 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_generateParticle(number, particle) {
-	repeat(number) instance_create_layer(x, y, layer, particle);
+//파티클을 생성해주는 함수
+//particle        = 파티클의 종류
+//number          = 파티클의 수
+//dir             = 파티클의 날아가는 방향
+//dir_randomRange = 파티클의 날아가는 방향에 부여할 랜덤범위
+
+function scr_generateParticle(particle, number, dir, dir_randomRange) {
+	repeat(number) with instance_create_layer(x, y, layer, particle) {
+		direction = dir + random_range(-dir_randomRange, dir_randomRange);	
+	}
 }

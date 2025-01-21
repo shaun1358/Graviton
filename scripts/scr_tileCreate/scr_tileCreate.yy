@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_tileCreate",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"bricks",
+    "path":"folders/Scripts/bricks.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
