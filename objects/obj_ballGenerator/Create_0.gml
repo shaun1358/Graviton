@@ -1,3 +1,7 @@
+if not instance_exists(obj_laser) {
+	instance_create_layer(x, y, layer, obj_laser);
+}
+
 if instance_exists(obj_camera) {
 	x = obj_camera.cameraWidth / 2;
 	y = obj_camera.cameraMarginY + 100;

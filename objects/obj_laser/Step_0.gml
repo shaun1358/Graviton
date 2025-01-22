@@ -1,3 +1,6 @@
+depth = 10;
+
+//위치는 obj_ballGenerator로 고정
 var _x = 0;
 var _y = 0;
 if instance_exists(obj_ballGenerator) {
@@ -7,7 +10,9 @@ if instance_exists(obj_ballGenerator) {
 x = _x;
 y = _y;
 
-direction = image_angle;
+//레이저 길이 (1/2)^n배 증가
+//-> 블럭이랑 닿음? 닿으면 아까 그 코드 취소
+//-> n 증가
 image_xscale = 0;
 image_size   = 1
 for (var i = 0; i < 30; i++) {
@@ -18,12 +23,11 @@ for (var i = 0; i < 30; i++) {
    image_size *= 0.5;
 }
 
+//레이저 투명해지는 효과
 timer++;
 image_alpha = 0.7 + (0.1 * sin(timer / timer_period));
-if not instance_exists(obj_laserEnd) {
-	instance_create_layer(x, y, layer, obj_laserEnd);
-}
 
+//레이저 끝부분에 똥그란 그 원 생성해주는 코드
 if instance_exists(obj_laserEnd) {
 	obj_laserEnd.visible = visible;
 	obj_laserEnd.direction = image_angle; 
