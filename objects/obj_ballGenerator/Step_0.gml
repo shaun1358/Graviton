@@ -24,6 +24,7 @@ if (room == room_gameClassic) {
                 physics_apply_impulse(x, y, _xForce, _yForce);
             }
             ballTimer = ballDelay;
+
         }
         ballTimer--;
     } else {
@@ -68,4 +69,14 @@ else if (room == room_gameElevator) {
     } else {
         ballTimer = 0;
     }
+}
+
+if instance_exists(obj_laser) {
+	if drawArrow {
+		obj_laser.visible = 1;
+		obj_laser.image_angle = ballDirection;
+	}
+	else {
+		obj_laser.visible = 0;
+	}
 }
