@@ -8,7 +8,9 @@ var _x2 = x;
 var _y2 = y;
 
 with (other) {
-	hit = 1;
+	// non-zero = hit
+	hit = true;
+	damage = other.damage
 	_x1 = x;
 	_y1 = y;
 }

@@ -21,11 +21,11 @@ x1 = 0;
 y1 = 0;
 
 // elevator constants
-#macro RISING_SPEED 1
+#macro RISING_SPEED 60 // room speed?
 // gameover location
 #macro THRESHOLD_Y 600
 
-tileCreationCnt = (BLOCK_HEIGHT_MARGIN+BLOCK_HEIGHT)/RISING_SPEED;
+tileCreationCnt = (BLOCK_HEIGHT_MARGIN+BLOCK_HEIGHT)/(RISING_SPEED/60);
 incr_cnt = 0;
 global.const_STAGE_CONFIG_CLASSIC = [
 	{ stage: 1, min_blocks: 1, max_blocks: 1 },

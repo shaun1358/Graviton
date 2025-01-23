@@ -36,35 +36,50 @@ if (count_ball<=ballCount) {
 			
 
 			//현재 상태를 '공 발사중'으로 바꿈
-		}
-// gameover mech with y axis, and creation with modulus count.
+}
 with (obj_brickParent) {
-	// Only process blocks with the riseable trait
-	if (isRiseable && !global.isFreeze) {
+    if (isRiseable && !global.isFreeze) {
+        // Set vertical speed for rising
+        phy_linear_velocity_y = -RISING_SPEED;
 
-	    // Smoothly move toward the target position
-	    phy_position_y -= RISING_SPEED
-		if(phy_position_y<THRESHOLD_Y){
-			isGameover = true;
-			state = BALL_STATE_3_GAMEOVER;
-		}
+
+        // Check for game over condition when reaching the threshold
+        if (y < THRESHOLD_Y) {
+            isGameover = true;
+            state = BALL_STATE_3_GAMEOVER;
+        }
+    }
+	else{
+	        phy_linear_velocity_y = 0;
 	}
 }
+
 with (obj_itemParent) {
-	if(!global.isFreeze && obj_itemParent.obtained == 0) {
-		y -= RISING_SPEED;
-		if(y < THRESHOLD_Y){
-			instance_destroy();
-		}
+    if (!global.isFreeze && obtained == 0) {
+        // Set vertical speed for rising
+		phy_linear_velocity_y = -RISING_SPEED;
+
+        // Destroy item if it crosses the threshold
+        if (y < THRESHOLD_Y) {
+            instance_destroy();
+        }
+    }
+	else{
+		phy_linear_velocity_y = 0;
 	}
 }
-	
-if(!global.isFreeze) incr_cnt++;
-if(incr_cnt==tileCreationCnt){
-	scr_tileCreate(global.stage, MAX_ROW);
-	global.stage++;
-	incr_cnt = 0;
+
+
+// Modulus-based tile creation mechanism
+if (!global.isFreeze) {
+    incr_cnt++; // Increment counter only if not frozen
+    if (incr_cnt >= tileCreationCnt) { // Check if counter matches the required modulus
+        scr_tileCreate(global.stage, MAX_ROW); // Create tiles
+        global.stage++; // Advance the stage
+        incr_cnt = 0; // Reset counter
+    }
 }
+
 
 	show_debug_message(state);
 switch(state) {
