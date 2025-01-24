@@ -5,7 +5,7 @@
 //dir_randomRange = 파티클의 날아가는 방향에 부여할 랜덤범위
 
 function scr_generateParticle(particle, number, dir, dir_randomRange) {
-	repeat(number) with instance_create_layer(x, y, layer, particle) {
+	repeat(number * global.optionParticle) with instance_create_layer(x, y, layer, particle) {
 		direction = dir + random_range(-dir_randomRange, dir_randomRange);	
 	}
 }

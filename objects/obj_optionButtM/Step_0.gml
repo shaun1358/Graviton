@@ -1,0 +1,1 @@
+global.soundMusic = (x - 325 - owner.x) / 460;

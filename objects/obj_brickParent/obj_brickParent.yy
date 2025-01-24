@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"bricks",
-    "path":"folders/Objects/bricks.yy",
+    "path":"folders/Objects/game/bricks.yy",
   },
   "parentObjectId":null,
   "persistent":false,

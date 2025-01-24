@@ -12,7 +12,8 @@ function scr_globalReset() {
 	global.soundMusic = 1;
 	global.soundEffect = 1;
 	
+	global.optionParticle = 1;
+	
 	global.damage = 1
-	global.isFreeze = false;
 	
 }
