@@ -1,14 +1,10 @@
-if( place_meeting(x, y, obj_ball) && obtained = 0) {
-    obtained = 1;
+if( place_meeting(x, y, obj_ball)) {
+	obj_gameElevator.itemFreeze = true;
+	obj_gameElevator.itemFreezeTimer = DUR_FREEZE;
+	obj_gameElevator.itemFreezeDelta = 0;
 	visible = false;
-	time = 0;
-	global.isFreeze = true;
-}
+	with (obj_brickParent) phy_linear_velocity_y = 0;
+	with (obj_itemParent) phy_linear_velocity_y = 0;
 
-if(obtained == 1) {
-	time++;
-	if(time >= endTime){
-		global.isFreeze = false;
-		instance_destroy();
-	}
+	instance_destroy();
 }

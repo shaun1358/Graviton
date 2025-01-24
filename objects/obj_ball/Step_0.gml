@@ -12,6 +12,8 @@ if (y > 2000) {
 			total_destruction++;
         }
     }
+	instance_create_layer(x, y, "Effects", obj_ripple);
+
     instance_destroy();
 }
 phy_speed_y = clamp(phy_speed_y, -yspdMax, yspdMax);

@@ -48,10 +48,10 @@ global.const_STAGE_CONFIG_CLASSIC = [
 	{ stage: 21, min_blocks: 2, max_blocks: 4 },
 	{ stage: 41, min_blocks: 2, max_blocks: 5 },
 	{ stage: 61, min_blocks: 3, max_blocks: 5 },
-	{ stage: 81, min_blocks: 3, max_blocks: 6 },
-	{ stage: 101, min_blocks: 4, max_blocks: 6 },
-	{ stage: 151, min_blocks: 5, max_blocks: 6 },
-	{ stage: 201, min_blocks: 6, max_blocks: 6 }
+	{ stage: 81, min_blocks: 3, max_blocks: 5 },
+	{ stage: 101, min_blocks: 4, max_blocks: 5 },
+	{ stage: 151, min_blocks: 5, max_blocks: 5 }
+	//{ stage: 201, min_blocks: , max_blocks: 5 }
 ];
 
 

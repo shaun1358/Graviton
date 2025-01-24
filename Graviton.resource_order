@@ -49,6 +49,7 @@
     {"name":"obj_laser","order":14,"path":"objects/obj_laser/obj_laser.yy",},
     {"name":"obj_laserEnd","order":15,"path":"objects/obj_laserEnd/obj_laserEnd.yy",},
     {"name":"obj_particleLaser","order":1,"path":"objects/obj_particleLaser/obj_particleLaser.yy",},
+    {"name":"obj_ripple","order":16,"path":"objects/obj_ripple/obj_ripple.yy",},
     {"name":"obj_startButton","order":1,"path":"objects/obj_startButton/obj_startButton.yy",},
     {"name":"Obj1","order":1,"path":"objects/Obj1/Obj1.yy",},
     {"name":"Obj3","order":2,"path":"objects/Obj3/Obj3.yy",},

@@ -40,7 +40,7 @@ function scr_tileCreate(level, block_layer)	{
 	for (var c = 0; c < block_cnt; c++) {
 		// no need for empty queue check since c<MAX_COLUMN
 		var brick_type = ds_queue_dequeue(my_queue);
-		
+		show_debug_message(string(global.tile_order));
 	    // Perform actions for each (r, c) pair
 		cur_x = scr_get_x_coordinate(global.tile_order[c]);
 		cur_y = scr_get_y_coordinate(block_layer);

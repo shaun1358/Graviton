@@ -5,7 +5,7 @@
 state = 0;
 
 //ballCount = 현재 보유하고 있는 공의 개수
-ballCount = 1;
+ballCount = 230;
 
 //플레이어 조작 관련 변수
 controlPressing  = 0;
@@ -21,9 +21,13 @@ x1 = 0;
 y1 = 0;
 
 // elevator constants
-#macro RISING_SPEED 60 // room speed?
+#macro RISING_SPEED 200 // room speed?
 // gameover location
 #macro THRESHOLD_Y 600
+
+// item duration (in ms)
+
+
 
 tileCreationCnt = (BLOCK_HEIGHT_MARGIN+BLOCK_HEIGHT)/(RISING_SPEED/60);
 incr_cnt = 0;
@@ -90,3 +94,14 @@ global.isFreeze = false;
 count_ball=0;
 total_destruction=0;
 scr_tileCreate(global.stage, MAX_ROW-1);
+
+itemDamage = false;
+itemFreeze = false;
+itemDelete = false;
+itemDamageTimer = 0;
+itemFreezeTimer = 0;
+itemDeleteTimer = 0;
+itemDamageDelta = 0;
+itemFreezeDelta = 0;
+itemDeleteDelta = 0;
+isGameover = false;

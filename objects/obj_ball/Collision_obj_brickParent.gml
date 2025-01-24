@@ -10,7 +10,7 @@ var _y2 = y;
 with (other) {
 	// non-zero = hit
 	hit = true;
-	damage = other.damage
+	hp -= other.damage*other.multiplier;
 	_x1 = x;
 	_y1 = y;
 }

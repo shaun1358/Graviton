@@ -3,4 +3,6 @@
 
 // Inherit the parent event
 event_inherited();
-draw_self();
+min_y = 0;
+epsilon = 1; // float pixel correction
+

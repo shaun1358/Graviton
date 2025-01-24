@@ -1,14 +1,10 @@
-if( place_meeting(x, y, obj_ball) && obtained = 0) {
-    obtained = 1;
+if( place_meeting(x, y, obj_ball)) {
+    obj_gameElevator.itemDamage = true;
+	obj_gameElevator.itemDamageTimer = DUR_DAMAGE;
+	obj_gameElevator.itemDamageDelta = 0;
 	visible = false;
-	global.damage = 2;
-	time = 0;
-}
-
-if(obtained == 1) {
-	time++;
-	if(time >= endTime) {
-		global.damage = 1;
-		instance_destroy();
+	with(obj_ball){
+		multiplier = 2;
 	}
+	instance_destroy();
 }

@@ -62,6 +62,13 @@ else if (room == room_gameElevator) {
 
             with (_ball) {
                 physics_apply_impulse(x, y, _xForce, _yForce);
+				_ball.damage = max(1, obj_gameElevator.ballCount/100);
+				if(obj_gameElevator.itemDamage){
+					_ball.multiplier = 2;
+				}
+				else{
+					_ball.multiplier = 1;
+				}
             }
             ballTimer = ballDelay;
         }

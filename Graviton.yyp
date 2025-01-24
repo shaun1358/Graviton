@@ -72,6 +72,7 @@
     {"id":{"name":"obj_laserEnd","path":"objects/obj_laserEnd/obj_laserEnd.yy",},},
     {"id":{"name":"obj_particleBrick","path":"objects/obj_particleBrick/obj_particleBrick.yy",},},
     {"id":{"name":"obj_particleLaser","path":"objects/obj_particleLaser/obj_particleLaser.yy",},},
+    {"id":{"name":"obj_ripple","path":"objects/obj_ripple/obj_ripple.yy",},},
     {"id":{"name":"obj_startButton","path":"objects/obj_startButton/obj_startButton.yy",},},
     {"id":{"name":"obj_test","path":"objects/obj_test/obj_test.yy",},},
     {"id":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},},

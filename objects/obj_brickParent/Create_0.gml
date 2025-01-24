@@ -4,7 +4,6 @@ hp = 1;
 //hit = 피격 여부; 1 = 피격됨, 0 = 안맞음
 hit = 0;
 
-damage = 1;
 //파괴 가능 여부; 1 = 파괴 가능, 0 = 파괴 불가능
 breakable = 1;
 
@@ -23,3 +22,4 @@ yspdAcc = 0;
 brickScore = 0;
 //item이 무엇이 나올지 계산할 때 씀
 item = 0;
+dp_hp = 0;

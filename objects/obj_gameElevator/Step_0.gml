@@ -12,76 +12,104 @@ else if device_mouse_check_button_released(0, mb_left) {
 	controlReleasing = 1;
 }
 
-var isGameover = false;
-if (controlPressing) {
-	//(x0, y0) 계산
-	x0 = obj_ballGenerator.x;
-	y0 = obj_ballGenerator.y;
-			
-	//(x0, y0)와 (x1, y1)으로부터 공이 날아갈 방향을 계산하고 obj_direction에 대입
-	//동시에 obj_ballGenerator에 화살표 그리라고 지시
-	with (obj_ballGenerator) {
-		ballDirection = point_direction(other.x0, other.y0, other.x1, other.y1);
-		drawArrow = 1;
-	}
-}
-if (count_ball<=ballCount) {
-			//ballCount를 obj_gameOrigin의 ballCount로부터 가져오도록 지시
-			//동시에 화살표 다시 지우도록 지시
-			
-			with (obj_ballGenerator) {
-				ballCount = other.ballCount-other.count_ball;
-				drawArrow = 0;
+if(!isGameover){
+	// item timer processing
+	if(itemDamage){
+		itemDamageDelta += scr_delta_to_ms(delta_time);
+		// set item damage false
+		if(itemDamageDelta>=itemDamageTimer){
+			itemDamage = false;
+			itemDamageTimer = 0;
+			itemDamageDelta = 0;
+			with(obj_ball){
+				multiplier = 1;
 			}
+		}
+	}
+
+	// item timer processing
+	if(itemFreeze){
+		itemFreezeDelta += scr_delta_to_ms(delta_time);
+		// set item damage false
+		if(itemFreezeDelta>=itemFreezeTimer){
+			itemFreeze = false;
+			itemFreezeTimer = 0;
+			itemFreezeDelta = 0;
+		
+			with (obj_brickParent) phy_linear_velocity_y = -RISING_SPEED;
+			with (obj_itemParent) phy_linear_velocity_y = -RISING_SPEED;
+
+		}
+	}
+	if (controlPressing) {
+		//(x0, y0) 계산
+		x0 = obj_ballGenerator.x;
+		y0 = obj_ballGenerator.y;
+			
+		//(x0, y0)와 (x1, y1)으로부터 공이 날아갈 방향을 계산하고 obj_direction에 대입
+		//동시에 obj_ballGenerator에 화살표 그리라고 지시
+		with (obj_ballGenerator) {
+			ballDirection = point_direction(other.x0, other.y0, other.x1, other.y1);
+			drawArrow = 1;
+		}
+	}
+	if (count_ball<=ballCount) {
+				//ballCount를 obj_gameOrigin의 ballCount로부터 가져오도록 지시
+				//동시에 화살표 다시 지우도록 지시
+			
+				with (obj_ballGenerator) {
+					ballCount = other.ballCount-other.count_ball;
+					drawArrow = 0;
+				}
 			
 
-			//현재 상태를 '공 발사중'으로 바꿈
-}
-with (obj_brickParent) {
-    if (isRiseable && !global.isFreeze) {
-        // Set vertical speed for rising
-        phy_linear_velocity_y = -RISING_SPEED;
-
-
-        // Check for game over condition when reaching the threshold
-        if (y < THRESHOLD_Y) {
-            isGameover = true;
-            state = BALL_STATE_3_GAMEOVER;
-        }
-    }
-	else{
-	        phy_linear_velocity_y = 0;
+				//현재 상태를 '공 발사중'으로 바꿈
 	}
-}
 
-with (obj_itemParent) {
-    if (!global.isFreeze && obtained == 0) {
-        // Set vertical speed for rising
-		phy_linear_velocity_y = -RISING_SPEED;
+	if(!itemFreeze){
+		with (obj_brickParent) {
+		    if (isRiseable) {
+		        // Set vertical speed for rising
+		        phy_linear_velocity_y = -RISING_SPEED;
 
-        // Destroy item if it crosses the threshold
-        if (y < THRESHOLD_Y) {
-            instance_destroy();
-        }
-    }
-	else{
-		phy_linear_velocity_y = 0;
+
+		        // Check for game over condition when reaching the threshold
+	       
+			}
+		}
+
+		with (obj_itemParent) {
+			// Set vertical speed for rising
+			phy_linear_velocity_y = -RISING_SPEED;
+
+			// Destroy item if it crosses the threshold
+			if (y < THRESHOLD_Y) {
+			    instance_destroy();
+			}
+		}
+
+
+	// Modulus-based tile creation mechanism
+
+	    incr_cnt++; // Increment counter only if not frozen
+	    if (incr_cnt >= tileCreationCnt) { // Check if counter matches the required modulus
+	        scr_tileCreate(global.stage, MAX_ROW); // Create tiles
+	        global.stage++; // Advance the stage
+	        incr_cnt = 0; // Reset counter
+	    }
+
 	}
+
+	// check game over
+	with(obj_brickParent){
+		if (y < THRESHOLD_Y) {
+			other.isGameover = true;
+			other.state = BALL_STATE_3_GAMEOVER;
+			show_debug_message("!");
+		}
+	}
+
 }
-
-
-// Modulus-based tile creation mechanism
-if (!global.isFreeze) {
-    incr_cnt++; // Increment counter only if not frozen
-    if (incr_cnt >= tileCreationCnt) { // Check if counter matches the required modulus
-        scr_tileCreate(global.stage, MAX_ROW); // Create tiles
-        global.stage++; // Advance the stage
-        incr_cnt = 0; // Reset counter
-    }
-}
-
-
-	show_debug_message(state);
 switch(state) {
 	//공 발사전
 	case BALL_STATE_0_IDLE :
