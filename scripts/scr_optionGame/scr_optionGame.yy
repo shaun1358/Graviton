@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_optionGame",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_optionGame",
+  "parent":{
+    "name":"option",
+    "path":"folders/Scripts/option.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
