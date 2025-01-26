@@ -79,7 +79,7 @@ else if (room == room_gameElevator) {
 }
 
 if instance_exists(obj_laser) {
-	if drawArrow {
+	if (drawArrow) {
 		obj_laser.visible = 1;
 		obj_laser.image_angle = ballDirection;
 	}

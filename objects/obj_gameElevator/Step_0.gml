@@ -59,7 +59,7 @@ if(!isGameover){
 			
 				with (obj_ballGenerator) {
 					ballCount = other.ballCount-other.count_ball;
-					drawArrow = 0;
+					//drawArrow = 0;
 				}
 			
 
@@ -113,11 +113,15 @@ if(!isGameover){
 switch(state) {
 	//공 발사전
 	case BALL_STATE_0_IDLE :
-		state = BALL_STATE_1_FIRING;
+		if (controlPressing) {
+			state = BALL_STATE_1_FIRING;
+			if instance_exists(obj_holdToStart) obj_holdToStart.phase = 1;
+		}
 		break;
 		
 	//공 발사중
 	case BALL_STATE_1_FIRING :
+		
 		controlPressing = 0;
 		controlReleasing = 0;
 		
@@ -138,7 +142,7 @@ switch(state) {
 	        state = BALL_STATE_3_GAMEOVER;
 	        break;
 	    }
-		state = BALL_STATE_0_IDLE;
+		state = BALL_STATE_1_FIRING;
 	    break;
 
 	case BALL_STATE_3_GAMEOVER:
