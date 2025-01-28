@@ -1,6 +1,6 @@
 {
   "$GMFont":"",
-  "%Name":"fnt_pressStart2P_small",
+  "%Name":"fnt_pressStart2P_20",
   "AntiAlias":1,
   "applyKerning":0,
   "ascender":27,
@@ -118,7 +118,7 @@
   "last":0,
   "lineHeight":27,
   "maintainGms1Font":false,
-  "name":"fnt_pressStart2P_small",
+  "name":"fnt_pressStart2P_20",
   "parent":{
     "name":"Fonts",
     "path":"folders/Fonts.yy",

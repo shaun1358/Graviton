@@ -1,10 +1,10 @@
 
 if (instance_exists(obj_camera)) {
     x = obj_camera.cameraWidth / 2;
-    y = obj_camera.cameraMarginY + 100;
+    y = obj_camera.cameraMarginY + 300;
 } else {
     x = 540;
-    y = 100;
+    y = 300;
 }
 if (room == room_gameClassic) {
     // Logic for gamemode origin

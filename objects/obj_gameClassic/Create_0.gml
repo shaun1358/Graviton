@@ -1,3 +1,17 @@
+//위치 조정용 변수
+if instance_exists(obj_camera) {
+	_marginX = obj_camera.cameraMarginX;
+	_marginY = obj_camera.cameraMarginY;
+	_width   = obj_camera.cameraWidth;
+	_height  = obj_camera.cameraHeight;
+}
+else {
+	_marginX = 0;
+	_marginY = 0;
+	_width   = 1080;
+	_height  = 1920;
+}
+
 //state = 현재 게임 진행 상황
 //0 = 아무 조작도 안함 or 플레이어가 공의 방향을 조준하는 중
 //1 = 플레이어가 조준하고 손가락을 놓았음. 공은 이제 발사가 되는 중
@@ -100,4 +114,8 @@ global.stage = 1;
 global.scoreGame = 0; //init score
 global.tile_order = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 global.easing_active = false;
-scr_tileCreate(global.stage, MAX_ROW-1);
+scr_tileCreate(global.stage, MAX_ROW - 1);
+
+//화면에 표시되는 점수, 실제 점수는 아님
+scoreDraw  = 0;
+scoreScale = 1;

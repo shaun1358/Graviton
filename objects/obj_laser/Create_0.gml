@@ -9,5 +9,5 @@ timer_period = 10;
 
 
 if not instance_exists(obj_laserEnd) {
-	instance_create_layer(x, y, layer, obj_laserEnd);
+	instance_create_layer(x, y, "Laser", obj_laserEnd);
 }

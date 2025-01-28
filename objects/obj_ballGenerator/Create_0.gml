@@ -1,14 +1,14 @@
 if not instance_exists(obj_laser) {
-	instance_create_layer(x, y, layer, obj_laser);
+	instance_create_layer(x, y, "Laser", obj_laser);
 }
 
 if instance_exists(obj_camera) {
 	x = obj_camera.cameraWidth / 2;
-	y = obj_camera.cameraMarginY + 100;
+	y = obj_camera.cameraMarginY + 300;
 }
 else {
 	x = 540;
-	y = 100;
+	y = 300;
 }
 
 //ballCount = 현재 보유하고 있는 공의 개수. ballDelay = 공 발사까지 걸리는 시간

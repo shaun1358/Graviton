@@ -11,5 +11,5 @@ else {
 	_height  = 1920;
 }
 
-x = _marginX + 100;
+x = _marginX + 1080 - 100;
 y = _marginY + 100;

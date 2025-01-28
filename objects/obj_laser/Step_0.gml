@@ -1,4 +1,3 @@
-depth = 10;
 
 //위치는 obj_ballGenerator로 고정
 var _x = 0;

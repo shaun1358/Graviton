@@ -1,1 +1,1 @@
-room_goto(room_title);
+scr_optionGame();
