@@ -6,6 +6,9 @@ if (instance_exists(obj_camera)) {
     x = 540;
     y = 300;
 }
+
+if (ballDirection < 180 && ballDirection >= 90) ballDirection = 180;
+else if (ballDirection < 90 && ballDirection > 0) ballDirection = 0;
 if (room == room_gameClassic) {
     // Logic for gamemode origin
     
@@ -16,10 +19,12 @@ if (room == room_gameClassic) {
         if (ballTimer <= 0 && ballCount > 0) {
             ballCount--;
             var _ball = instance_create_layer(x, y, layer, obj_ball);
-
+			
             var _xForce = lengthdir_x(other.ballSpeed, other.ballDirection);
             var _yForce = lengthdir_y(other.ballSpeed, other.ballDirection);
-
+			
+			//if (_yForce < 0) _yForce = 0;
+			
             with (_ball) {
                 physics_apply_impulse(x, y, _xForce, _yForce);
             }

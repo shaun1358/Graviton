@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_optionTitle",
-    "path":"sprites/spr_optionTitle/spr_optionTitle.yy",
+    "name":"spr_optionGame",
+    "path":"sprites/spr_optionGame/spr_optionGame.yy",
   },
   "spriteMaskId":null,
   "visible":true,

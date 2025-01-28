@@ -116,6 +116,9 @@ global.tile_order = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 global.easing_active = false;
 scr_tileCreate(global.stage, MAX_ROW - 1);
 
+//조작 가능 여부, 옵션이 있으면 0이 됨
+canControl = 1;
+
 //화면에 표시되는 점수, 실제 점수는 아님
 scoreDraw  = 0;
 scoreScale = 1;

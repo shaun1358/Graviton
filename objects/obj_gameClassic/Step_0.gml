@@ -12,6 +12,7 @@ else {
 	_height  = 1920;
 }
 
+//스코어가 촤랴랴략 하면서 올라가도록 해주는 코드
 if (scoreDraw < global.scoreGame) {
 	scoreDraw += 10;
 	scoreScale = 1.2;
@@ -21,46 +22,62 @@ if (scoreScale > 1) {
 	if (scoreScale <= 1.01) scoreScale = 1;
 }
 
+//옵션이 있으면 canControl = -1, 일부로 -1로 한거임 0으로 하면 옵션 끄자마자 같은 플레임에 1이 되면서 공이 발사가 되버림...
+if instance_exists(obj_optionParant) canControl = -1;
+else if (canControl < 1) canControl += 1;
+
 //마우스 클릭 / 손가락 태핑 인식
 //참고로 겜메스는 손가락 태핑도 마우스 입력 취급 한다는데.. 나중에 디버깅 해봐야함
 if device_mouse_check_button(0, mb_left) {
-	controlPressing = 1;
 	//(x1, y1) 계산
 	x1 = device_mouse_x(0)
 	y1 = device_mouse_y(0)
+	if (obj_ballGenerator.y < y1 && canControl) controlPressing = 1;
 }
 //마우스 놓기 / 손가락 떼기 인식
 else if device_mouse_check_button_released(0, mb_left) {
+	if (obj_ballGenerator.y < y1 && canControl) {
+		controlPressing = 0;
+		controlReleasing = 1;
+	}
 	controlPressing = 0;
-	controlReleasing = 1;
 }
 
 switch(state) {
 	//공 발사전
 	case BALL_STATE_0_IDLE :
+		//아무것도 안할 경우
+		if (not controlPressing) {
+			with (obj_ballGenerator) {
+				drawArrow = 0;
+			}
+		}
+		
 		//마우스 or 손가락을 누르고 있으면
-		if (controlPressing) {
+		if (controlPressing && canControl) {
 			//(x0, y0) 계산
 			x0 = obj_ballGenerator.x;
 			y0 = obj_ballGenerator.y;
 			
 			//(x0, y0)와 (x1, y1)으로부터 공이 날아갈 방향을 계산하고 obj_direction에 대입
 			//동시에 obj_ballGenerator에 화살표 그리라고 지시
+
 			with (obj_ballGenerator) {
 				ballDirection = point_direction(other.x0, other.y0, other.x1, other.y1);
 				drawArrow = 1;
 			}
+			
 		}
 		//마우스 or 손가락을 눌렀다가 놓으면
-		if (controlReleasing) {
+		if (controlReleasing && canControl) {
 			//ballCount를 obj_gameOrigin의 ballCount로부터 가져오도록 지시
 			//동시에 화살표 다시 지우도록 지시
+
 			with (obj_ballGenerator) {
 				ballCount = other.ballCount;
 				ballDelay = max(9 - floor(other.ballCount / 10), 3);
 				drawArrow = 0;
 			}
-
 			//현재 상태를 '공 발사중'으로 바꿈
 			state = BALL_STATE_1_FIRING;
 		}

@@ -1,3 +1,27 @@
+//위치 조정용 변수
+if instance_exists(obj_camera) {
+	_marginX = obj_camera.cameraMarginX;
+	_marginY = obj_camera.cameraMarginY;
+	_width   = obj_camera.cameraWidth;
+	_height  = obj_camera.cameraHeight;
+}
+else {
+	_marginX = 0;
+	_marginY = 0;
+	_width   = 1080;
+	_height  = 1920;
+}
+
+//스코어가 촤랴랴략 하면서 올라가도록 해주는 코드
+if (scoreDraw < global.scoreGame) {
+	scoreDraw += 10;
+	scoreScale = 1.2;
+}
+if (scoreScale > 1) {
+	scoreScale = (1 + (scoreScale * 4)) / 5;
+	if (scoreScale <= 1.01) scoreScale = 1;
+}
+
 //마우스 클릭 / 손가락 태핑 인식
 //참고로 겜메스는 손가락 태핑도 마우스 입력 취급 한다는데.. 나중에 디버깅 해봐야함
 if device_mouse_check_button(0, mb_left) {

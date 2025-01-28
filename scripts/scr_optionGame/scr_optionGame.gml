@@ -30,5 +30,10 @@ function scr_optionGame() {
 			depth = 2;
 			owner = other.optionID;
 		}
+		
+		with instance_create_layer(_x + 299, _y + 786, "Option", obj_optionCheckT) {
+			depth = 2;
+			owner = other.optionID;
+		}
 	}
 }

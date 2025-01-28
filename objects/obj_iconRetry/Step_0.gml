@@ -14,7 +14,7 @@ else {
 x = _marginX + 100;
 y = _marginY + 100;
 
-if (timer > 0) timer -= 0.1;
+if (timer > 0) timer -= 1;
 
 //scr_drawCircularBar(x, y, 3, 5, c_white, 100, 1, 5)
-if (timer == timer_period) room_restart();
+if (timer == timer_period) scr_roomTransition(TRANS_MODE.RESTART);

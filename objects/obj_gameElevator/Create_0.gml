@@ -1,3 +1,17 @@
+//위치 조정용 변수
+if instance_exists(obj_camera) {
+	_marginX = obj_camera.cameraMarginX;
+	_marginY = obj_camera.cameraMarginY;
+	_width   = obj_camera.cameraWidth;
+	_height  = obj_camera.cameraHeight;
+}
+else {
+	_marginX = 0;
+	_marginY = 0;
+	_width   = 1080;
+	_height  = 1920;
+}
+
 //state = 현재 게임 진행 상황
 //0 = 아무 조작도 안함 or 플레이어가 공의 방향을 조준하는 중
 //1 = 플레이어가 조준하고 손가락을 놓았음. 공은 이제 발사가 되는 중
@@ -105,3 +119,10 @@ itemDamageDelta = 0;
 itemFreezeDelta = 0;
 itemDeleteDelta = 0;
 isGameover = false;
+
+//조작 가능 여부, 옵션이 있으면 0이 됨
+canControl = 1;
+
+//화면에 표시되는 점수, 실제 점수는 아님
+scoreDraw  = 0;
+scoreScale = 1;

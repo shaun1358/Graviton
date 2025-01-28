@@ -10,3 +10,8 @@ else {
 	_width   = 1080;
 	_height  = 1920;
 }
+
+scale_press = 1;
+scale_state = 0;
+scale_timer = 0;
+scale_period = 10;

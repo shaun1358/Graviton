@@ -23,7 +23,7 @@
   ],
   "name":"spr_optionBar",
   "nineSlice":null,
-  "origin":3,
+  "origin":9,
   "parent":{
     "name":"option",
     "path":"folders/Sprites/option.yy",
