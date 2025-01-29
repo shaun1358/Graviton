@@ -1,16 +1,4 @@
 //위치 조정용 변수
-if instance_exists(obj_camera) {
-	_marginX = obj_camera.cameraMarginX;
-	_marginY = obj_camera.cameraMarginY;
-	_width   = obj_camera.cameraWidth;
-	_height  = obj_camera.cameraHeight;
-}
-else {
-	_marginX = 0;
-	_marginY = 0;
-	_width   = 1080;
-	_height  = 1920;
-}
 
 //state = 현재 게임 진행 상황
 //0 = 아무 조작도 안함 or 플레이어가 공의 방향을 조준하는 중
@@ -35,7 +23,7 @@ x1 = 0;
 y1 = 0;
 
 // elevator constants
-#macro RISING_SPEED 200 // room speed?
+#macro RISING_SPEED 60 // room speed?
 // gameover location
 #macro THRESHOLD_Y 600
 
@@ -51,10 +39,10 @@ global.const_STAGE_CONFIG_CLASSIC = [
 	{ stage: 21, min_blocks: 2, max_blocks: 4 },
 	{ stage: 41, min_blocks: 2, max_blocks: 5 },
 	{ stage: 61, min_blocks: 3, max_blocks: 5 },
-	{ stage: 81, min_blocks: 3, max_blocks: 6 },
-	{ stage: 101, min_blocks: 4, max_blocks: 6 },
-	{ stage: 151, min_blocks: 5, max_blocks: 6 },
-	{ stage: 201, min_blocks: 6, max_blocks: 6 }
+	{ stage: 81, min_blocks: 3, max_blocks: 5 },
+	{ stage: 101, min_blocks: 4, max_blocks: 5 },
+	{ stage: 151, min_blocks: 5, max_blocks: 5 },
+	{ stage: 201, min_blocks: 5, max_blocks: 5 }
 ];
 
 
@@ -99,7 +87,7 @@ global.const_SEED_STAGE_classic = [
 	{ stage: 100, seed_start: 11, seed_end: 19 },
 ];
 
-global.stage = 1;
+global.stage = 150;
 global.scoreGame = 0; //init score
 global.tile_order = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 global.easing_active = false;
@@ -107,7 +95,7 @@ global.damage = 1;
 global.isFreeze = false;
 count_ball=0;
 total_destruction=0;
-scr_tileCreate(global.stage, MAX_ROW-1);
+//scr_tileCreate(global.stage, MAX_ROW-1);
 
 itemDamage = false;
 itemFreeze = false;
@@ -126,3 +114,6 @@ canControl = 1;
 //화면에 표시되는 점수, 실제 점수는 아님
 scoreDraw  = 0;
 scoreScale = 1;
+
+highestBrick = 5000;
+dangerLine = instance_create_layer(0, 0, "Effect", obj_dangerLine);

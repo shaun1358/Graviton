@@ -1,1 +1,1 @@
-timer += 2;
+timer.curTime+=8;

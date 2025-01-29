@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_draw_arc",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_draw_arc",
+  "parent":{
+    "name":"bricks",
+    "path":"folders/Scripts/bricks.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

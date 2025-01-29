@@ -1,0 +1,1 @@
+global.back_pressed = false; // Reset after 1.5 seconds if not pressed again

@@ -1,17 +1,3 @@
-//위치 조정용 변수
-if instance_exists(obj_camera) {
-	_marginX = obj_camera.cameraMarginX;
-	_marginY = obj_camera.cameraMarginY;
-	_width   = obj_camera.cameraWidth;
-	_height  = obj_camera.cameraHeight;
-}
-else {
-	_marginX = 0;
-	_marginY = 0;
-	_width   = 1080;
-	_height  = 1920;
-}
-
 //스코어가 촤랴랴략 하면서 올라가도록 해주는 코드
 if (scoreDraw < global.scoreGame) {
 	scoreDraw += 10;
@@ -73,7 +59,10 @@ if(!isGameover){
 		//(x0, y0)와 (x1, y1)으로부터 공이 날아갈 방향을 계산하고 obj_direction에 대입
 		//동시에 obj_ballGenerator에 화살표 그리라고 지시
 		with (obj_ballGenerator) {
-			ballDirection = point_direction(other.x0, other.y0, other.x1, other.y1);
+			var dir = point_direction(other.x0, other.y0, other.x1, other.y1);
+			show_debug_message(dir);
+			if((dir>=225&&dir<=315)) // only detect below the ball generator
+				ballDirection = 180+(dir-225)*2;
 			drawArrow = 1;
 		}
 	}
@@ -123,14 +112,22 @@ if(!isGameover){
 	    }
 
 	}
-
+	
+	highestBrick = 5000; // max
 	// check game over
 	with(obj_brickParent){
-		if (y < THRESHOLD_Y) {
+		other.highestBrick = min(other.highestBrick, y);
+	}
+	
+	if (highestBrick < THRESHOLD_Y) {
 			other.isGameover = true;
 			other.state = BALL_STATE_3_GAMEOVER;
-			show_debug_message("!");
-		}
+	}	
+	else if(highestBrick < 900) {
+		dangerLine.visible = true;
+	}
+	else{
+		dangerLine.visible = false;
 	}
 
 }

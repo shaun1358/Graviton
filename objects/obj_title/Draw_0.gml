@@ -5,17 +5,8 @@ if (room == room_title) {
     // Draw the title sprite with dynamic scaling
 	var _y = 400;
 	
-	if instance_exists(obj_camera) {
-		var _marginX = obj_camera.cameraMarginX;
-		var _marginY = obj_camera.cameraMarginY;
-		var _width   = obj_camera.cameraWidth;
-		var _height  = obj_camera.cameraHeight;
-		draw_sprite_ext(spr_title, 0, _marginX + (1080 / 2), _marginY + _y, 1, 1, 0, c_white, 1);
-		
-	}
-	else {
-		draw_sprite_ext(spr_title, 0, 1080 / 2, _y, 1, 1, 0, c_white, 1);
-	}
+	draw_sprite_ext(spr_title, 0, 1080 / 2, _y, 1, 1, 0, c_white, 1);
+	
     
 	/*
     // Calculate the position for the start button
@@ -31,3 +22,10 @@ if (room == room_title) {
 } else {
     // Other draw logic for different rooms
 }
+
+
+draw_rectangle(0,0,10,1920, false);
+draw_rectangle(1070,0,1080,1920, false);
+draw_rectangle(0,0,1080,10, false);
+draw_rectangle(0,0,1080,10, false);
+draw_rectangle(0,1910,1080,1920, false);

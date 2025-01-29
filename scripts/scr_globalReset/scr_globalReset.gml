@@ -16,4 +16,8 @@ function scr_globalReset() {
 	
 	global.damage = 1
 	
+	
+	global.back_pressed = false;
+	global.is_paused = false;
+	
 }

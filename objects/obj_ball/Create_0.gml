@@ -25,3 +25,6 @@ part_type_blend(part_type, true); // Enables additive blending for neon effect
 part_type_alpha3(part_type, 1, 0.5, 0); // Fades out
 part_type_speed(part_type, 2, 5, 0, 0);
 part_type_life(part_type, 30, 60);
+
+
+yThreshold = 1920;

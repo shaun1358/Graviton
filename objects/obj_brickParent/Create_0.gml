@@ -23,3 +23,7 @@ brickScore = 0;
 //item이 무엇이 나올지 계산할 때 씀
 item = 0;
 dp_hp = 0;
+
+// for keeping aspect ratio
+x_default = x;
+y_default = y;

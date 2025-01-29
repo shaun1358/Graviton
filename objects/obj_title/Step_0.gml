@@ -4,4 +4,4 @@ windowHeight = window_get_height();
 
 windowRatio = windowHeight / windowWidth;
 
-global.sizeRatio = obj_title.windowHeight / 1920;
+global.sizeRatio = windowHeight / windowWidth;

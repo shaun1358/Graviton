@@ -4,8 +4,16 @@ if (gravtApply == 1) {
 	phy_linear_damping = linearDamping;
 }
 
-//방 탈출하면 파괴되게 만들어야함; 지금은 임시로 y좌표 > 2000이면 뽀개지게 만들었음
-if (y > 2000) {
+//방 탈출하면 파괴되게 만들어야함;
+// y >= room_height => destroyed
+
+if(instance_exists(obj_camera)){
+	yThreshold = obj_camera.cameraMarginY+1920;
+}
+else
+	yThreshold = 1920;
+	
+if (y > yThreshold) {
     if (instance_exists(obj_gameElevator)) {
         with (obj_gameElevator) {
             count_ball--;

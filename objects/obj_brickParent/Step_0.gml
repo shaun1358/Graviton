@@ -12,13 +12,10 @@ if (hp <= 0) {
 	global.scoreGame += brickScore;
 	if(room = room_gameElevator){
 		//item이 나올 확률 조절
-		item = random(10);
-		if(item <= 0/* && !instance_exists(obj_itemDamage)*/) instance_create_layer(x,y,"Instances",obj_itemDamage);
-		else if(item <= 10 /*&& !instance_exists(obj_itemDelete)*/) instance_create_layer(x,y,"Instances",obj_itemDelete);
-		else if(item <= 10/* && !instance_exists(obj_itemFreeze)*/) instance_create_layer(x,y,"Instances",obj_itemFreeze);
+		item = random(100);
+		if(item <= 2/* && !instance_exists(obj_itemDamage)*/) instance_create_layer(x,y,"Instances",obj_itemDamage);
+		else if(item <= 4 /*&& !instance_exists(obj_itemDelete)*/) instance_create_layer(x,y,"Instances",obj_itemDelete);
+		else if(item <= 6/* && !instance_exists(obj_itemFreeze)*/) instance_create_layer(x,y,"Instances",obj_itemFreeze);
 	}
 	instance_destroy();
 }
-
-phy_position_x = scr_get_x_coordinate(column);
-//phy_position_y = scr_get_y_coordinate(row);

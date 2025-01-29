@@ -11,5 +11,9 @@ else {
 	_height  = 1920;
 }
 
-timer = 0;
-timer_period = 60;
+timer = instance_create_layer(_marginX+95, _marginY+100, "Instances", obj_donut_timer);
+timer.endTime = 30 * 8; // 0.5 sec but + 8 per frame
+timer.color = make_color_rgb(144, 213, 240);
+
+
+timer.reverse = true;
