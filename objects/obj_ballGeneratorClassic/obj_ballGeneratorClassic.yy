@@ -8,12 +8,12 @@
   "name":"obj_ballGeneratorClassic",
   "overriddenProperties":[],
   "parent":{
-    "name":"game",
-    "path":"folders/Objects/game.yy",
+    "name":"ball",
+    "path":"folders/Objects/game/ball.yy",
   },
   "parentObjectId":{
-    "name":"obj_ballGenerator",
-    "path":"objects/obj_ballGenerator/obj_ballGenerator.yy",
+    "name":"obj_ballGeneratorParent",
+    "path":"objects/obj_ballGeneratorParent/obj_ballGeneratorParent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

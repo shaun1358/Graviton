@@ -19,6 +19,7 @@ state = 0;
 
 //ballCount = 현재 보유하고 있는 공의 개수
 ballCount = 10;
+with (obj_ballGeneratorElevator) ballCount = other.ballCount;
 
 //플레이어 조작 관련 변수
 controlPressing  = 0;
@@ -34,7 +35,7 @@ x1 = 0;
 y1 = 0;
 
 // elevator constants
-#macro RISING_SPEED 60 //상승 속도 베이스
+#macro RISING_SPEED 40 //상승 속도 베이스
 risingSpeedRatio = 1;  //상승 속도 배수, 나중에 빨라짐
 risingSpeedFreeze = 1; //얼음 효과시 요게 0이 됨
 risingSpeedOption = 1; //옵션 키면 요게 0이 됨
@@ -46,10 +47,10 @@ instance_create_layer(_width / 2, scr_get_y_coordinate(7), "Brick", obj_canCreat
 
 global.const_STAGE_CONFIG_CLASSIC = [
 	{ stage: 1, min_blocks: 1, max_blocks: 1 },
-	{ stage: 4, min_blocks: 1, max_blocks: 4 },
-	{ stage: 21, min_blocks: 2, max_blocks: 4 },
-	{ stage: 41, min_blocks: 2, max_blocks: 5 },
-	{ stage: 61, min_blocks: 3, max_blocks: 5 },
+	{ stage: 4, min_blocks: 1, max_blocks: 3 },
+	{ stage: 21, min_blocks: 2, max_blocks: 3 },
+	{ stage: 41, min_blocks: 2, max_blocks: 4 },
+	{ stage: 61, min_blocks: 3, max_blocks: 4 },
 	{ stage: 81, min_blocks: 3, max_blocks: 5 },
 	{ stage: 101, min_blocks: 4, max_blocks: 5 },
 	{ stage: 151, min_blocks: 5, max_blocks: 5 },
@@ -102,8 +103,8 @@ global.stage = 1;
 global.scoreGame = 0; //init score
 global.tile_order = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 global.easing_active = false;
-count_ball=0;
-total_destruction=0;
+count_ball = 0;
+total_destruction = 0;
 //scr_tileCreate(global.stage, MAX_ROW-1);
 
 itemDamage = false;

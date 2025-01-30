@@ -32,11 +32,11 @@ if device_mouse_check_button(0, mb_left) {
 	//(x1, y1) 계산
 	x1 = device_mouse_x(0)
 	y1 = device_mouse_y(0)
-	if (obj_ballGenerator.y < y1 && canControl) controlPressing = 1;
+	if (obj_ballGeneratorParent.y < y1 && canControl) controlPressing = 1;
 }
 //마우스 놓기 / 손가락 떼기 인식
 else if device_mouse_check_button_released(0, mb_left) {
-	if (obj_ballGenerator.y < y1 && canControl) {
+	if (obj_ballGeneratorParent.y < y1 && canControl) {
 		controlPressing = 0;
 		controlReleasing = 1;
 	}
@@ -48,7 +48,7 @@ switch(state) {
 	case BALL_STATE_0_IDLE :
 		//아무것도 안할 경우
 		if (not controlPressing) {
-			with (obj_ballGenerator) {
+			with (obj_ballGeneratorParent) {
 				drawArrow = 0;
 			}
 		}
@@ -56,12 +56,12 @@ switch(state) {
 		//마우스 or 손가락을 누르고 있으면
 		if (controlPressing && canControl) {
 			//(x0, y0) 계산
-			x0 = obj_ballGenerator.x;
-			y0 = obj_ballGenerator.y;
+			x0 = obj_ballGeneratorParent.x;
+			y0 = obj_ballGeneratorParent.y;
 			
 			//(x0, y0)와 (x1, y1)으로부터 공이 날아갈 방향을 계산하고 obj_direction에 대입
 			//동시에 obj_ballGenerator에 화살표 그리라고 지시
-			with (obj_ballGenerator) {
+			with (obj_ballGeneratorParent) {
 				var dir = point_direction(other.x0, other.y0, other.x1, other.y1);
 				show_debug_message(dir);
 				// only detect below the ball generator
@@ -75,7 +75,7 @@ switch(state) {
 			//ballCount를 obj_gameOrigin의 ballCount로부터 가져오도록 지시
 			//동시에 화살표 다시 지우도록 지시
 
-			with (obj_ballGenerator) {
+			with (obj_ballGeneratorParent) {
 				ballCount = other.ballCount;
 				ballDelay = max(9 - floor(other.ballCount / 10), 3);
 				drawArrow = 0;
@@ -92,7 +92,7 @@ switch(state) {
 		controlReleasing = 0;
 		
 		//공 전부 소모시 현재 상태를 '공 발사후'로 바꿈
-		if (!instance_exists(obj_ball) && obj_ballGenerator.ballCount == 0){
+		if (!instance_exists(obj_ball) && obj_ballGeneratorParent.ballCount == 0){
 			state = BALL_STATE_2_FINISHED;
 			global.easing_active = true;
 			ballCount += 1;

@@ -2,9 +2,9 @@
 //위치는 obj_ballGenerator로 고정
 var _x = 0;
 var _y = 0;
-if instance_exists(obj_ballGenerator) {
-	_x = obj_ballGenerator.x;
-	_y = obj_ballGenerator.y;
+if instance_exists(obj_ballGeneratorParent) {
+	_x = obj_ballGeneratorParent.x;
+	_y = obj_ballGeneratorParent.y;
 }
 x = _x;
 y = _y;

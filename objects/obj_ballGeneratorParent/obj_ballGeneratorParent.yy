@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_ballGenerator",
+  "%Name":"obj_ballGeneratorParent",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_ballGenerator",
+  "name":"obj_ballGeneratorParent",
   "overriddenProperties":[],
   "parent":{
-    "name":"game",
-    "path":"folders/Objects/game.yy",
+    "name":"ball",
+    "path":"folders/Objects/game/ball.yy",
   },
   "parentObjectId":null,
   "persistent":false,
