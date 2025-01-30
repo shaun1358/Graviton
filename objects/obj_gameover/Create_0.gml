@@ -44,3 +44,5 @@ ripple_timer = 0;        // Timer for the sine wave
 
 // Rotation variables
 rotation_angle = 345;      // Initial rotation
+
+scr_globalSave();

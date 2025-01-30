@@ -5,7 +5,7 @@ if(startAngle == endAngle){
 	endAngle = 360;
 	startAngle = 0;
 }
-if(endTime!=0){
+if(endTime != 0){
 	if(reverse)
 		angle = startAngle + ((endTime-curTime) / endTime) * (endAngle - startAngle);
 	else

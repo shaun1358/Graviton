@@ -22,7 +22,7 @@ function scr_optionTitle() {
 			depth = 3;
 			owner = other.optionID;
 		}
-		with instance_create_layer(_x + 325 + (global.soundMusic * 460), _y + 529, "Option", obj_optionButtE) {
+		with instance_create_layer(_x + 325 + (global.soundEffect * 460), _y + 529, "Option", obj_optionButtE) {
 			depth = 2;
 			owner = other.optionID;
 		}

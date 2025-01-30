@@ -1,5 +1,7 @@
 var _tri = 400;
 
+
+
 if (mode != TRANS_MODE.OFF) {
 	draw_set_color(c_white);
 	if (mode != TRANS_MODE.INTRO) {
@@ -14,3 +16,7 @@ if (mode != TRANS_MODE.OFF) {
 	
 
 }
+
+draw_set_color(c_black);
+draw_rectangle(0, 0, _width, -1000, false);
+draw_rectangle(0, _height, _width, _height + 1000, false);

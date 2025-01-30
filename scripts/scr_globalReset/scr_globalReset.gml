@@ -5,7 +5,7 @@ function scr_globalReset() {
 	global.coin = 0;
 	global.sizeRatio = obj_title.windowHeight / 1920;
 	
-	global.scoreClassic = 9870;
+	global.scoreClassic = 0;
 	global.scoreElevator = 0;
 	global.scoreGame = 0;
 	

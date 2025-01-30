@@ -10,8 +10,8 @@
   "name":"obj_iconExit",
   "overriddenProperties":[],
   "parent":{
-    "name":"game",
-    "path":"folders/Objects/game.yy",
+    "name":"icon",
+    "path":"folders/Objects/game/icon.yy",
   },
   "parentObjectId":null,
   "persistent":false,

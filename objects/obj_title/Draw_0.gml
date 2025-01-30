@@ -22,6 +22,7 @@ if (room == room_title) {
 } else {
     // Other draw logic for different rooms
 }
+draw_set_color(c_white);
 
 
 draw_rectangle(0,0,10,1920, false);

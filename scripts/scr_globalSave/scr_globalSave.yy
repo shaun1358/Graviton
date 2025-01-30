@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_draw_arc",
+  "%Name":"scr_globalSave",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_draw_arc",
+  "name":"scr_globalSave",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"global",
+    "path":"folders/Scripts/global.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
