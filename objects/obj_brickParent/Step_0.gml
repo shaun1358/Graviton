@@ -19,10 +19,21 @@ if (hp <= 0) {
 		else if(item <= 4 /*&& !instance_exists(obj_itemDelete)*/) instance_create_layer(x,y,"Instances",obj_itemDelete);
 		else if(item <= 6/* && !instance_exists(obj_itemFreeze)*/) instance_create_layer(x,y,"Instances",obj_itemFreeze);
 	}
+	with instance_create_layer(x, y, layer, obj_particleBrickBreak) {
+		sprite_index = other.sprite_index;
+		
+	}
+	
 	instance_destroy();
 }
 
-image_xscale = hitScale;
-image_yscale = hitScale;
+createScale = (1 + (createScale * 5)) / 6;
+createAlpha = (1 + (createAlpha * 5)) / 6;
+if (createScale < 1.01) createScale = 1;
+if (createAlpha > 0.99) createAlpha = 1;
+image_alpha = createAlpha;
+
+image_xscale = hitScale * createScale;
+image_yscale = hitScale * createScale;
 hitScale = (1 + (3 * hitScale)) / 4;
 if (hitScale < 1.01) hitScale = 1;

@@ -1,6 +1,6 @@
 draw_self()
 draw_set_colour(c_red);
-physics_draw_debug();
+//physics_draw_debug();
 //for display
 
 // i hate -1 display

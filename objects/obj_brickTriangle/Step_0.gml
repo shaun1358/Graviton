@@ -4,4 +4,4 @@
 // Inherit the parent event
 event_inherited();
 
-image_xscale = hitScale * _xScale;
+image_xscale = hitScale * createScale * _xScale;

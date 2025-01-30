@@ -14,8 +14,6 @@ isRiseable = true;
 row = 0;
 column = 0;
 
-isRiseable = true;
-
 yspd = 0;
 yspdAcc = 0;
 
@@ -28,6 +26,12 @@ dp_hp = 0;
 x_default = x;
 y_default = y;
 
+//방금 따끈따끈하게 생성되었을때 블럭이 맛깔나게 변하는 마법의 변수
+createScale = 1.5;
+createAlpha = 0;
+
 //피격되었을때 블럭이 맛깔나게 변하는 마법의 변수
-//
 hitScale = 1;
+
+image_xscale = hitScale * createScale;
+image_yscale = hitScale * createScale;
