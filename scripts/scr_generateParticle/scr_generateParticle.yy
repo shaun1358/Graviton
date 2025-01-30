@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_generateParticle",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"game",
+    "path":"folders/Scripts/game.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

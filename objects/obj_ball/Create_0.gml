@@ -5,7 +5,7 @@ gravtApply = 0;
 
 //공의 데미지
 damage = 1;
-multiplier = 1;
+damageMult = 1;
 
 //yspdMax = 공의 y속도의 최대최소, linearDamping = 공의 마찰계수
 yspdMax = 20;
@@ -26,5 +26,7 @@ part_type_alpha3(part_type, 1, 0.5, 0); // Fades out
 part_type_speed(part_type, 2, 5, 0, 0);
 part_type_life(part_type, 30, 60);
 
-
 yThreshold = 1920;
+
+xspdTemp = 0;
+yspdTemp = 0;

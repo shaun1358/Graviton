@@ -9,9 +9,9 @@
     {"name":"inst_3A4E2A53","path":"rooms/room_gameClassic/room_gameClassic.yy",},
     {"name":"inst_79878A4A","path":"rooms/room_gameClassic/room_gameClassic.yy",},
     {"name":"inst_40B15CC9","path":"rooms/room_gameClassic/room_gameClassic.yy",},
-    {"name":"inst_3E1CCF55","path":"rooms/room_gameClassic/room_gameClassic.yy",},
     {"name":"inst_6C95CDED","path":"rooms/room_gameClassic/room_gameClassic.yy",},
     {"name":"inst_4B7C09ED","path":"rooms/room_gameClassic/room_gameClassic.yy",},
+    {"name":"inst_648FDA21","path":"rooms/room_gameClassic/room_gameClassic.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -22,7 +22,7 @@
       ],"layers":[],"name":"Option","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Effect","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Effect","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Ball","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v1","%Name":"inst_3E1CCF55","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3E1CCF55","objectId":{"name":"obj_ballGenerator","path":"objects/obj_ballGenerator/obj_ballGenerator.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":448.0,"y":128.0,},
+        {"$GMRInstance":"v1","%Name":"inst_648FDA21","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_648FDA21","objectId":{"name":"obj_ballGeneratorClassic","path":"objects/obj_ballGeneratorClassic/obj_ballGeneratorClassic.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":704.0,"y":384.0,},
       ],"layers":[],"name":"Ball","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Laser","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Laser","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Brick","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[

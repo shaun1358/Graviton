@@ -64,8 +64,8 @@ switch(state) {
 			with (obj_ballGenerator) {
 				var dir = point_direction(other.x0, other.y0, other.x1, other.y1);
 				show_debug_message(dir);
-				if((dir>=225&&dir<=315)) // only detect below the ball generator
-					ballDirection = 180+(dir-225)*2;
+				// only detect below the ball generator
+				ballDirection = clamp(180 + (dir - 240) * 3, 180, 360);
 				drawArrow = 1;
 			}
 			

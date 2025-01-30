@@ -1,4 +1,3 @@
-
 if (instance_exists(obj_camera)) {
     x = obj_camera.cameraWidth / 2;
     y = obj_camera.cameraMarginY + 300;
@@ -9,44 +8,8 @@ if (instance_exists(obj_camera)) {
 
 if (ballDirection < 180 && ballDirection >= 90) ballDirection = 180;
 else if (ballDirection < 90 && ballDirection > 0) ballDirection = 0;
-if (room == room_gameClassic) {
-    // Logic for gamemode origin
-    
-    if (obj_gameClassic.state == BALL_STATE_0_IDLE) visible = 1;
-    else if (ballCount <= 0) visible = 0;
 
-    if (obj_gameClassic.state == BALL_STATE_1_FIRING) {
-        if (ballTimer <= 0 && ballCount > 0) {
-            ballCount--;
-            var _ball = instance_create_layer(x, y, layer, obj_ball);
-			
-            var _xForce = lengthdir_x(other.ballSpeed, other.ballDirection);
-            var _yForce = lengthdir_y(other.ballSpeed, other.ballDirection);
-			
-			//if (_yForce < 0) _yForce = 0;
-			
-            with (_ball) {
-                physics_apply_impulse(x, y, _xForce, _yForce);
-            }
-            ballTimer = ballDelay;
-
-        }
-        ballTimer--;
-    } else {
-        ballTimer = 0;
-    }
-} 
 else if (room == room_gameElevator) {
-    // Logic for gamemode 2
-	/*
-    if (instance_exists(obj_camera)) {
-        x = obj_camera.cameraWidth / 4;
-        y = obj_camera.cameraMarginY + 50;
-    } else {
-        x = 640;
-        y = 120;
-		
-    } */
 	timer.curTime++;
 
     if (obj_gameElevator.state == BALL_STATE_0_IDLE) visible = 1;
@@ -54,8 +17,8 @@ else if (room == room_gameElevator) {
 
     if (obj_gameElevator.state == BALL_STATE_1_FIRING) {
 		
-		if(timer.curTime==timer.endTime){
-			while(ballCount>6){
+		if (timer.curTime == timer.endTime){
+			while(ballCount > 6){
 				 ballCount--;
 	            var _ball = instance_create_layer(x, y, layer, obj_ball);
 
@@ -82,7 +45,7 @@ else if (room == room_gameElevator) {
 	            }
 			
 			}
-			timer.curTime=0;
+			timer.curTime = 0;
 		}
         if (ballTimer <= 0 && ballCount > 0) {
             ballCount--;

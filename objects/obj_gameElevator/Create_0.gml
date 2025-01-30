@@ -1,5 +1,16 @@
 //위치 조정용 변수
-
+if instance_exists(obj_camera) {
+	_marginX = obj_camera.cameraMarginX;
+	_marginY = obj_camera.cameraMarginY;
+	_width   = obj_camera.cameraWidth;
+	_height  = obj_camera.cameraHeight;
+}
+else {
+	_marginX = 0;
+	_marginY = 0;
+	_width   = 1080;
+	_height  = 1920;
+}
 //state = 현재 게임 진행 상황
 //0 = 아무 조작도 안함 or 플레이어가 공의 방향을 조준하는 중
 //1 = 플레이어가 조준하고 손가락을 놓았음. 공은 이제 발사가 되는 중
@@ -7,7 +18,7 @@
 state = 0;
 
 //ballCount = 현재 보유하고 있는 공의 개수
-ballCount = 230;
+ballCount = 10;
 
 //플레이어 조작 관련 변수
 controlPressing  = 0;
@@ -23,16 +34,16 @@ x1 = 0;
 y1 = 0;
 
 // elevator constants
-#macro RISING_SPEED 60 // room speed?
+#macro RISING_SPEED 60 //상승 속도 베이스
+risingSpeedRatio = 1;  //상승 속도 배수, 나중에 빨라짐
+risingSpeedFreeze = 1; //얼음 효과시 요게 0이 됨
+risingSpeedOption = 1; //옵션 키면 요게 0이 됨
+
 // gameover location
 #macro THRESHOLD_Y 600
 
-// item duration (in ms)
+instance_create_layer(_width / 2, scr_get_y_coordinate(7), "Brick", obj_canCreateTile);
 
-
-
-tileCreationCnt = (BLOCK_HEIGHT_MARGIN+BLOCK_HEIGHT)/(RISING_SPEED/60);
-incr_cnt = 0;
 global.const_STAGE_CONFIG_CLASSIC = [
 	{ stage: 1, min_blocks: 1, max_blocks: 1 },
 	{ stage: 4, min_blocks: 1, max_blocks: 4 },
@@ -87,12 +98,10 @@ global.const_SEED_STAGE_classic = [
 	{ stage: 100, seed_start: 11, seed_end: 19 },
 ];
 
-global.stage = 150;
+global.stage = 1;
 global.scoreGame = 0; //init score
 global.tile_order = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 global.easing_active = false;
-global.damage = 1;
-global.isFreeze = false;
 count_ball=0;
 total_destruction=0;
 //scr_tileCreate(global.stage, MAX_ROW-1);
@@ -106,6 +115,8 @@ itemDeleteTimer = 0;
 itemDamageDelta = 0;
 itemFreezeDelta = 0;
 itemDeleteDelta = 0;
+
+
 isGameover = false;
 
 //조작 가능 여부, 옵션이 있으면 0이 됨

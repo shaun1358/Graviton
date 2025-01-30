@@ -25,3 +25,15 @@ if (y > yThreshold) {
     instance_destroy();
 }
 phy_speed_y = clamp(phy_speed_y, -yspdMax, yspdMax);
+
+
+if instance_exists(obj_optionParant) {
+	phy_speed_x = 0;
+	phy_speed_y = 0;
+}
+else {
+	if (phy_speed_x != 0) xspdTemp = phy_speed_x;
+	if (phy_speed_y != 0) yspdTemp = phy_speed_y;
+	phy_speed_x = xspdTemp;
+	phy_speed_y = yspdTemp;
+}

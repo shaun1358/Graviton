@@ -1,3 +1,5 @@
+event_inherited();
+
 if(place_meeting(x, y, obj_ball)) {
     visible = false;
     min_y = 5000; // 초기값을 큰 값으로 설정

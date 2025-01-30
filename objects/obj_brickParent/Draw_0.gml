@@ -10,7 +10,7 @@ draw_set_font(fnt_maple);
 
 // drop shadow
 draw_set_color(c_black); 
-draw_text(x+1, y+1, dp_hp);
+draw_text_transformed(x + 1, y + 1, dp_hp, hitScale, hitScale, 0);
 
 draw_set_color(c_white); 
-draw_text(x, y, dp_hp);
+draw_text_transformed(x, y, dp_hp, hitScale, hitScale, 0);

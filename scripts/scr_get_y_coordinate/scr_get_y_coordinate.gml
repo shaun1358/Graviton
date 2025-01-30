@@ -17,7 +17,7 @@ function scr_get_y_coordinate(r) {
     }
 
     // Calculate the y-coordinate for the nth row
-    var coord_y = start_y + r * (BLOCK_HEIGHT + BLOCK_HEIGHT_MARGIN) + (BLOCK_HEIGHT/2);
+    var coord_y = start_y + r * (BLOCK_HEIGHT + BLOCK_HEIGHT_MARGIN) + (BLOCK_HEIGHT / 2);
 	
     return coord_y;
 }

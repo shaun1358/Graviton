@@ -13,11 +13,12 @@ draw_sprite(spr_gameBar, 0, 1080 / 2, 240);
 //디버그용
 draw_self();
 
+/*
 blink_alpha = 1; // Start fully visible
 blink_direction = -1; // Fading out
 blink_speed = 0.02; // Adjust speed of fade
 
-/*
+
 draw_set_color(c_red);
 draw_text(100, 100, state);
 draw_text(100, 120, controlPressing);

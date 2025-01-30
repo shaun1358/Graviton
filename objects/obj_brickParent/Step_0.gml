@@ -4,6 +4,8 @@ if (hit == 1) {
 	// put it into ball collision instead
 	//if (breakable == 1) hp -= damage;
 	//damage = 0;
+	
+	hitScale = 1.2;
 	hit = 0;
 }
 
@@ -19,3 +21,8 @@ if (hp <= 0) {
 	}
 	instance_destroy();
 }
+
+image_xscale = hitScale;
+image_yscale = hitScale;
+hitScale = (1 + (3 * hitScale)) / 4;
+if (hitScale < 1.01) hitScale = 1;

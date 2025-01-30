@@ -10,9 +10,9 @@
     {"name":"inst_40B15CC9_1","path":"rooms/room_gameElevator/room_gameElevator.yy",},
     {"name":"inst_7DFD62C2","path":"rooms/room_gameElevator/room_gameElevator.yy",},
     {"name":"inst_1FA5FE98","path":"rooms/room_gameElevator/room_gameElevator.yy",},
-    {"name":"inst_3E1CCF55_1","path":"rooms/room_gameElevator/room_gameElevator.yy",},
     {"name":"inst_62CAC2B","path":"rooms/room_gameElevator/room_gameElevator.yy",},
     {"name":"inst_296E8094","path":"rooms/room_gameElevator/room_gameElevator.yy",},
+    {"name":"inst_6A25CC4B","path":"rooms/room_gameElevator/room_gameElevator.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -23,7 +23,7 @@
       ],"layers":[],"name":"Option","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Effect","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Effect","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Ball","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v1","%Name":"inst_3E1CCF55_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3E1CCF55_1","objectId":{"name":"obj_ballGenerator","path":"objects/obj_ballGenerator/obj_ballGenerator.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":448.0,"y":128.0,},
+        {"$GMRInstance":"v1","%Name":"inst_6A25CC4B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6A25CC4B","objectId":{"name":"obj_ballGeneratorElevator","path":"objects/obj_ballGeneratorElevator/obj_ballGeneratorElevator.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":544.0,"y":160.0,},
       ],"layers":[],"name":"Ball","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Laser","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Laser","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Brick","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[

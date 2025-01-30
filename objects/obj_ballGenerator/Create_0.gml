@@ -24,8 +24,3 @@ ballSpeed = 10000;
 //화살표(공이 튕기는 방향)의 표시 여부
 drawArrow = 0;
 
-timer = instance_create_layer(x, y, "Instances", obj_donut_timer);
-timer.endTime = 60; // 0.5 sec but + 8 per frame
-timer.innerRadius = 45;
-timer.color = make_color_rgb(251, 227, 214);
-timer.reverse = true;

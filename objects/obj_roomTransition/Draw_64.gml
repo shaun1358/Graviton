@@ -1,7 +1,5 @@
 var _tri = 400;
 
-
-
 if (mode != TRANS_MODE.OFF) {
 	draw_set_color(c_white);
 	if (mode != TRANS_MODE.INTRO) {
@@ -13,8 +11,6 @@ if (mode != TRANS_MODE.OFF) {
 		draw_triangle(0, _height - (percent * (_height + _tri)), 0, _height - (percent * (_height + _tri)) + _tri, _width / 2,  _height - (percent * (_height + _tri)) + _tri, false);
 		draw_triangle(_width, _height - (percent * (_height + _tri)), _width, _height - (percent * (_height + _tri)) + _tri, _width / 2,  _height - (percent * (_height + _tri)) + _tri, false);
 	}
-	
-
 }
 
 draw_set_color(c_black);
