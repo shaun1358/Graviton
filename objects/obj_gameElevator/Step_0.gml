@@ -24,7 +24,8 @@ else if device_mouse_check_button_released(0, mb_left) {
 if (!isGameover) {
 	// item timer processing
 	if (itemDamage) {
-		itemDamageDelta += scr_delta_to_ms(delta_time);
+		itemDamageDelta++;
+		//itemDamageDelta += scr_delta_to_ms(delta_time);
 		// set item damage false
 		if(itemDamageDelta >= itemDamageTimer) {
 			itemDamage = false;
@@ -35,7 +36,8 @@ if (!isGameover) {
 	}
 	// item timer processing
 	if(itemFreeze) {
-		itemFreezeDelta += scr_delta_to_ms(delta_time);
+		itemFreezeDelta++;
+		//itemFreezeDelta += scr_delta_to_ms(delta_time);
 		risingSpeedFreeze = 0;
 		if (itemFreezeDelta >= itemFreezeTimer) {
 			risingSpeedFreeze = 1;
