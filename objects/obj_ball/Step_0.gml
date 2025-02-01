@@ -4,33 +4,21 @@ if (gravtApply == 1) {
 	phy_linear_damping = linearDamping;
 }
 
-//방 탈출하면 파괴되게 만들어야함;
-// y >= room_height => destroyed
-
+//방 탈출하면 파괴
 if (instance_exists(obj_camera)) {
 	yThreshold = obj_camera.cameraMarginY + 1920;
 }
 else yThreshold = 1920;
-	
 if (y > yThreshold) {
 	if (room == room_gameElevator) {
 		obj_ballGeneratorElevator.ballCount += 1;
 	}
-	/*
-    if (instance_exists(obj_gameElevator)) {
-        with (obj_gameElevator) {
-            count_ball--;
-			total_destruction++;
-        }
-    }
-	*/
 	instance_create_layer(x, y, "Effects", obj_ripple);
-
     instance_destroy();
 }
 phy_speed_y = clamp(phy_speed_y, -yspdMax, yspdMax);
 
-
+//옵션창이 있으면 공 멈춤
 if instance_exists(obj_optionParant) {
 	phy_linear_damping = 0;
 	phy_speed_x = 0;
