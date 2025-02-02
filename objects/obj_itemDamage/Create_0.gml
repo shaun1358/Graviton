@@ -4,4 +4,5 @@
 // Inherit the parent event
 event_inherited();
 
-duration = 60 * 2;
+visual = obj_itemVisualDamage;
+duration = 60 * 5;

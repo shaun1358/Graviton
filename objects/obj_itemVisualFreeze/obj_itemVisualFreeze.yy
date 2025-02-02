@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_itemFreezeVisual",
+  "%Name":"obj_itemVisualFreeze",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_itemFreezeVisual",
+  "name":"obj_itemVisualFreeze",
   "overriddenProperties":[],
   "parent":{
     "name":"visual",
-    "path":"folders/Objects/items/visual.yy",
+    "path":"folders/Objects/game/items/visual.yy",
   },
   "parentObjectId":null,
   "persistent":false,

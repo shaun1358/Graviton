@@ -1,3 +1,6 @@
+image_xscale = ((image_xscale * 5) + scaleTo) / 6;
+image_yscale = image_xscale;
+
 if (instance_exists(obj_camera)) {
     x = obj_camera.cameraWidth / 2;
     y = obj_camera.cameraMarginY + 300;

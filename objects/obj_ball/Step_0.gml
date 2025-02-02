@@ -1,3 +1,6 @@
+image_xscale = ((image_xscale * 5) + scaleTo) / 6;
+image_yscale = image_xscale;
+
 //중력 적용 코드
 if (gravtApply == 1) {
 	physics_apply_impulse(x, y, 0, gravtPower);

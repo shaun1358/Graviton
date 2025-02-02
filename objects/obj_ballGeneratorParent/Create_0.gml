@@ -1,3 +1,5 @@
+scaleTo = 1;
+
 if not instance_exists(obj_laser) {
 	instance_create_layer(x, y, "Laser", obj_laser);
 }

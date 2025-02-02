@@ -7,6 +7,10 @@ gravtApply = 0;
 damage = 1;
 damageMult = 1;
 
+scaleTo = 1;
+image_xscale = scaleTo;
+image_yscale = scaleTo;
+
 //yspdMax = 공의 y속도의 최대최소, linearDamping = 공의 마찰계수
 yspdMax = 20;
 linearDamping = 0.1

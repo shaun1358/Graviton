@@ -1,4 +1,4 @@
 event_inherited();
 
-target = obj_itemFreezeVisual;
+visual = obj_itemVisualFreeze;
 duration = 60 * 5;
