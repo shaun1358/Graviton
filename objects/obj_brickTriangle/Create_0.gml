@@ -1,6 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
-
 // Inherit the parent event
 event_inherited();
 
@@ -9,6 +6,9 @@ brickScore = 200;
 //겜메스에는 physicx collision shape를 뒤집는 코드가 없음...
 //그래서 collision shape를 하나하나 노가다해서 만들었음 즈에에에에엔장
 _xScale = choose(-1, 1);
+_xS = 1;
+_yS = 1;
+
 
 image_xscale = _xScale;
 fix_triangle = physics_fixture_create();

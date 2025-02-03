@@ -16,8 +16,11 @@ if (hp <= 0) {
 		//else if (item <= 6) instance_create_layer(x, y, layer, obj_itemFreeze);
 	}
 	//블록 파괴 파티클 생성
-	with instance_create_layer(x, y, layer, obj_particleBrickBreak) {
-		sprite_index = other.sprite_index;
+	//근데 삼각형은 xscale yscale 지정해줘야 해서 따로 뺌
+	if (sprite_index != spr_brickTriangle) {
+		with instance_create_layer(x, y, layer, obj_particleBrickBreak) {
+			sprite_index = other.sprite_index;
+		}
 	}
 	instance_destroy();
 }
