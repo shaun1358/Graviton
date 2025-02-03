@@ -13,8 +13,8 @@ draw_sprite(spr_gameBar, 0, 1080 / 2, 240);
 //디버그용
 draw_self();
 
-//draw_text(100, 100, itemFreezeDelta)
-//draw_text(100, 200, itemFreezeTimer);
+draw_text(100, 100, itemDamageDelta)
+draw_text(100, 200, itemDamageTimer);
 /*
 blink_alpha = 1; // Start fully visible
 blink_direction = -1; // Fading out

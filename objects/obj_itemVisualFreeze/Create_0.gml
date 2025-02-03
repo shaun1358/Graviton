@@ -1,4 +1,4 @@
-timer        = 0;
+timer       = 0;
 timerPeriod = 6;
 
 timerDuration = 1000;

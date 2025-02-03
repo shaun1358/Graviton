@@ -11,8 +11,8 @@ if (hp <= 0) {
 	if(room = room_gameElevator){
 		//item이 나올 확률 조절
 		item = random(100);
-		if      (item <= 10) instance_create_layer(x, y, layer, obj_itemDamage);
-		//else if (item <= 4) instance_create_layer(x, y, layer, obj_itemDelete);
+		//if      (item <= 2) instance_create_layer(x, y, layer, obj_itemDamage);
+		if (item <= 100) instance_create_layer(x, y, layer, obj_itemDelete);
 		//else if (item <= 6) instance_create_layer(x, y, layer, obj_itemFreeze);
 	}
 	//블록 파괴 파티클 생성

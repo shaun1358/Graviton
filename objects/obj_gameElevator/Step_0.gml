@@ -25,6 +25,7 @@ if (!isGameover) {
 	// item timer processing
 	if (itemDamage) {
 		itemDamageDelta++;
+		if instance_exists(obj_ball) with(obj_ball) damageMult = 2;
 		//itemDamageDelta += scr_delta_to_ms(delta_time);
 		// set item damage false
 		if(itemDamageDelta >= itemDamageTimer) {

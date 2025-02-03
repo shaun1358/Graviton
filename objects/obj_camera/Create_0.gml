@@ -31,3 +31,8 @@ cameraMarginY = max(0, (cameraHeight - 1920) / 2);
 
 //width와 height를 이용해 카메라 사이즈를 설정
 camera_set_view_size(cam, cameraWidth, cameraHeight);
+
+
+shake_length = 0;
+shake_magnitude = 0;
+shake_remain = 0;

@@ -16,7 +16,12 @@ if (y > yThreshold) {
 	if (room == room_gameElevator) {
 		obj_ballGeneratorElevator.ballCount += 1;
 	}
-	instance_create_layer(x, y, "Effects", obj_ripple);
+	with instance_create_layer(x, y, "Effects", obj_particleBall) {
+		image_xscale = other.image_xscale;
+		image_yscale = other.image_yscale;
+		sprite_index = other.sprite_index;	
+	}
+	//instance_create_layer(x, y, "Effects", obj_ripple);
     instance_destroy();
 }
 phy_speed_y = clamp(phy_speed_y, -yspdMax, yspdMax);
