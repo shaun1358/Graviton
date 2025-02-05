@@ -8,15 +8,17 @@ if (obj_gameElevator.state == BALL_STATE_0_IDLE) visible = 1;
 if (obj_gameElevator.state == BALL_STATE_1_FIRING && option == false) {
 	timer.curTime++;
 	if (timer.curTime == timer.endTime) {
-		var _dirLength = min(ballCount * 3, 40);
-		var _dirGap    = _dirLength / ballCount;
-		var _dirBase  = ballDirection - (_dirLength / 2);
 		var i = 0;
 		for (i = 0; i < ballCount; i++) {
-	        scr_ballShot(ballSpeed, _dirBase + (_dirGap * i), obj_gameElevator.ballCount);
+			// Generate a normally distributed direction offset (mean = ballDirection, std_dev = 10)
+			var _dir = scr_random_normal_simple(ballDirection, 6);
+    
+			scr_ballShot(ballSpeed, _dir, obj_gameElevator.ballCount);
 		}
+
 		ballCount -= i;
 		timer.curTime = 0;
+
 	}
 	/*
     if (ballTimer <= 0 && ballCount > 0) {

@@ -14,6 +14,9 @@ if device_mouse_check_button(0, mb_left) {
 	x1 = device_mouse_x(0)
 	y1 = device_mouse_y(0)
 	if (obj_ballGeneratorParent.y < y1 && canControl) controlPressing = 1;
+	mouseLock = false; // Unlock when the user clicks again
+
+
 }
 //마우스 놓기 / 손가락 떼기 인식
 else if device_mouse_check_button_released(0, mb_left) {
@@ -114,11 +117,15 @@ switch(state) {
 		//(x0, y0)와 (x1, y1)으로부터 공이 날아갈 방향을 계산하고 obj_direction에 대입
 		//동시에 obj_ballGenerator에 화살표 그리라고 지시
 		with (obj_ballGeneratorParent) {
-			if (other.y1 > y && not instance_exists(obj_optionParant)) {
-				var dir = point_direction(other.x0, other.y0, other.x1, other.y1);
-				ballDirection = clamp(180 + (dir - 240) * 3, 180, 360);
-				drawArrow = 1;
+			if (other.y1 > y && !other.mouseLock) { 
+			    var dir = 180 + clamp(other.x1 - 180, 0, 720) / 4;
+    
+			    if (!instance_exists(obj_optionParant)) {
+			        ballDirection = dir;
+			        drawArrow = 1;
+			    }
 			}
+
 		}
 		break;
 		
@@ -130,7 +137,7 @@ switch(state) {
 
 	    // Reset important global variables
 	    global.easing_active = false;
-	    global.ballCount = 0;
+	    global.ballCount = BALL_COUNT_ELEVATOR;
 
 	    // Create the GUI instance for the game-over screen
 	    if (!instance_exists(obj_gameover)) { // Ensure only one instance is created

@@ -1,7 +1,7 @@
 event_inherited();
 
 option = false;
-
+ballCount = obj_gameElevator.ballCount
 ballDelay = 120;
 
 timer = instance_create_layer(x, y, "Ball", obj_donut_timer);

@@ -7,6 +7,7 @@ function scr_globalLoad() {
 		global.scoreClassic  = ini_read_real("Score", "gameClassic" , 0);
 		global.scoreElevator = ini_read_real("Score", "gameElevator", 0);
 		
+		global.musicSource = -1; // Use -1
 		global.soundMusic     = ini_read_real("Option", "soundMusic" , 1);
 		global.soundEffect    = ini_read_real("Option", "soundEffect", 1);
 		global.optionParticle = ini_read_real("Option", "particle"   , 1);

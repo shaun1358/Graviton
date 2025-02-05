@@ -38,3 +38,10 @@ global.last_window_height = window_h;
 /*
 show_debug_message("Window: " + string(window_w) + "x" + string(window_h));
 show_debug_message("Camera: " + string(new_width) + "x" + string(new_height));
+*/
+
+/** MUSIC SECTOR **/
+if (audio_is_playing(global.musicSource)) {
+    audio_sound_gain(global.musicSource, global.soundMusic, 0);
+}
+
