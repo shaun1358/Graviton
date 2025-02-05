@@ -13,7 +13,7 @@ if (instance_exists(obj_camera)) {
 }
 else yThreshold = 1920;
 if (y > yThreshold) {
-	if (room == room_gameElevator) {
+	if (room == room_gameElevator && image_alpha == 1) {
 		obj_ballGeneratorElevator.ballCount += 1;
 	}
 	with instance_create_layer(x, y, "Effects", obj_particleBall) {

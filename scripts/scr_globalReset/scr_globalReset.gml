@@ -20,4 +20,9 @@ function scr_globalReset() {
 	global.back_pressed = false;
 	global.is_paused = false;
 	
+	global.statPower = 1;
+	global.statBall  = 1;
+	global.statDelay = 1;
+	global.statLuck  = 1;
+	global.statItemd = 1;
 }

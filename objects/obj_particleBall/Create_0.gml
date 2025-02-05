@@ -1,0 +1,1 @@
+if instance_exists(obj_ball) sprite_index = obj_ball.sprite_index

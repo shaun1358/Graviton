@@ -47,6 +47,18 @@ if (!isGameover) {
 			itemFreezeDelta = 0;
 		}
 	}
+	if (itemWeight) {
+		itemWeightDelta++;
+		if instance_exists(obj_ball) obj_ball.gravtPower = 200;
+		if instance_exists(obj_ballGhost) obj_ballGhost.gravtPower = 200;
+		if (itemWeightDelta >= itemWeightTimer) {
+			if instance_exists(obj_ball) obj_ball.gravtPower = 50;
+			if instance_exists(obj_ballGhost) obj_ballGhost.gravtPower = 50;
+			itemWeightDelta = 0;
+			itemWeightTimer = 0;
+		}
+	}
+	
 	//옵션 키면 멈춤
 	if instance_exists(obj_optionParant) risingSpeedOption = 0;
 	else risingSpeedOption = 1;
@@ -102,9 +114,11 @@ switch(state) {
 		//(x0, y0)와 (x1, y1)으로부터 공이 날아갈 방향을 계산하고 obj_direction에 대입
 		//동시에 obj_ballGenerator에 화살표 그리라고 지시
 		with (obj_ballGeneratorParent) {
-			var dir = point_direction(other.x0, other.y0, other.x1, other.y1);
-			ballDirection = clamp(180 + (dir - 240) * 3, 180, 360);
-			drawArrow = 1;
+			if (other.y1 > y && not instance_exists(obj_optionParant)) {
+				var dir = point_direction(other.x0, other.y0, other.x1, other.y1);
+				ballDirection = clamp(180 + (dir - 240) * 3, 180, 360);
+				drawArrow = 1;
+			}
 		}
 		break;
 		

@@ -7,6 +7,6 @@ if (timer % timerPeriod == 0 && timerDuration - timer > 60) {
 }
 
 effect1_alpha = 0.9 + (sin(timer / 20) * 0.1);
-effect1_alpha = min(1, (timerDuration - timer) / 60);
+effect1_alpha *= min(1, (timerDuration - timer) / 60);
 
 effect2_alpha = max(0, (-0.002 * power(timer, 2)) + (0.04 * timer) + 0.3);

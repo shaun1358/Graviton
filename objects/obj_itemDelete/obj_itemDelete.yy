@@ -39,8 +39,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_itemDelete",
-    "path":"sprites/spr_itemDelete/spr_itemDelete.yy",
+    "name":"spr_itemDelete1",
+    "path":"sprites/spr_itemDelete1/spr_itemDelete1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

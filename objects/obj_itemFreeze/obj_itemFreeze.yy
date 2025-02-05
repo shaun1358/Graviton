@@ -39,8 +39,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_itemFreeze",
-    "path":"sprites/spr_itemFreeze/spr_itemFreeze.yy",
+    "name":"spr_itemFreeze1",
+    "path":"sprites/spr_itemFreeze1/spr_itemFreeze1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

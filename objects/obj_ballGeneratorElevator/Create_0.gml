@@ -1,7 +1,8 @@
 event_inherited();
 
-ballDelay = 120;
+option = false;
 
+ballDelay = 120;
 
 timer = instance_create_layer(x, y, "Ball", obj_donut_timer);
 timer.endTime = ballDelay;

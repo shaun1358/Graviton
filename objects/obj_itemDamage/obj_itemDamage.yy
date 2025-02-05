@@ -39,8 +39,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_itemDamage",
-    "path":"sprites/spr_itemDamage/spr_itemDamage.yy",
+    "name":"spr_itemDamage1",
+    "path":"sprites/spr_itemDamage1/spr_itemDamage1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

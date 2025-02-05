@@ -107,16 +107,23 @@ count_ball = 0;
 total_destruction = 0;
 //scr_tileCreate(global.stage, MAX_ROW-1);
 
+//아이템 지속 상태
 itemDamage = false;
 itemFreeze = false;
 itemDelete = false;
+itemWeight = false;
+
+//아이템 유효 시간
 itemDamageTimer = 0;
 itemFreezeTimer = 0;
 itemDeleteTimer = 0;
+itemWeightTimer = 0;
+
+//아이템 유효 시간에 필요한 타이머 (+= 1 해주는 그 변수)
 itemDamageDelta = 0;
 itemFreezeDelta = 0;
 itemDeleteDelta = 0;
-
+itemWeightDelta = 0;
 
 isGameover = false;
 

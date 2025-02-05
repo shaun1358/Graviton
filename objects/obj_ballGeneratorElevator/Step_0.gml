@@ -1,8 +1,11 @@
 event_inherited();
 
+if instance_exists(obj_optionParant) option = true;
+else option = false;
+
 if (obj_gameElevator.state == BALL_STATE_0_IDLE) visible = 1;
 
-if (obj_gameElevator.state == BALL_STATE_1_FIRING) {
+if (obj_gameElevator.state == BALL_STATE_1_FIRING && option == false) {
 	timer.curTime++;
 	if (timer.curTime == timer.endTime) {
 		var _dirLength = min(ballCount * 3, 40);

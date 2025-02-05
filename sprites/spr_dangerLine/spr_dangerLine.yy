@@ -5,21 +5,21 @@
   "bbox_bottom":644,
   "bbox_left":0,
   "bbox_right":1079,
-  "bbox_top":456,
+  "bbox_top":447,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"9b2c4bea-e6e2-4063-92ce-45e478605f0b","name":"9b2c4bea-e6e2-4063-92ce-45e478605f0b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"679f2b79-25a7-40e7-9c78-b08f9cff34c8","name":"679f2b79-25a7-40e7-9c78-b08f9cff34c8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":645,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"147b3e65-2bca-4bc2-b0b1-bb223ca13399","blendMode":0,"displayName":"default","isLocked":false,"name":"147b3e65-2bca-4bc2-b0b1-bb223ca13399","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"8f0c83f0-3232-4c4d-88dd-9ddb0f4b9b8e","blendMode":0,"displayName":"default","isLocked":false,"name":"8f0c83f0-3232-4c4d-88dd-9ddb0f4b9b8e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_dangerLine",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9b2c4bea-e6e2-4063-92ce-45e478605f0b","path":"sprites/spr_dangerLine/spr_dangerLine.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"454d75e0-bb1f-4fec-b7ef-2087115915df","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"679f2b79-25a7-40e7-9c78-b08f9cff34c8","path":"sprites/spr_dangerLine/spr_dangerLine.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"b492342c-ee91-4f89-a045-992b37b47303","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
