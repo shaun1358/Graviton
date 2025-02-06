@@ -4,7 +4,7 @@
 /* AUDIO */
 if (room == room_gameElevator) {
     if (!audio_is_playing(global.musicSource)) {
-        global.musicSource = scr_soundMusic(snd_background2Debug, 1, 1, true);
+        global.musicSource = scr_soundMusic(snd_background4Debug, 1, 1, true);
     }
 } else { // Stop music when entering any other room
     if (audio_is_playing(global.musicSource)) {

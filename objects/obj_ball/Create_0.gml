@@ -34,3 +34,4 @@ yThreshold = 1920;
 
 xspdTemp = 0;
 yspdTemp = 0;
+_dir = 0;

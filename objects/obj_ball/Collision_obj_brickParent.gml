@@ -13,7 +13,7 @@ with (other) {
 }
 
 // Calculate the hit direction
-var _dir = point_direction(_x1, _y1, _x2, _y2);
+_dir = point_direction(_x1, _y1, _x2, _y2);
 
 // Play random ball bounce sound based on global.soundEffect volume
 if (global.soundEffect > 0) { // Only play if sound is enabled
@@ -32,8 +32,7 @@ if (global.soundEffect > 0) { // Only play if sound is enabled
     audio_sound_gain(sound_to_play, global.soundEffect, 0); // Adjust volume
 }
 
-// Generate particle effect
-scr_generateParticle(obj_particleBrickHit, 10, _dir, 30, x, y);
+
 
 // 이제부터 공에 중력이 적용이 됨
 gravtApply = 1;

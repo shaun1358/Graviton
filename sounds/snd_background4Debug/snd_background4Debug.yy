@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_background4Debug",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":147.096,
+  "name":"snd_background4Debug",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_background4Debug.mp3",
+  "type":0,
+  "volume":1.0,
+}
