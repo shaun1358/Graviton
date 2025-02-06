@@ -13,7 +13,7 @@
 /// Example usage:
 /// scr_soundEffect(snd_jump, 1.2, 1, false); // Plays snd_jump at 1.2x speed, priority 1, no looping.
 
-function scr_soundEffect(sound, pitch, priority, loop) {
+function scr_soundEffect(sound, pitch, priority, loop){
     // Set the pitch of the sound
     audio_sound_pitch(sound, pitch);
     

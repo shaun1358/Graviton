@@ -31,6 +31,7 @@
     {"name":"bricks","order":1,"path":"folders/Sprites/game/bricks.yy",},
     {"name":"icon","order":10,"path":"folders/Sprites/game/icon.yy",},
     {"name":"items","order":6,"path":"folders/Sprites/game/items.yy",},
+    {"name":"shop","order":22,"path":"folders/Sprites/shop.yy",},
     {"name":"option","order":21,"path":"folders/Sprites/option.yy",},
     {"name":"particle","order":20,"path":"folders/Sprites/particle.yy",},
     {"name":"item","order":3,"path":"folders/Sprites/particle/item.yy",},
