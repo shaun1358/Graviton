@@ -2,3 +2,20 @@
 gravtApply = 1;
 
 scr_generateParticle(obj_particleBrickHit, 10, 270 + (90 * sign(phy_speed_x)), 30, x, y);
+
+// Play random ball bounce sound based on global.soundEffect volume
+if (global.soundEffect > 0) { // Only play if sound is enabled
+    var sound_choice = irandom_range(1, 4);
+    var sound_to_play;
+
+    switch (sound_choice) {
+        case 1: sound_to_play = snd_ballBounce1; break;
+        case 2: sound_to_play = snd_ballBounce2; break;
+        case 3: sound_to_play = snd_ballBounce3; break;
+        case 4: sound_to_play = snd_ballBounce4; break;
+    }
+
+    // Play sound at the volume set in global.soundEffect (0 = mute, 1 = full volume)
+    audio_play_sound(sound_to_play, 1, false);
+    audio_sound_gain(sound_to_play, global.soundEffect, 0); // Adjust volume
+}

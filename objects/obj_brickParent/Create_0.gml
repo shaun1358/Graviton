@@ -32,6 +32,9 @@ createAlpha = 0;
 
 //피격되었을때 블럭이 맛깔나게 변하는 마법의 변수
 hitScale = 1;
+hitAlpha = 1;
+
 
 image_xscale = hitScale * createScale;
 image_yscale = hitScale * createScale;
+image_alpha = createAlpha;

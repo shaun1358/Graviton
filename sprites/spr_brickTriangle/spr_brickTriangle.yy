@@ -6,20 +6,20 @@
   "bbox_left":10,
   "bbox_right":139,
   "bbox_top":10,
-  "collisionKind":4,
-  "collisionTolerance":223,
+  "collisionKind":0,
+  "collisionTolerance":121,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"b4a03883-b723-44a5-ab59-a712170f7fe2","name":"b4a03883-b723-44a5-ab59-a712170f7fe2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"c77ca3c7-1c40-46d2-96cb-51fb9643b5ab","name":"c77ca3c7-1c40-46d2-96cb-51fb9643b5ab","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":120,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"97d1d46a-bdc7-434a-a3a2-2c12ec04baaa","blendMode":0,"displayName":"default","isLocked":false,"name":"97d1d46a-bdc7-434a-a3a2-2c12ec04baaa","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"d1e2dd9b-3a43-42ea-bc2c-f76eb94db1ef","blendMode":0,"displayName":"default","isLocked":false,"name":"d1e2dd9b-3a43-42ea-bc2c-f76eb94db1ef","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_brickTriangle",
   "nineSlice":{
@@ -88,8 +88,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b4a03883-b723-44a5-ab59-a712170f7fe2","path":"sprites/spr_brickTriangle/spr_brickTriangle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"886a8381-8b79-4346-a115-b566bb828313","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c77ca3c7-1c40-46d2-96cb-51fb9643b5ab","path":"sprites/spr_brickTriangle/spr_brickTriangle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"0ca5bc6c-9132-41e3-8359-18e3b6b758e6","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

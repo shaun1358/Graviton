@@ -16,16 +16,16 @@ image_xscale = 0;
 image_size   = 1
 for (var i = 0; i < 30; i++) {
    image_xscale += image_size;
-   if place_meeting(x, y, obj_brickParent) || place_meeting(x, y, obj_border){
+   if (place_meeting(x, y, obj_brickParent) || place_meeting(x, y, obj_border)){
       image_xscale -= image_size;
    }
    image_size *= 0.5;
 }
 
+
 //레이저 투명해지는 효과
 timer++;
-image_alpha = 0.7 + (0.1 * sin(timer / timer_period));
-
+//image_alpha = 0.7 + (0.1 * sin(timer / timer_period));
 //레이저 끝부분에 똥그란 그 원 생성해주는 코드
 if instance_exists(obj_laserEnd) {
 	obj_laserEnd.visible = visible;

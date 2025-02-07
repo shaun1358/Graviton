@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_brickTriangle",
-    "path":"sprites/spr_brickTriangle/spr_brickTriangle.yy",
+    "name":"spr_brickTriangle_old2",
+    "path":"sprites/spr_brickTriangle_old2/spr_brickTriangle_old2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

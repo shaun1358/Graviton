@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_brickSquare",
-    "path":"sprites/spr_brickSquare/spr_brickSquare.yy",
+    "name":"spr_brickSquare_old2",
+    "path":"sprites/spr_brickSquare_old2/spr_brickSquare_old2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

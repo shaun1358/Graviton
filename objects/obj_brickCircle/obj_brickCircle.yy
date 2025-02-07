@@ -30,8 +30,8 @@
   "physicsSensor":false,
   "physicsShape":0,
   "physicsShapePoints":[
-    {"x":75.0,"y":60.0,},
-    {"x":48.0,"y":60.0,},
+    {"x":113.0,"y":90.0,},
+    {"x":48.0,"y":90.0,},
   ],
   "physicsStartAwake":true,
   "properties":[],
@@ -39,8 +39,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_brickCircle",
-    "path":"sprites/spr_brickCircle/spr_brickCircle.yy",
+    "name":"spr_brickCircleNeon",
+    "path":"sprites/spr_brickCircleNeon/spr_brickCircleNeon.yy",
   },
   "spriteMaskId":null,
   "visible":true,

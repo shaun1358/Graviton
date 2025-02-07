@@ -4,6 +4,7 @@
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_ball","path":"objects/obj_ball/obj_ball.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_brickSquare",
@@ -28,10 +29,10 @@
   "physicsSensor":false,
   "physicsShape":1,
   "physicsShapePoints":[
-    {"x":13.0,"y":14.0,},
-    {"x":137.0,"y":14.0,},
-    {"x":137.0,"y":107.0,},
-    {"x":13.0,"y":107.0,},
+    {"x":51.0,"y":43.0,},
+    {"x":175.0,"y":43.0,},
+    {"x":175.0,"y":138.0,},
+    {"x":51.0,"y":138.0,},
   ],
   "physicsStartAwake":true,
   "properties":[],
@@ -39,8 +40,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_brickSquare",
-    "path":"sprites/spr_brickSquare/spr_brickSquare.yy",
+    "name":"spr_brickSquareNeon",
+    "path":"sprites/spr_brickSquareNeon/spr_brickSquareNeon.yy",
   },
   "spriteMaskId":null,
   "visible":true,

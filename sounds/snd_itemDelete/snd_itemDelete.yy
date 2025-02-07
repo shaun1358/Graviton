@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.373708,
+  "duration":1.220658,
   "name":"snd_itemDelete",
   "parent":{
     "name":"Sounds",

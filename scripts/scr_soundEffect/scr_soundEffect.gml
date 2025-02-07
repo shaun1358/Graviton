@@ -8,7 +8,7 @@
 /// @param {real} priority     - The sound priority (higher value = more important).
 /// @param {bool} loop         - Whether the sound should loop (true = loop, false = play once).
 ///
-/// @returns {int} The audio source ID of the played sound.
+/// @returns {Id.Sound} The audio source ID of the played sound.
 ///
 /// Example usage:
 /// scr_soundEffect(snd_jump, 1.2, 1, false); // Plays snd_jump at 1.2x speed, priority 1, no looping.

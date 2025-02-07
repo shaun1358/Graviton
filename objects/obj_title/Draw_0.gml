@@ -2,11 +2,15 @@
 //draw_sprite_stretched(spr_titleDebug, 0, windowWidth/4, windowHeight/6, windowWidth*1/2,windowHeight* 1/6);
 // Ensure the room is the title room
 if (room == room_title) {
-    // Draw the title sprite with dynamic scaling
-	var _y = 400;
-	
+    // Draw the title sprite with dynamic scaling + oscillation
+	var _y = 400 + sin(current_time * 0.002) * 15;
+	var _y2 = 400 + sin(current_time * 0.002 + 1) * 20;
+
+
+	draw_sprite_ext(spr_titleEffect1, 0, 150, _y2, 1.5, 1, 0, c_white, 0.8);
+	draw_sprite_ext(spr_titleEffect2, 0, 930, _y2, 1.5, 1, 0, c_white, 0.8);
 	draw_sprite_ext(spr_title, 0, 1080 / 2, _y, 1, 1, 0, c_white, 1);
-	
+
     
 	/*
     // Calculate the position for the start button
