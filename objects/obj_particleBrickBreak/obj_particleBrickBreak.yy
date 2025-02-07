@@ -9,8 +9,8 @@
   "name":"obj_particleBrickBreak",
   "overriddenProperties":[],
   "parent":{
-    "name":"particle",
-    "path":"folders/Objects/particle.yy",
+    "name":"bricks",
+    "path":"folders/Objects/particle/bricks.yy",
   },
   "parentObjectId":null,
   "persistent":false,

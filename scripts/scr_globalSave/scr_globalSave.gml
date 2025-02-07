@@ -8,6 +8,8 @@ function scr_globalSave() {
 	ini_write_real("Option", "soundEffect", global.soundEffect);
 	ini_write_real("Option", "particle"   , global.optionParticle);
 	
+	ini_write_real("Shop", "coin", global.coin);
+	
 	ini_write_real("Stat", "power", global.statPower);
 	ini_write_real("Stat", "ball" , global.statBall);
 	ini_write_real("Stat", "delay", global.statDelay);

@@ -5,3 +5,6 @@ windowHeight = window_get_height();
 windowRatio = windowHeight / windowWidth;
 
 global.sizeRatio = windowHeight / windowWidth;
+
+coinTo = (global.coin + (coinTo * 9)) / 10;
+if (abs(coinTo - global.coin) < 0.5) coinTo = global.coin;

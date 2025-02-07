@@ -10,8 +10,8 @@
   "name":"obj_particleBrickHit",
   "overriddenProperties":[],
   "parent":{
-    "name":"particle",
-    "path":"folders/Objects/particle.yy",
+    "name":"bricks",
+    "path":"folders/Objects/particle/bricks.yy",
   },
   "parentObjectId":null,
   "persistent":false,

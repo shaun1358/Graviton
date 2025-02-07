@@ -1,0 +1,1 @@
+global.coin -= 10;

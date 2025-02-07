@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_shopGetStatLevel",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_shopGetStatLevel",
+  "parent":{
+    "name":"shop",
+    "path":"folders/Scripts/shop.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

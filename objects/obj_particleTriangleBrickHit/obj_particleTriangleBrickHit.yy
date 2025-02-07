@@ -6,8 +6,8 @@
   "name":"obj_particleTriangleBrickHit",
   "overriddenProperties":[],
   "parent":{
-    "name":"particle",
-    "path":"folders/Objects/particle.yy",
+    "name":"bricks",
+    "path":"folders/Objects/particle/bricks.yy",
   },
   "parentObjectId":{
     "name":"obj_particleBrickHit",

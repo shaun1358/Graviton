@@ -2,7 +2,6 @@
   "$GMObject":"",
   "%Name":"obj_optionOpenTitle",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
@@ -10,8 +9,8 @@
   "name":"obj_optionOpenTitle",
   "overriddenProperties":[],
   "parent":{
-    "name":"option",
-    "path":"folders/Objects/option.yy",
+    "name":"title",
+    "path":"folders/Objects/title.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -12,6 +12,8 @@ function scr_globalLoad() {
 		global.soundEffect    = ini_read_real("Option", "soundEffect", 1);
 		global.optionParticle = ini_read_real("Option", "particle"   , 1);
 		
+		global.coin = ini_read_real("Shop", "coin", 0);
+		
 		global.statPower = ini_read_real("Stat", "power", 1);
 		global.statBall  = ini_read_real("Stat", "ball" , 1);
 		global.statDelay = ini_read_real("Stat", "delay", 1);

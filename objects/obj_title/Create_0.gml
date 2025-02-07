@@ -22,3 +22,6 @@ else hasSave = 0;
 //hasSave = 1이면 세이브파일에서 글로벌 변수값 가져오기, 아니면 글로벌 변수값 초기화
 if (hasSave) scr_globalLoad();
 else scr_globalReset();
+
+//타이틀에 보여주는 보유 중인 코인의 개수, 실제 코인의 개수는 아님
+coinTo = global.coin;

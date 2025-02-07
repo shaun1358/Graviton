@@ -10,8 +10,25 @@ if (room == room_title) {
 	draw_sprite_ext(spr_titleEffect1, 0, 150, _y2, 1.5, 1, 0, c_white, 0.8);
 	draw_sprite_ext(spr_titleEffect2, 0, 930, _y2, 1.5, 1, 0, c_white, 0.8);
 	draw_sprite_ext(spr_title, 0, 1080 / 2, _y, 1, 1, 0, c_white, 1);
-
-    
+	
+	draw_sprite_ext(spr_coin, 0, 100, 100, 2, 2, 0, c_white, 1);
+	
+	scr_drawSetText(#7ACCCC, fnt_pressStart2P_30, fa_left, fa_middle);
+	draw_text(160 + 2, 100 + 2, string(ceil(coinTo)));
+	draw_text(160 - 2, 100 + 2, string(ceil(coinTo)));
+	draw_text(160 + 2, 100 - 2, string(ceil(coinTo)));
+	draw_text(160 - 2, 100 - 2, string(ceil(coinTo)));
+    scr_drawSetText(#99FFFF, fnt_pressStart2P_30, fa_left, fa_middle);
+	draw_text(160, 100, string(ceil(coinTo)));
+	//draw_text(360, 100, string(global.coin));
+	
+	
+	
+	draw_text(100, 1400, "Power : " + string(global.statPower));
+	draw_text(100, 1500, "Ball  : " + string(global.statBall));
+	draw_text(100, 1600, "Delay : " + string(global.statDelay));
+	draw_text(100, 1700, "Luck  : " + string(global.statLuck));
+	draw_text(100, 1800, "ItemD : " + string(global.statItemd));
 	/*
     // Calculate the position for the start button
     var startButton_x = windowWidth / 2; // Center horizontally
