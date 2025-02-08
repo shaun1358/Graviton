@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 /* AUDIO */
+/*
 if (room == room_gameElevator) {
     if (!audio_is_playing(global.musicSource)) {
         global.musicSource = scr_soundMusic(snd_background4Debug, 1, 1, true);

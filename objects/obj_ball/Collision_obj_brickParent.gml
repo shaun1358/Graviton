@@ -7,7 +7,7 @@ var _y2 = y;
 with (other) {
     // non-zero = hit
     hit = true;
-    hp -= other.damage * other.damageMult;
+    hp -= other.damage * other.damageMult * (1 + (global.statPower / 10));
     _x1 = x;
     _y1 = y;
 }
@@ -28,8 +28,8 @@ if (global.soundEffect > 0) { // Only play if sound is enabled
     }
 
     // Play sound at the volume set in global.soundEffect (0 = mute, 1 = full volume)
-    audio_play_sound(sound_to_play, 1, false);
-    audio_sound_gain(sound_to_play, global.soundEffect, 0); // Adjust volume
+	scr_soundEffect(sound_to_play, random_range(0.9, 1.1), 1, false);
+
 }
 
 

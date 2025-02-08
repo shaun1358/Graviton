@@ -13,12 +13,12 @@ if (hp <= 0) {
 		//item이 나올 확률 조절
 		item = random(100);
 		//if      (item <= 100) instance_create_layer(x, y, layer, obj_itemDoubleBall);
-		if      (item <= 2) instance_create_layer(x, y, layer, obj_itemDamage);
-		else if (item <= 4) instance_create_layer(x, y, layer, obj_itemDelete);
-		else if (item <= 6) instance_create_layer(x, y, layer, obj_itemFreeze);
-		else if (item <= 8) instance_create_layer(x, y, layer, obj_itemBlockRandomize);
-		else if (item <= 10) instance_create_layer(x, y, layer, obj_itemDoubleBall);
-		else if (item <= 12) instance_create_layer(x, y, layer, obj_itemWeight);
+		if      (item <= 2 * (1 + (global.statLuck / 10))) instance_create_layer(x, y, layer, obj_itemDamage);
+		else if (item <= 4 * (1 + (global.statLuck / 10))) instance_create_layer(x, y, layer, obj_itemDelete);
+		else if (item <= 6 * (1 + (global.statLuck / 10))) instance_create_layer(x, y, layer, obj_itemFreeze);
+		else if (item <= 8 * (1 + (global.statLuck / 10))) instance_create_layer(x, y, layer, obj_itemBlockRandomize);
+		else if (item <= 10 * (1 + (global.statLuck / 10))) instance_create_layer(x, y, layer, obj_itemDoubleBall);
+		else if (item <= 12 * (1 + (global.statLuck / 10))) instance_create_layer(x, y, layer, obj_itemWeight);
 	}
 	//블록 파괴 파티클 생성
 	//근데 삼각형은 xscale yscale 지정해줘야 해서 따로 뺌

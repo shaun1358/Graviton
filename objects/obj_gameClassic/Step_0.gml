@@ -78,6 +78,7 @@ switch(state) {
 			with (obj_ballGeneratorParent) {
 				ballCount = other.ballCount;
 				ballDelay = max(9 - floor(other.ballCount / 10), 3);
+				ballDelay *= (20 - global.statDelay) / 20
 				drawArrow = 0;
 			}
 			//현재 상태를 '공 발사중'으로 바꿈
@@ -137,7 +138,7 @@ switch(state) {
 
 	    // Reset important global variables
 	    global.easing_active = false;
-	    global.ballCount = 0;
+	    //global.ballCount = 0;
 		
 		// high score controlled by gameover when resetting
 		
@@ -147,7 +148,7 @@ switch(state) {
 			var gui_x = display_get_gui_width() / 2;
 			var gui_y = display_get_gui_height() / 2;
 
-			var instance = instance_create_layer(gui_x, gui_y, "Option", obj_gameover);
+			instance_create_layer(gui_x, gui_y, "Option", obj_gameover);
 			//instance.depth = -100;
 		}
 

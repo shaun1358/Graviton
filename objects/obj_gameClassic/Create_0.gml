@@ -19,7 +19,7 @@ else {
 state = 0;
 
 //ballCount = 현재 보유하고 있는 공의 개수
-ballCount = 1;
+ballCount = 1 + global.statBall;
 
 //플레이어 조작 관련 변수
 controlPressing  = 0;

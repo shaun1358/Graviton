@@ -137,13 +137,13 @@ switch(state) {
 
 	    // Reset important global variables
 	    global.easing_active = false;
-	    global.ballCount = BALL_COUNT_ELEVATOR;
+	   // global.ballCount = BALL_COUNT_ELEVATOR;
 
 	    // Create the GUI instance for the game-over screen
 	    if (!instance_exists(obj_gameover)) { // Ensure only one instance is created
 			var gui_x = display_get_gui_width() / 2;
 			var gui_y = display_get_gui_height() / 2;
-			var instance = instance_create_layer(gui_x, gui_y, "Option", obj_gameover);
+			instance_create_layer(gui_x, gui_y, "Option", obj_gameover);
 		}
 	    break;
 }

@@ -11,7 +11,7 @@ else {
 	_width   = 1080;
 	_height  = 1920;
 }
-#macro BALL_COUNT_ELEVATOR 100
+#macro BALL_COUNT_ELEVATOR 1;
 //state = 현재 게임 진행 상황
 //0 = 아무 조작도 안함 or 플레이어가 공의 방향을 조준하는 중
 //1 = 플레이어가 조준하고 손가락을 놓았음. 공은 이제 발사가 되는 중
@@ -20,7 +20,7 @@ state = 0;
 
 //ballCount = 현재 보유하고 있는 공의 개수
 ballCount = BALL_COUNT_ELEVATOR;
-with (obj_ballGeneratorElevator) ballCount = other.ballCount;
+//with (obj_ballGeneratorElevator) ballCount = other.ballCount + global.statBall;
 
 //플레이어 조작 관련 변수
 controlPressing  = 0;
@@ -101,12 +101,10 @@ global.const_SEED_STAGE_classic = [
 	{ stage: 100, seed_start: 11, seed_end: 19 },
 ];
 
-global.stage = 60;
+global.stage = 1;
 global.scoreGame = 0; //init score
 global.tile_order = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 global.easing_active = false;
-count_ball = 0;
-total_destruction = 0;
 //scr_tileCreate(global.stage, MAX_ROW-1);
 
 //아이템 지속 상태
