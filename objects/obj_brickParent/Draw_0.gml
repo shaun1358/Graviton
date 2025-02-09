@@ -1,3 +1,4 @@
+scr_drawSetText($F0D590, fnt_pressStart2P_20, fa_center, fa_middle);
 draw_self()
 draw_set_colour(c_red);
 //physics_draw_debug();
@@ -5,7 +6,6 @@ draw_set_colour(c_red);
 
 // i hate -1 display
 dp_hp = max(0, ceil(hp));
-draw_self();
 draw_set_font(fnt_maple);
 
 // drop shadow

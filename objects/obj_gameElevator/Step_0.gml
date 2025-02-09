@@ -141,9 +141,12 @@ switch(state) {
 
 	    // Create the GUI instance for the game-over screen
 	    if (!instance_exists(obj_gameover)) { // Ensure only one instance is created
+			scr_gameover();
+			/*
 			var gui_x = display_get_gui_width() / 2;
 			var gui_y = display_get_gui_height() / 2;
 			instance_create_layer(gui_x, gui_y, "Option", obj_gameover);
+			*/
 		}
 	    break;
 }

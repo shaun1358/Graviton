@@ -122,3 +122,5 @@ canControl = 1;
 //화면에 표시되는 점수, 실제 점수는 아님
 scoreDraw  = 0;
 scoreScale = 1;
+
+global.coinGame = 0;

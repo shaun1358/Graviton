@@ -8,6 +8,8 @@ if (hit == 1) {
 
 //블록이 파괴될 경우
 if (hp <= 0) {
+	global.coinGame += 1;
+	global.coin += 1;
 	global.scoreGame += brickScore;
 	if (room = room_gameElevator){
 		//item이 나올 확률 조절

@@ -4,7 +4,7 @@ draw_text(1080 / 2, 50, "Score");
 scr_drawSetText($F0D590, fnt_pressStart2P_50, fa_center, fa_middle);
 draw_text_transformed(1080 / 2, 120, scoreDraw, scoreScale, scoreScale, 0);
 
-draw_sprite_ext(spr_trophy, 0, (1080 / 2) - (string_length(global.scoreClassic) * 14) - 15, 180, 0.5, 0.5, 0, c_white, 1);
+draw_sprite_ext(spr_trophy, 0, (1080 / 2) - (string_length(global.scoreElevator) * 14) - 15, 180, 0.5, 0.5, 0, c_white, 1);
 scr_drawSetText($F0D590, fnt_pressStart2P_20, fa_center, fa_middle);
 draw_text(1080 / 2 + 10, 180, global.scoreElevator);
 

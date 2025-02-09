@@ -3,6 +3,7 @@
 function scr_globalReset() {
 	//global.maxScore = 0;
 	global.coin = 0;
+	global.coinGame = 0;
 	global.sizeRatio = obj_title.windowHeight / 1920;
 	
 	global.scoreClassic = 0;
@@ -16,9 +17,7 @@ function scr_globalReset() {
 	
 	global.damage = 1
 	
-	
 	global.back_pressed = false;
-	global.is_paused = false;
 	
 	global.statPower = 0;
 	global.statBall  = 0;

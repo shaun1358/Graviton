@@ -3,6 +3,7 @@ y = _marginY + 100;
 
 
 if(timer.curTime >= timer.endTime){
+	scr_setHighscore();
 	scr_roomTransition(TRANS_MODE.RESTART);
 }
 if (!mouse_check_button(mb_left)) {

@@ -11,6 +11,10 @@ draw_sprite_ext(spr_trophy, 0, (_width / 2) - (string_length(global.scoreClassic
 scr_drawSetText($F0D590, fnt_pressStart2P_20, fa_center, fa_middle);
 draw_text(_width / 2 + 10, _marginY + 180, global.scoreClassic);
 
+draw_sprite_ext(spr_coin, 0,  100, 180, 1.5, 1.5, 0, c_white, 1);
+scr_drawSetText($F0D590, fnt_pressStart2P_20, fa_left, fa_middle);
+draw_text(140, 180, global.coinGame);
+
 draw_sprite(spr_gameBar, 0, _width / 2, _marginY + 240);
 
 //디버그용

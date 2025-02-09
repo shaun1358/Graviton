@@ -1,48 +1,37 @@
-var final_score = global.scoreGame;
-isHighScore = false;
- 
-// score update logic
-if(room==room_gameClassic){
-	if(global.scoreGame > global.scoreClassic){
-		global.scoreClassic = global.scoreGame;	
-		isHighScore = true;
-	}	
+event_inherited();
+
+depth = 5;
+
+if instance_exists(obj_camera) {
+	_marginX = obj_camera.cameraMarginX;
+	_marginY = obj_camera.cameraMarginY;
+	_width   = obj_camera.cameraWidth;
+	_height  = obj_camera.cameraHeight;
 }
-else if(room == room_gameElevator){
-	if(global.scoreGame > global.scoreElevator){		
-		global.scoreElevator = global.scoreGame;	
-		isHighScore = true;
-	}
+else {
+	_marginX = 0;
+	_marginY = 0;
+	_width   = 1080;
+	_height  = 1920;
 }
-// Create event of obj_gameover
 
-// Existing variables for "Retry" text
-text_scale_retry = 1;
-target_scale_retry = 1;
-text_x_retry = display_get_gui_width() / 2 - 20; // magic number for "> "
-text_y_retry = display_get_gui_height() / 2 + 50;
-text_retry = "> Retry";
-text_hovered_retry = false;
-// New variables for "Title" text
-text_scale_title = 1;
-target_scale_title = 1;
-text_x_title = display_get_gui_width() / 2 - 20; // magic number for "> "
-text_y_title = text_y_retry + 80; // Position below "Retry"
-text_title = "> Title";
-text_hovered_title = false;
+timer = 0;
+x = (_width - sprite_width) / 2;
+y = ((_height - sprite_height) / 2) - 500;;
+xTo = (_width - sprite_width) / 2;
+yTo = (_height - sprite_height) / 2;
 
-var gui_width = display_get_gui_width();
-var gui_height = display_get_gui_height();
-var sprite_x = gui_width * 0.75; // Center horizontally in the top-right quadrant
-var sprite_y = gui_height * 0.25; // Center vertically in the top-right quadrant
+scoreTimer  = 0;
+scorePeriod = 3;
+scoreShow   = 0;
+scoreSize   = 1;
+scoreHigh   = 0;
+scoreHighShow = 0;
+if      (room == room_gameClassic)  scoreHigh = global.scoreClassic;
+else if (room == room_gameElevator) scoreHigh = global.scoreElevator;
 
-// Ripple effect variables
-ripple_scale = 1;        // Initial scale of the sprite
-ripple_speed = 0.1;      // Speed of the ripple effect
-ripple_amplitude = 0.2;  // Intensity of the ripple (scaling factor)
-ripple_timer = 0;        // Timer for the sine wave
-
-// Rotation variables
-rotation_angle = 345;      // Initial rotation
-
-scr_globalSave();
+coinPhase  = 0;
+coinTimer  = 0;
+coinPeriod = 3;
+coinShow   = 0;
+coinSize   = 1;

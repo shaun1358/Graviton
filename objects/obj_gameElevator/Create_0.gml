@@ -138,3 +138,5 @@ highestBrick = 5000;
 dangerLine = instance_create_layer(0, 0, "Effect", obj_dangerLine);
 /* for the bug fix of clicking */
 mouseLock = false; // Initially unlocked
+
+global.coinGame = 0;
