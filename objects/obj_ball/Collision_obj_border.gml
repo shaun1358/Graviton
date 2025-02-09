@@ -9,10 +9,10 @@ if (global.soundEffect > 0) { // Only play if sound is enabled
     var sound_to_play;
 
     switch (sound_choice) {
-        case 1: sound_to_play = snd_ballBounce1; break;
-        case 2: sound_to_play = snd_ballBounce2; break;
-        case 3: sound_to_play = snd_ballBounce3; break;
-        case 4: sound_to_play = snd_ballBounce4; break;
+        case 1: sound_to_play = snd_ballHit1; break;
+        case 2: sound_to_play = snd_ballHit2; break;
+        case 3: sound_to_play = snd_ballHit3; break;
+        case 4: sound_to_play = snd_ballHit4; break;
     }
 
     // Play sound at the volume set in global.soundEffect (0 = mute, 1 = full volume)

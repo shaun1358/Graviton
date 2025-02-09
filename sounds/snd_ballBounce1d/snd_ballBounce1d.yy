@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_background4Debug",
+  "%Name":"snd_ballBounce1d",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":147.096,
-  "name":"snd_background4Debug",
+  "duration":0.421563,
+  "name":"snd_ballBounce1d",
   "parent":{
     "name":"dummy",
     "path":"folders/Sounds/dummy.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_background4Debug.mp3",
+  "soundFile":"snd_ballBounce1d.wav",
   "type":0,
   "volume":1.0,
 }

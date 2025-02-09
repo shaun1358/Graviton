@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_background4Debug",
+  "%Name":"snd_itemDeleteBang",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,17 +9,17 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":147.096,
-  "name":"snd_background4Debug",
+  "duration":0.94839,
+  "name":"snd_itemDeleteBang",
   "parent":{
-    "name":"dummy",
-    "path":"folders/Sounds/dummy.yy",
+    "name":"item",
+    "path":"folders/Sounds/item.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_background4Debug.mp3",
+  "soundFile":"snd_itemDeleteBang.wav",
   "type":0,
-  "volume":1.0,
+  "volume":0.35,
 }

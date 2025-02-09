@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_itemDelete",
+  "%Name":"snd_ballHit2",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,17 +9,17 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.220658,
-  "name":"snd_itemDelete",
+  "duration":0.503628,
+  "name":"snd_ballHit2",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"bgm",
+    "path":"folders/Sounds/bgm.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_itemDelete.wav",
+  "soundFile":"snd_ballHit2.wav",
   "type":0,
   "volume":1.0,
 }

@@ -1,6 +1,7 @@
 event_inherited();
 
 if (place_meeting(x, y, obj_ball)) {
+	scr_soundEffect(snd_itemGet, 1, 1, false);
     obj_gameElevator.itemDamage = true;
 	obj_gameElevator.itemDamageTimer = duration;
 	obj_gameElevator.itemDamageDelta = 0;

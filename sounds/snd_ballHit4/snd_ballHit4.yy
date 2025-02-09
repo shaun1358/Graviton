@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_background4Debug",
+  "%Name":"snd_ballHit4",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,17 +9,17 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":147.096,
-  "name":"snd_background4Debug",
+  "duration":0.54415,
+  "name":"snd_ballHit4",
   "parent":{
-    "name":"dummy",
-    "path":"folders/Sounds/dummy.yy",
+    "name":"bgm",
+    "path":"folders/Sounds/bgm.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_background4Debug.mp3",
+  "soundFile":"snd_ballHit4.wav",
   "type":0,
   "volume":1.0,
 }

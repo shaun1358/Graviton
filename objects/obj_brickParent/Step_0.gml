@@ -27,6 +27,7 @@ if (hp <= 0) {
 			sprite_index = other.sprite_index;
 		}
 	}
+	scr_generateParticle(obj_particleCoinDrop, 1, 90, 0, x, y);
 	instance_destroy();
 }
 

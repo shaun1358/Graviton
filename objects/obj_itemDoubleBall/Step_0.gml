@@ -1,6 +1,7 @@
 event_inherited();
 
 if place_meeting(x, y, obj_ball) {
+	scr_soundEffect(snd_itemGet, 1, 1, false);
 	if instance_exists(obj_ball) with (obj_ball) {
 		with instance_create_layer(x, y, layer, obj_ballGhost) {
 			//어디서 버그 터질지 몰라서 다 복붙함

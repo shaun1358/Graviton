@@ -1,14 +1,16 @@
 event_inherited();
 
 if(place_meeting(x, y, obj_ball)) {
+	scr_soundEffect(snd_itemGet, 1, 1, false);
     visible = false;
 	
 	// Play item delete sound effect
+	/*
 	if (global.soundEffect > 0) { // Ensure SFX obeys sound settings
 	    audio_play_sound(snd_itemDelete, 1, false);
 	    audio_sound_gain(snd_itemDelete, global.soundEffect, 0); // Apply volume setting
 	}
-
+	*/
 	/*
     min_y = 5000; // 초기값을 큰 값으로 설정
     

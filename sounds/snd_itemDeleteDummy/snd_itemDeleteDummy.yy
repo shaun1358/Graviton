@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_ballBounce1",
+  "%Name":"snd_itemDeleteDummy",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,17 +9,17 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.421563,
-  "name":"snd_ballBounce1",
+  "duration":1.220658,
+  "name":"snd_itemDeleteDummy",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"dummy",
+    "path":"folders/Sounds/dummy.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_ballBounce1.wav",
+  "soundFile":"snd_itemDeleteDummy.wav",
   "type":0,
   "volume":1.0,
 }

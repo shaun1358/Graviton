@@ -12,8 +12,8 @@
   "duration":126.456,
   "name":"snd_background2Debug",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"dummy",
+    "path":"folders/Sounds/dummy.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

@@ -1,17 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_particleItemDelete2",
+  "%Name":"obj_particleCoinDrop",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_brickParent","path":"objects/obj_brickParent/obj_brickParent.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_particleItemDelete2",
+  "name":"obj_particleCoinDrop",
   "overriddenProperties":[],
   "parent":{
-    "name":"items",
-    "path":"folders/Objects/particle/items.yy",
+    "name":"particle",
+    "path":"folders/Objects/particle.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_particleItemDelete2",
-    "path":"sprites/spr_particleItemDelete2/spr_particleItemDelete2.yy",
+    "name":"spr_coin",
+    "path":"sprites/spr_coin/spr_coin.yy",
   },
   "spriteMaskId":null,
   "visible":true,

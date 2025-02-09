@@ -1,6 +1,7 @@
 event_inherited();
 
 if place_meeting(x, y, obj_ball) {
+	scr_soundEffect(snd_itemGet, 1, 1, false);
 	if instance_exists(obj_brickParent) with (obj_brickParent) {
 		var _x = x;
 		var _y = y;

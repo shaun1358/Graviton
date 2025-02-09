@@ -26,3 +26,4 @@ ballSpeed = 10000;
 //화살표(공이 튕기는 방향)의 표시 여부
 drawArrow = 0;
 
+soundPitch = 1;
