@@ -2,8 +2,13 @@ event_inherited();
 
 depth = 5;
 
+/*
 optionX = x;
 optionY = y;
+startScale = 1.1
+image_xscale = startScale;
+image_yscale = startScale;
+*/
 
 if instance_exists(obj_camera) {
 	_marginX = obj_camera.cameraMarginX;

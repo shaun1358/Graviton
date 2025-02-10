@@ -10,8 +10,8 @@
   "name":"obj_ripple",
   "overriddenProperties":[],
   "parent":{
-    "name":"game",
-    "path":"folders/Objects/game.yy",
+    "name":"dummy",
+    "path":"folders/Objects/dummy.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -4,3 +4,5 @@ if (room_exists(target)) { // Check if the room exists
 } else {
     show_message("The room does not exist!"); // Debugging message (optional)
 }
+
+scale_state = 2;

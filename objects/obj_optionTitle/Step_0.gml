@@ -16,5 +16,11 @@ else {
 	_height  = 1920;
 }
 
+/*
 x = (_width - sprite_width) / 2;
 y = (_height - sprite_height) / 2;
+
+startScale = (1 + (startScale * 5)) / 6
+if (startScale < 1.01) startScale = 1;
+image_xscale = startScale;
+image_yscale = startScale;

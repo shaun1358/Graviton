@@ -6,7 +6,7 @@ function scr_optionGame() {
 		optionID.depth = 5;
 		var _x = optionID.x
 		var _y = optionID.y;
-		with instance_create_layer(_x + 688, _y + 131, "Option", obj_optionExit) {
+		with instance_create_layer(_x + 688 + 50, _y + 131 + 50, "Option", obj_optionExit) {
 			depth = 3;
 			owner = other.optionID;
 		}

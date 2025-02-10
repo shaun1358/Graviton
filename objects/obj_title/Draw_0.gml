@@ -23,7 +23,7 @@ if (room == room_title) {
 	//draw_text(360, 100, string(global.coin));
 	
 	
-	
+	/*
 	draw_text(100, 1400, "Power : " + string(global.statPower));
 	draw_text(100, 1500, "Ball  : " + string(global.statBall));
 	draw_text(100, 1600, "Delay : " + string(global.statDelay));

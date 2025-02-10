@@ -29,4 +29,4 @@ else {
 	draw_text_transformed(x + (sprite_width / 2), (y + (sprite_height / 2) + 210), "(+" + string(global.coinGame) + ")", coinSize, coinSize, 0);
 }
 
-draw_text(200, 200, coinPhase);
+//draw_text(200, 200, coinPhase);

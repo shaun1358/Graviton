@@ -45,7 +45,7 @@
   "origin":4,
   "parent":{
     "name":"bricks",
-    "path":"folders/Sprites/game/bricks.yy",
+    "path":"folders/Sprites/debugs/bricks.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

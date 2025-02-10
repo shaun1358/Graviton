@@ -1,12 +1,12 @@
 
 function scr_optionTitle() {
-	if not instance_exists(obj_optionParant) {
+	if (not instance_exists(obj_optionParant) && not instance_exists(obj_shopParant)) {
 		//global.soundMusic = 1
 		optionID = instance_create_layer(x, y, "Option", obj_optionTitle);
 		optionID.depth = 5;
 		var _x = optionID.x
 		var _y = optionID.y;
-		with instance_create_layer(_x + 688, _y + 131, "Option", obj_optionExit) {
+		with instance_create_layer(_x + 688 + 50, _y + 131 + 50, "Option", obj_optionExit) {
 			depth = 3;
 			owner = other.optionID;
 		}
