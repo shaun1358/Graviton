@@ -13,6 +13,7 @@ _yS = 1;
 image_xscale = _xScale;
 fix_triangle = physics_fixture_create();
 physics_fixture_set_polygon_shape(fix_triangle);
+
 if (_xScale == 1) {
 	physics_fixture_add_point(fix_triangle, 65, -50);
 	physics_fixture_add_point(fix_triangle, 65, 50);
@@ -25,6 +26,7 @@ else {
 	physics_fixture_add_point(fix_triangle, -65, -50);
 
 }
+
 physics_fixture_set_density(fix_triangle, 0);
 physics_fixture_set_restitution(fix_triangle, 1);
 physics_fixture_set_collision_group(fix_triangle, 1);
