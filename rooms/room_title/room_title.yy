@@ -12,7 +12,6 @@
     {"name":"inst_133FCF6C","path":"rooms/room_title/room_title.yy",},
     {"name":"inst_4413774A","path":"rooms/room_title/room_title.yy",},
     {"name":"inst_2D1EE964","path":"rooms/room_title/room_title.yy",},
-    {"name":"inst_B22FBFB","path":"rooms/room_title/room_title.yy",},
     {"name":"inst_3555CB87","path":"rooms/room_title/room_title.yy",},
   ],
   "isDnd":false,
@@ -28,7 +27,6 @@
         {"$GMRInstance":"v1","%Name":"inst_133FCF6C","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_133FCF6C","objectId":{"name":"obj_startButton","path":"objects/obj_startButton/obj_startButton.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":384.0,"y":960.0,},
         {"$GMRInstance":"v1","%Name":"inst_4413774A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4413774A","objectId":{"name":"obj_optionOpenTitle","path":"objects/obj_optionOpenTitle/obj_optionOpenTitle.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":256.0,"y":1440.0,},
         {"$GMRInstance":"v1","%Name":"inst_2D1EE964","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2D1EE964","objectId":{"name":"obj_roomTransition","path":"objects/obj_roomTransition/obj_roomTransition.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-288.0,"y":672.0,},
-        {"$GMRInstance":"v1","%Name":"inst_B22FBFB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_B22FBFB","objectId":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":128.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets_1","assets":[
         {"$GMRSpriteGraphic":"","%Name":"graphic_60E64510","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_60E64510","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_credit","path":"sprites/spr_credit/spr_credit.yy",},"x":96.0,"y":1800.0,},

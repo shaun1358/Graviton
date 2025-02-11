@@ -11,7 +11,7 @@ else {
 	_width   = 1080;
 	_height  = 1920;
 }
-#macro BALL_COUNT_ELEVATOR 1;
+#macro BALL_COUNT_ELEVATOR 1
 //state = 현재 게임 진행 상황
 //0 = 아무 조작도 안함 or 플레이어가 공의 방향을 조준하는 중
 //1 = 플레이어가 조준하고 손가락을 놓았음. 공은 이제 발사가 되는 중

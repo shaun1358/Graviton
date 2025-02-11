@@ -20,4 +20,3 @@ if (view_camera[0] == noone) {
 // Assign the camera to the viewport
 view_set_camera(0, view_camera[0]);
 view_enabled = true;
-

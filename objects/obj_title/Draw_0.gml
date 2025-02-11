@@ -45,7 +45,7 @@ if (room == room_title) {
 }
 draw_set_color(c_white);
 
-
+/* BORDER DEBUG
 draw_rectangle(0,0,10,1920, false);
 draw_rectangle(1070,0,1080,1920, false);
 draw_rectangle(0,0,1080,10, false);

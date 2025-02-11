@@ -10,6 +10,7 @@ function scr_globalReset() {
 	global.scoreElevator = 0;
 	global.scoreGame = 0;
 	
+	global.musicSource = -1; // Use -1
 	global.soundMusic = 1;
 	global.soundEffect = 1;
 	

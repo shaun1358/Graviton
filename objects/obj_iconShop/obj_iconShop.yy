@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_gameIconShop",
-    "path":"sprites/spr_gameIconShop/spr_gameIconShop.yy",
+    "name":"spr_gameIconShop_new",
+    "path":"sprites/spr_gameIconShop_new/spr_gameIconShop_new.yy",
   },
   "spriteMaskId":null,
   "visible":true,
