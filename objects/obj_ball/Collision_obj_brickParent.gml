@@ -14,6 +14,10 @@ with (other) {
 
 // Calculate the hit direction
 _dir = point_direction(_x1, _y1, _x2, _y2);
+if (other.object_index == obj_brickSquare)   scr_generateParticle(obj_particleSquareBrickHit, 10, _dir, 30, x, y);
+if (other.object_index == obj_brickTriangle) scr_generateParticle(obj_particleTriangleBrickHit, 10, _dir, 30, x, y);
+if (other.object_index == obj_brickDiamond)  scr_generateParticle(obj_particleDiamondBrickHit, 10, _dir, 30, x, y);
+if (other.object_index == obj_brickCircle)   scr_generateParticle(obj_particleCircleBrickHit, 10, _dir, 30, x, y);
 
 // Play random ball bounce sound based on global.soundEffect volume
 if (global.soundEffect > 0) { // Only play if sound is enabled

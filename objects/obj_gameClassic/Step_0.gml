@@ -43,6 +43,7 @@ else if device_mouse_check_button_released(0, mb_left) {
 	controlPressing = 0;
 }
 
+
 switch(state) {
 	//공 발사전
 	case BALL_STATE_0_IDLE :
