@@ -1,8 +1,9 @@
-if (timer == 1) with instance_create_layer(x, y, layer, obj_particleItemDelete1) {
+event_inherited();
+if (timer == 1 && not instance_exists(obj_optionParant)) with instance_create_layer(x, y, layer, obj_particleItemDelete1) {
 	timerDuration = other.timerDuration;
 }
 
-timer += 1;
+//timer += 1;
 if (timer >= timerDuration) {
 	//min_y = 5000; // 초기값을 큰 값으로 설정
     

@@ -1,3 +1,5 @@
+event_inherited();
+
 if instance_exists(obj_ball) obj_ball.scaleTo = 1.3;
 if instance_exists(obj_ballGeneratorParent) obj_ballGeneratorParent.scaleTo = 1.3;
 
@@ -7,7 +9,7 @@ if (timer >= timerDuration) {
 	instance_destroy();
 }
 
-timer += 1;
+//timer += 1;
 
 effect1_alpha = 0.8 + (sin(timer / 20) * 0.2);
 effect1_alpha *= min(1, (timerDuration - timer) / 60);

@@ -1,6 +1,7 @@
+event_inherited();
 if (timer >= timerDuration) instance_destroy();
 
-timer += 1;
+//timer += 1;
 
 if (timer % timerPeriod == 0 && timerDuration - timer > 60) {
 	//instance_create_layer(1080 / 2, 1920 - 500, "Effect", obj_particleItemWeight2)

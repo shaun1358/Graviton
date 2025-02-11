@@ -117,6 +117,7 @@
     {"id":{"name":"obj_itemVisualDelete","path":"objects/obj_itemVisualDelete/obj_itemVisualDelete.yy",},},
     {"id":{"name":"obj_itemVisualDoubleBall","path":"objects/obj_itemVisualDoubleBall/obj_itemVisualDoubleBall.yy",},},
     {"id":{"name":"obj_itemVisualFreeze","path":"objects/obj_itemVisualFreeze/obj_itemVisualFreeze.yy",},},
+    {"id":{"name":"obj_itemVisualParant","path":"objects/obj_itemVisualParant/obj_itemVisualParant.yy",},},
     {"id":{"name":"obj_itemVisualWeight","path":"objects/obj_itemVisualWeight/obj_itemVisualWeight.yy",},},
     {"id":{"name":"obj_itemWeight","path":"objects/obj_itemWeight/obj_itemWeight.yy",},},
     {"id":{"name":"obj_laser","path":"objects/obj_laser/obj_laser.yy",},},

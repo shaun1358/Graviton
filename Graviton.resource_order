@@ -90,6 +90,7 @@
     {"name":"obj_itemVisualDamage","order":1,"path":"objects/obj_itemVisualDamage/obj_itemVisualDamage.yy",},
     {"name":"obj_itemVisualDelete","order":2,"path":"objects/obj_itemVisualDelete/obj_itemVisualDelete.yy",},
     {"name":"obj_itemVisualDoubleBall","order":5,"path":"objects/obj_itemVisualDoubleBall/obj_itemVisualDoubleBall.yy",},
+    {"name":"obj_itemVisualParant","order":6,"path":"objects/obj_itemVisualParant/obj_itemVisualParant.yy",},
     {"name":"obj_itemVisualWeight","order":3,"path":"objects/obj_itemVisualWeight/obj_itemVisualWeight.yy",},
     {"name":"obj_itemWeight","order":6,"path":"objects/obj_itemWeight/obj_itemWeight.yy",},
     {"name":"obj_laser","order":5,"path":"objects/obj_laser/obj_laser.yy",},

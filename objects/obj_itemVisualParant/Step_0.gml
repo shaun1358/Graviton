@@ -1,0 +1,1 @@
+if (not instance_exists(obj_optionParant)) timer += 1;

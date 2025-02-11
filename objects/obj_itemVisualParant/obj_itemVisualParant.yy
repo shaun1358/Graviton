@@ -1,22 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_itemVisualBlockRandomize",
+  "%Name":"obj_itemVisualParant",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_itemVisualBlockRandomize",
+  "name":"obj_itemVisualParant",
   "overriddenProperties":[],
   "parent":{
     "name":"visual",
     "path":"folders/Objects/game/items/visual.yy",
   },
-  "parentObjectId":{
-    "name":"obj_itemVisualParant",
-    "path":"objects/obj_itemVisualParant/obj_itemVisualParant.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

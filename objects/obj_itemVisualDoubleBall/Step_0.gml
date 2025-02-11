@@ -1,5 +1,6 @@
+event_inherited();
 if (timer >= timerDuration) instance_destroy();
-timer += 1;
+//timer += 1;
 
 if (timer == 1 && instance_exists(obj_ball)) with (obj_ball) {
 	var _x = x;

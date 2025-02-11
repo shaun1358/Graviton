@@ -13,7 +13,10 @@
     "name":"visual",
     "path":"folders/Objects/game/items/visual.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_itemVisualParant",
+    "path":"objects/obj_itemVisualParant/obj_itemVisualParant.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
