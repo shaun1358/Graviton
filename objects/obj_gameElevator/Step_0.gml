@@ -27,7 +27,8 @@ else if device_mouse_check_button_released(0, mb_left) {
 if (!isGameover) {
 	// item timer processing
 	if (itemDamage) {
-		itemDamageDelta++;
+		if not instance_exists(obj_optionParent)
+			itemDamageDelta++;
 		if instance_exists(obj_ball) with(obj_ball) damageMult = 2;
 		//itemDamageDelta += scr_delta_to_ms(delta_time);
 		// set item damage false
@@ -40,7 +41,8 @@ if (!isGameover) {
 	}
 	// item timer processing
 	if(itemFreeze) {
-		itemFreezeDelta++;
+		if not instance_exists(obj_optionParent)
+			itemFreezeDelta++;
 		//itemFreezeDelta += scr_delta_to_ms(delta_time);
 		risingSpeedFreeze = 0;
 		if (itemFreezeDelta >= itemFreezeTimer) {
@@ -51,12 +53,14 @@ if (!isGameover) {
 		}
 	}
 	if (itemWeight) {
-		itemWeightDelta++;
+		if not instance_exists(obj_optionParent)
+			itemWeightDelta++;
 		if instance_exists(obj_ball) obj_ball.gravtPower = 200;
 		if instance_exists(obj_ballGhost) obj_ballGhost.gravtPower = 200;
 		if (itemWeightDelta >= itemWeightTimer) {
 			if instance_exists(obj_ball) obj_ball.gravtPower = 50;
 			if instance_exists(obj_ballGhost) obj_ballGhost.gravtPower = 50;
+			itemWeight = false;
 			itemWeightDelta = 0;
 			itemWeightTimer = 0;
 		}
@@ -106,6 +110,31 @@ if (!isGameover) {
 	else dangerLine.visible = false;
 
 }
+
+/* ITEM FRAME */
+// 생성할 오브젝트 배열 (true인 것만 저장)
+var obj_list = [];
+
+// 체크하여 true인 변수에 해당하는 객체를 배열에 추가
+if (itemDamage) array_push(obj_list, obj_itemFrameDamage);
+if (itemFreeze) array_push(obj_list, obj_itemFrameFreeze);
+if (itemWeight) array_push(obj_list, obj_itemFrameWeight);
+if (itemDevil)  array_push(obj_list, obj_itemFrameDevil);
+
+// 기존 객체 삭제 (리셋) - 위에서부터 다시 채우기 위해
+with (obj_itemFrameParent) { // obj_itemFrameParent가 부모 오브젝트
+    instance_destroy();
+}
+
+// 새로운 오브젝트를 위에서부터 생성
+var y_start = 288;
+var spacing = 96;
+
+for (var i = 0; i < array_length(obj_list); i++) {
+    instance_create_layer(96, y_start + (spacing * i), "Option", obj_list[i]);
+}
+/* END OF ITEM FRAME */
+show_debug_message("gameElevatorStep"+string(obj_list));
 switch(state) {
 	//공 발사전
 	case BALL_STATE_0_IDLE :

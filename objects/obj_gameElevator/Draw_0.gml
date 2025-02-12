@@ -8,11 +8,15 @@ draw_sprite_ext(spr_trophy, 0, (1080 / 2) - (string_length(global.scoreElevator)
 scr_drawSetText($F0D590, fnt_pressStart2P_20, fa_center, fa_middle);
 draw_text(1080 / 2 + 10, 180, global.scoreElevator);
 
+draw_sprite_ext(spr_coin, 0,  100, 190, 1.5, 1.5, 0, c_white, 1);
+scr_drawSetText($F0D590, fnt_pressStart2P_20, fa_left, fa_middle);
+draw_text(140, 190, global.coinGame);
+
 draw_sprite(spr_gameBar, 0, 1080 / 2, 240);
 
 //디버그용
 draw_self();
-
+/*
 draw_text(100, 100, itemDamageDelta)
 draw_text(100, 200, itemDamageTimer);
 /*
