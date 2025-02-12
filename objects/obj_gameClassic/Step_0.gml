@@ -23,7 +23,7 @@ if (scoreScale > 1) {
 }
 
 //옵션이 있으면 canControl = -1, 일부로 -1로 한거임 0으로 하면 옵션 끄자마자 같은 플레임에 1이 되면서 공이 발사가 되버림...
-if instance_exists(obj_optionParant) canControl = -1;
+if instance_exists(obj_optionParent) canControl = -1;
 else if (canControl < 1) canControl += 1;
 
 //마우스 클릭 / 손가락 태핑 인식

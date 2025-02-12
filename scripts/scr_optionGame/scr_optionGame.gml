@@ -1,6 +1,6 @@
 
 function scr_optionGame() {
-	if not instance_exists(obj_optionParant) {
+	if not instance_exists(obj_optionParent) {
 		//global.soundMusic = 1
 		optionID = instance_create_layer(x, y, "Option", obj_optionGame);
 		optionID.depth = 5;

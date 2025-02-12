@@ -63,7 +63,7 @@ if (!isGameover) {
 	}
 	
 	//옵션 키면 멈춤
-	if instance_exists(obj_optionParant) risingSpeedOption = 0;
+	if instance_exists(obj_optionParent) risingSpeedOption = 0;
 	else risingSpeedOption = 1;
 	//모든 속도 비율을 섞은 다음 속도를 지정함
 	var _ratio = risingSpeedRatio * risingSpeedFreeze * risingSpeedOption;
@@ -120,7 +120,7 @@ switch(state) {
 			if (other.y1 > y && !other.mouseLock) { 
 			    var dir = 180 + clamp(other.x1 - 180, 0, 720) / 4;
     
-			    if (!instance_exists(obj_optionParant)) {
+			    if (!instance_exists(obj_optionParent)) {
 			        ballDirection = dir;
 			        drawArrow = 1;
 			    }

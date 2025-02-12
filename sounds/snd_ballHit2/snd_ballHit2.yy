@@ -12,8 +12,8 @@
   "duration":0.503628,
   "name":"snd_ballHit2",
   "parent":{
-    "name":"bgm",
-    "path":"folders/Sounds/bgm.yy",
+    "name":"ball",
+    "path":"folders/Sounds/ball.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

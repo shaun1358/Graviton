@@ -1,6 +1,6 @@
 event_inherited();
 
-if place_meeting(x, y, obj_ball && not instance_exists(obj_optionParant)) {
+if place_meeting(x, y, obj_ball) && not instance_exists(obj_optionParent) {
 	scr_soundEffect(snd_itemGet, 1, 1, false);
 	if instance_exists(obj_ball) with (obj_ball) {
 		with instance_create_layer(x, y, layer, obj_ballGhost) {

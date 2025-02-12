@@ -1,5 +1,5 @@
 event_inherited();
-if (timer == 1 && not instance_exists(obj_optionParant)) with instance_create_layer(x, y, layer, obj_particleItemDelete1) {
+if (timer == 1 && not instance_exists(obj_optionParent)) with instance_create_layer(x, y, layer, obj_particleItemDelete1) {
 	timerDuration = other.timerDuration;
 }
 

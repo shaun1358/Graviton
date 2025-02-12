@@ -20,3 +20,31 @@ if (view_camera[0] == noone) {
 // Assign the camera to the viewport
 view_set_camera(0, view_camera[0]);
 view_enabled = true;
+
+musicSource = -1;
+musicIndex = 0;
+
+bgm_main = [
+    bgm_debug11
+];
+
+bgm_classic = [
+    snd_bgm4,
+    snd_bgm6,
+    snd_bgm10,
+    snd_bgm11
+];
+
+bgm_elevator = [
+    snd_bgm5,
+    snd_bgm7,
+    snd_bgm8,
+    snd_bgm9
+];
+
+// Shuffle the playlist
+scr_shuffleArray(bgm_main);
+// Shuffle the playlist
+scr_shuffleArray(bgm_classic);
+// Shuffle the playlist
+scr_shuffleArray(bgm_elevator);

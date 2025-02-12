@@ -1,4 +1,4 @@
-if (not instance_exists(obj_optionParant)) {
+if (not instance_exists(obj_optionParent)) {
 	if (timer % 10 == 0) scr_soundEffect(snd_itemDeleteTimer, 0.98, 1, false);
 	timer += 1;
 

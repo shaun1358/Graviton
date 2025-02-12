@@ -1,4 +1,3 @@
-event_inherited();
 
 depth = 5;
 
@@ -17,7 +16,7 @@ else {
 
 timer = 0;
 x = (_width - sprite_width) / 2;
-y = ((_height - sprite_height) / 2) - 500;;
+y = ((_height - sprite_height) / 2) - 500;
 xTo = (_width - sprite_width) / 2;
 yTo = (_height - sprite_height) / 2;
 

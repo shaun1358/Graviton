@@ -15,8 +15,8 @@
     "path":"folders/Objects/option.yy",
   },
   "parentObjectId":{
-    "name":"obj_optionParant",
-    "path":"objects/obj_optionParant/obj_optionParant.yy",
+    "name":"obj_optionParent",
+    "path":"objects/obj_optionParent/obj_optionParent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

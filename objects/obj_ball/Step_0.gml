@@ -27,7 +27,7 @@ if (y > yThreshold) {
 phy_speed_y = clamp(phy_speed_y, -yspdMax, yspdMax);
 
 //옵션창이 있으면 공 멈춤
-if instance_exists(obj_optionParant) {
+if instance_exists(obj_optionParent) {
 	phy_linear_damping = 0;
 	phy_speed_x = 0;
 	phy_speed_y = 0;

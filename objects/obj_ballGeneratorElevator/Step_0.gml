@@ -1,6 +1,6 @@
 event_inherited();
 
-if instance_exists(obj_optionParant) option = true;
+if instance_exists(obj_optionParent) option = true;
 else option = false;
 
 if (obj_gameElevator.state == BALL_STATE_0_IDLE) visible = 1;

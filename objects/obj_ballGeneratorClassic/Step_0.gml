@@ -1,6 +1,6 @@
 event_inherited();
 
-if (not instance_exists(obj_optionParant)) {
+if (not instance_exists(obj_optionParent)) {
 
 if (obj_gameClassic.state == BALL_STATE_0_IDLE) visible = 1;
 else if (ballCount <= 0) visible = 0;

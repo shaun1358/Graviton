@@ -1,1 +1,1 @@
-if (not instance_exists(obj_optionParant)) timer += 1;
+if (not instance_exists(obj_optionParent)) timer += 1;

@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"bgm_debug12",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":39.696,
+  "name":"bgm_debug12",
+  "parent":{
+    "name":"dummy",
+    "path":"folders/Sounds/dummy.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"bgm_debug12.mp3",
+  "type":0,
+  "volume":1.0,
+}

@@ -42,7 +42,23 @@ show_debug_message("Camera: " + string(new_width) + "x" + string(new_height));
 
 /** MUSIC SECTOR **/
 
-if (audio_is_playing(global.musicSource)) {
-    audio_sound_gain(global.musicSource, global.soundMusic, 0);
+if (audio_is_playing(musicSource)) {
+    audio_sound_gain(musicSource, global.soundMusic, 0);
 }
 
+if (room == room_gameElevator) {
+    if (!audio_is_playing(musicSource) || musicSource == -1) {
+        scr_playNextMusic(bgm_elevator);
+    }
+}
+else if(room == room_gameClassic){
+	if (!audio_is_playing(musicSource) || musicSource == -1) {
+        scr_playNextMusic(bgm_classic);
+    }
+}
+else {
+    if (audio_is_playing(musicSource)) {
+        audio_stop_sound(musicSource);
+        musicSource = -1;
+    }
+}
