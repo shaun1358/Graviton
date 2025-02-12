@@ -1,6 +1,6 @@
 
 function scr_optionTitle() {
-	if (not instance_exists(obj_optionParent) && not instance_exists(obj_shopParant)) {
+	if (not instance_exists(obj_optionParent) && not instance_exists(obj_shopParent)) {
 		//global.soundMusic = 1
 		optionID = instance_create_layer(x, y, "Option", obj_optionTitle);
 		optionID.depth = 5;

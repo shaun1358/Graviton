@@ -1,14 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_shopExit",
+  "%Name":"obj_shopPage2",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_shopExit",
+  "name":"obj_shopPage2",
   "overriddenProperties":[],
   "parent":{
     "name":"shop",
@@ -36,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_optionExit",
-    "path":"sprites/spr_optionExit/spr_optionExit.yy",
+    "name":"spr_shopP2",
+    "path":"sprites/spr_shopP2/spr_shopP2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

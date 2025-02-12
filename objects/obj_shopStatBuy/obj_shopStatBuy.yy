@@ -16,8 +16,8 @@
     "path":"folders/Objects/shop.yy",
   },
   "parentObjectId":{
-    "name":"obj_shopParant",
-    "path":"objects/obj_shopParant/obj_shopParant.yy",
+    "name":"obj_shopParent",
+    "path":"objects/obj_shopParent/obj_shopParent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

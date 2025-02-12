@@ -1,5 +1,3 @@
-event_inherited();
-
 depth = 5;
 
 shopX = x;
@@ -17,8 +15,6 @@ else {
 	_width   = 1080;
 	_height  = 1920;
 }
-
-timer = 0;
 
 x = (_width - sprite_width) / 2;
 y = (_height - sprite_height) / 2;

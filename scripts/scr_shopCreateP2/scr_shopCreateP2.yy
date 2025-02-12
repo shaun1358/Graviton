@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_shopCreateP2",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_shopCreateP2",
+  "parent":{
+    "name":"shop",
+    "path":"folders/Scripts/shop.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
