@@ -49,13 +49,13 @@ function scr_tileCreate(level, block_layer, blockHP)	{
 		
 		// level 0 programmer
 		if(brick_type == SHAPE_3_CIRCLE)
-			 new_object = instance_create_layer(cur_x, cur_y, "Instances", obj_brickCircle);
+			 new_object = instance_create_layer(cur_x, cur_y, "Brick", obj_brickCircle);
 		else if(brick_type == SHAPE_2_DIAMOND)
-			 new_object = instance_create_layer(cur_x, cur_y, "Instances", obj_brickDiamond);
+			 new_object = instance_create_layer(cur_x, cur_y, "Brick", obj_brickDiamond);
 		else if(brick_type == SHAPE_1_TRIANGLE)
-			 new_object = instance_create_layer(cur_x, cur_y, "Instances", obj_brickTriangle);
+			 new_object = instance_create_layer(cur_x, cur_y, "Brick", obj_brickTriangle);
 		else
-			 new_object = instance_create_layer(cur_x, cur_y, "Instances", obj_brickSquare);
+			 new_object = instance_create_layer(cur_x, cur_y, "Brick", obj_brickSquare);
 		
 		// linking stage = hp
 		new_object.hp = blockHP;
