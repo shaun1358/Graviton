@@ -8,14 +8,36 @@ if (obj_gameElevator.state == BALL_STATE_0_IDLE) visible = 1;
 if (obj_gameElevator.state == BALL_STATE_1_FIRING && option == false) {
 	timer.curTime++;
 	if (timer.curTime == timer.endTime) {
-		var i = 0;
+		
+		for (i = ceil(ballCount / 2) - 1; i >= 0; i--) {
+			// Generate a normally distributed direction offset (mean = ballDirection, std_dev = 10)
+			///ballCount--;
+			var _dir = ballDirection + scr_getBallDirectionElevator(ballCount, i);
+			var _speed = scr_getBallSpeedElevator(ballCount, i)
+			//show_debug_message(_speed)
+			scr_ballShot(_speed, _dir, obj_gameElevator.ballCount);
+			show_debug_message(ballCount)
+			show_debug_message(1)
+		}
+		for (i = ceil(ballCount / 2); i < ballCount; i++) {
+			//ballCount--;
+			// Generate a normally distributed direction offset (mean = ballDirection, std_dev = 10)
+			var _dir = ballDirection + scr_getBallDirectionElevator(ballCount, i);
+			var _speed = scr_getBallSpeedElevator(ballCount, i)
+			//show_debug_message(_speed)
+			show_debug_message(ballCount)
+			scr_ballShot(_speed, _dir, obj_gameElevator.ballCount);
+		}
+		
+		/*
 		for (i = 0; i < ballCount; i++) {
 			// Generate a normally distributed direction offset (mean = ballDirection, std_dev = 10)
-			var _dir = scr_random_normal_simple(ballDirection, 6);
-    
-			scr_ballShot(ballSpeed, _dir, obj_gameElevator.ballCount);
+			var _dir = ballDirection + scr_getBallDirectionElevator(ballCount, i);
+			var _speed = scr_getBallSpeedElevator(ballCount, i)
+			show_debug_message(_speed)
+			scr_ballShot(_speed, _dir, obj_gameElevator.ballCount);
 		}
-
+		*/
 		ballCount -= i;
 		timer.curTime = 0;
 

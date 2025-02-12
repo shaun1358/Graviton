@@ -16,8 +16,8 @@ yspdMax = 20;
 linearDamping = 0.1
 phy_linear_damping = 0;
 
-part_system = part_system_create();
-part_emitter = part_emitter_create(part_system);
+//part_system = part_system_create();
+//part_emitter = part_emitter_create(part_system);
 
 part_type = part_type_create();
 
@@ -35,3 +35,6 @@ yThreshold = 1920;
 xspdTemp = 0;
 yspdTemp = 0;
 _dir = 0;
+
+xspdTemp = phy_speed_x;
+yspdTemp = phy_speed_y;

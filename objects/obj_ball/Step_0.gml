@@ -1,3 +1,4 @@
+
 image_xscale = ((image_xscale * 5) + scaleTo) / 6;
 image_yscale = image_xscale;
 
