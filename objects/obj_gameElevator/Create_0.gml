@@ -112,19 +112,21 @@ itemDamage = false;
 itemFreeze = false;
 itemDelete = false;
 itemWeight = false;
+itemDevil = false;
 
 //아이템 유효 시간
 itemDamageTimer = 0;
 itemFreezeTimer = 0;
 itemDeleteTimer = 0;
 itemWeightTimer = 0;
+itemDevilTimer = 0;
 
 //아이템 유효 시간에 필요한 타이머 (+= 1 해주는 그 변수)
 itemDamageDelta = 0;
 itemFreezeDelta = 0;
 itemDeleteDelta = 0;
 itemWeightDelta = 0;
-
+itemDevilDelta = 0;
 isGameover = false;
 
 //조작 가능 여부, 옵션이 있으면 0이 됨
@@ -140,3 +142,5 @@ dangerLine = instance_create_layer(0, 0, "Effect", obj_dangerLine);
 mouseLock = false; // Initially unlocked
 
 global.coinGame = 0;
+
+dir = 0;

@@ -62,6 +62,17 @@ if (!isGameover) {
 		}
 	}
 	
+	// item devil timer control
+	if(itemDevil) {
+		if not instance_exists(obj_optionParent)
+			itemDevilDelta++;
+		if (itemDevilDelta >= itemDevilTimer) {
+			itemDevil = false;
+			itemDevilTimer = 0;
+			itemDevilDelta = 0;
+		}
+	}
+	
 	//옵션 키면 멈춤
 	if instance_exists(obj_optionParent) risingSpeedOption = 0;
 	else risingSpeedOption = 1;
@@ -118,12 +129,25 @@ switch(state) {
 		//동시에 obj_ballGenerator에 화살표 그리라고 지시
 		with (obj_ballGeneratorParent) {
 			if (other.y1 > y && !other.mouseLock) { 
-			    var dir = 180 + clamp(other.x1 - 180, 0, 720) / 4;
+				var userInput = clamp(other.x1 - 180, 0, 720);
+				
+				if(other.itemDevil){
+					userInput = 720 - userInput;
+				}
+			    var dir = 180 + userInput / 4;
     
 			    if (!instance_exists(obj_optionParent)) {
-			        ballDirection = dir;
+					ballDirection = dir;
 			        drawArrow = 1;
 			    }
+				
+				if(other.itemDevil){
+					obj_laser.image_angle = 540-obj_ballGeneratorParent.ballDirection;
+				}
+				else{
+					obj_laser.image_angle = obj_ballGeneratorParent.ballDirection;
+
+				}
 			}
 
 		}
@@ -155,4 +179,4 @@ switch(state) {
 if (global.stage <= 10) risingSpeedRatio = 1
 else if (global.stage <= 30) risingSpeedRatio = 1 + ((global.stage - 10) * 1 / 100);
 else if (global.stage <= 100) risingSpeedRatio = 1.2 + ((global.stage - 30) * 6 / 700);
-else risingSpeedRatio = 1.8 + ((global.stage - 100) * 10 / 1000)
+else risingSpeedRatio = 1.8 + ((global.stage - 100) * 10 / 1000);

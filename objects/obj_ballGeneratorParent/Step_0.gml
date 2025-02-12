@@ -9,13 +9,11 @@ if (instance_exists(obj_camera)) {
     y = 300;
 }
 
-if (ballDirection < 180 && ballDirection >= 90) ballDirection = 180;
-else if (ballDirection < 90 && ballDirection > 0) ballDirection = 0;
 
 if instance_exists(obj_laser) {
 	if (drawArrow) {
 		obj_laser.visible = 1;
-		obj_laser.image_angle = ballDirection;
+		//obj_laser.image_angle = ballDirection;
 	}
 	else {
 		obj_laser.visible = 0;

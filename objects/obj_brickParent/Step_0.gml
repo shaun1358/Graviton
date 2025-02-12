@@ -21,6 +21,8 @@ if (hp <= 0) {
 		else if (item <= 8 * (1 + (global.statLuck / 10))) instance_create_layer(x, y, layer, obj_itemBlockRandomize);
 		else if (item <= 10 * (1 + (global.statLuck / 10))) instance_create_layer(x, y, layer, obj_itemDoubleBall);
 		else if (item <= 12 * (1 + (global.statLuck / 10))) instance_create_layer(x, y, layer, obj_itemWeight);
+		else if (item <= 14 * (1 + (global.statLuck / 10))) instance_create_layer(x, y, layer, obj_itemDevil);
+
 	}
 	//블록 파괴 파티클 생성
 	//근데 삼각형은 xscale yscale 지정해줘야 해서 따로 뺌

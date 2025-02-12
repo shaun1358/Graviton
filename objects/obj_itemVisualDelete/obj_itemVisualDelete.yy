@@ -14,8 +14,8 @@
     "path":"folders/Objects/game/items/visual.yy",
   },
   "parentObjectId":{
-    "name":"obj_itemVisualParant",
-    "path":"objects/obj_itemVisualParant/obj_itemVisualParant.yy",
+    "name":"obj_itemVisualParent",
+    "path":"objects/obj_itemVisualParent/obj_itemVisualParent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

@@ -1,21 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_itemVisualWeight",
+  "%Name":"obj_particleLaserDevil",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_itemVisualWeight",
+  "name":"obj_particleLaserDevil",
   "overriddenProperties":[],
   "parent":{
-    "name":"visual",
-    "path":"folders/Objects/game/items/visual.yy",
+    "name":"particle",
+    "path":"folders/Objects/particle.yy",
   },
   "parentObjectId":{
-    "name":"obj_itemVisualParent",
-    "path":"objects/obj_itemVisualParent/obj_itemVisualParent.yy",
+    "name":"obj_particleLaser",
+    "path":"objects/obj_particleLaser/obj_particleLaser.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -34,7 +33,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_particleLaserDevil",
+    "path":"sprites/spr_particleLaserDevil/spr_particleLaserDevil.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
