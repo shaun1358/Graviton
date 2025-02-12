@@ -1,5 +1,7 @@
 //피격될 경우
 if (hit == 1) {
+	global.coinGame += 1;
+	global.coin += 1;
 	//나중에 flash와 피격음도 추가 예정	
 	hitScale = 1.2;
 	hitAlpha = 2;

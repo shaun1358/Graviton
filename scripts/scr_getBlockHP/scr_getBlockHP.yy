@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_getBlockHP",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_getBlockHP",
+  "parent":{
+    "name":"bricks",
+    "path":"folders/Scripts/bricks.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

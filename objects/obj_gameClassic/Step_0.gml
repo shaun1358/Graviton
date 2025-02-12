@@ -100,8 +100,9 @@ switch(state) {
 			global.easing_active = true;
 			ballCount += 1;
 	        global.stage++;
+			
 	        // Create new tiles
-	        scr_tileCreate(global.stage, MAX_ROW);
+	        scr_tileCreate(global.stage, MAX_ROW, scr_getBlockHP(global.stage));
 		}
 		break;
 		

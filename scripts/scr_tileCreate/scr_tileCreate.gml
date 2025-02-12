@@ -1,7 +1,7 @@
 /**
 * Creates tile at the bottom most level
 */
-function scr_tileCreate(level, block_layer)	{
+function scr_tileCreate(level, block_layer, blockHP)	{
 	randomize();
 	// level portion
 	// Hardcoded stage configuration using structs
@@ -58,7 +58,7 @@ function scr_tileCreate(level, block_layer)	{
 			 new_object = instance_create_layer(cur_x, cur_y, "Instances", obj_brickSquare);
 		
 		// linking stage = hp
-		new_object.hp = global.stage;
+		new_object.hp = blockHP;
 		new_object.row = block_layer;
 		new_object.column = global.tile_order[c];
 	        
