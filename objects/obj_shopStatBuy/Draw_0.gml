@@ -11,12 +11,12 @@ for (i = 6; i <= 10; i++) {
 }
 
 if (targetLevel < 10) {
-	if (global.coin >= scr_shopGetPriceStat(targetLevel)) scr_drawSetText(#F3FFE5, fnt_pressStart2P_20, fa_center, fa_middle);
-	else scr_drawSetText(#2C3323, fnt_pressStart2P_20, fa_center, fa_middle);
+	if (global.coin >= scr_shopGetPriceStat(targetLevel)) scr_drawSetText(#F3FFE5, fnt_pressStart2P_18, fa_center, fa_middle);
+	else scr_drawSetText(#2C3323, fnt_pressStart2P_18, fa_center, fa_middle);
 	draw_text_transformed(x, y, scr_shopGetPriceStat(targetLevel), scale_press, scale_press, 0);
 }
 else {
-	scr_drawSetText(#CCC453, fnt_pressStart2P_20, fa_center, fa_middle);
+	scr_drawSetText(#CCC453, fnt_pressStart2P_18, fa_center, fa_middle);
 	draw_text_transformed(x, y, "MAX", scale_press, scale_press, 0);
 }
 

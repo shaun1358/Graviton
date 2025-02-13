@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_itemGet",
+  "%Name":"snd_shopBuy",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,17 +9,17 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.662449,
-  "name":"snd_itemGet",
+  "duration":0.651791,
+  "name":"snd_shopBuy",
   "parent":{
-    "name":"item",
-    "path":"folders/Sounds/item.yy",
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_itemGet.wav",
+  "soundFile":"snd_shopBuy.wav",
   "type":0,
-  "volume":0.55,
+  "volume":0.5,
 }

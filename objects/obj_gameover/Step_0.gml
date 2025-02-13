@@ -37,8 +37,10 @@ if (coinPhase == 1 && global.coinGame > coinShow) {
 	coinTimer += 1;
 	if (coinTimer % coinPeriod == 0) {
 		coinSize = 1.2;
-		if      (global.coinGame > coinShow + 10) coinShow += 10;
-		else if (global.coinGame > coinShow)  coinShow += 1;
+		if      (global.coinGame > coinShow + 1000) coinShow += 1000;
+		else if (global.coinGame > coinShow + 100)  coinShow += 100;
+		else if (global.coinGame > coinShow + 10)   coinShow += 10;
+		else if (global.coinGame > coinShow)        coinShow += 1;
 	}
 }
 else if (coinPhase == 1 && coinShow == global.coinGame && coinSize == 1) {

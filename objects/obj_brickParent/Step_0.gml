@@ -22,13 +22,13 @@ if (hp <= 0) {
 		//item이 나올 확률 조절
 		item = random(100);
 		//if      (item <= 100) instance_create_layer(x, y, layer, obj_itemDoubleBall);
-		if      (item <= 2 * (1 + (global.statLuck / 10))) instance_create_layer(x, y, layer, obj_itemDamage);
-		else if (item <= 4 * (1 + (global.statLuck / 10))) instance_create_layer(x, y, layer, obj_itemDelete);
-		else if (item <= 6 * (1 + (global.statLuck / 10))) instance_create_layer(x, y, layer, obj_itemFreeze);
-		else if (item <= 8 * (1 + (global.statLuck / 10))) instance_create_layer(x, y, layer, obj_itemBlockRandomize);
-		else if (item <= 10 * (1 + (global.statLuck / 10))) instance_create_layer(x, y, layer, obj_itemDoubleBall);
-		else if (item <= 12 * (1 + (global.statLuck / 10))) instance_create_layer(x, y, layer, obj_itemWeight);
-		else if (item <= 14 * (1 + (global.statLuck / 10))) instance_create_layer(x, y, layer, obj_itemDevil);
+		if      (item <= 1 * (1 + (global.statLuck / 20))) instance_create_layer(x, y, layer, obj_itemDamage);
+		else if (item <= 2 * (1 + (global.statLuck / 20))) instance_create_layer(x, y, layer, obj_itemDelete);
+		else if (item <= 3 * (1 + (global.statLuck / 20))) instance_create_layer(x, y, layer, obj_itemFreeze);
+		else if (item <= 4 * (1 + (global.statLuck / 20))) instance_create_layer(x, y, layer, obj_itemBlockRandomize);
+		else if (item <= 5 * (1 + (global.statLuck / 20))) instance_create_layer(x, y, layer, obj_itemDoubleBall);
+		else if (item <= 6 * (1 + (global.statLuck / 20))) instance_create_layer(x, y, layer, obj_itemWeight);
+		else if (item <= 7 * (1 + (global.statLuck / 20))) instance_create_layer(x, y, layer, obj_itemDevil);
 
 	}
 	//블록 파괴 파티클 생성

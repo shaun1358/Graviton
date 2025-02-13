@@ -33,6 +33,7 @@
     {"name":"ball","order":12,"path":"folders/Sounds/ball.yy",},
     {"name":"bgm","order":11,"path":"folders/Sounds/bgm.yy",},
     {"name":"dummy","order":8,"path":"folders/Sounds/dummy.yy",},
+    {"name":"option,shop","order":13,"path":"folders/Sounds/option,shop.yy",},
     {"name":"item","order":9,"path":"folders/Sounds/item.yy",},
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"debugs","order":17,"path":"folders/Sprites/debugs.yy",},
@@ -56,6 +57,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"fnt_pressStart2P_10","order":4,"path":"fonts/fnt_pressStart2P_10/fnt_pressStart2P_10.yy",},
+    {"name":"fnt_pressStart2P_18","order":7,"path":"fonts/fnt_pressStart2P_18/fnt_pressStart2P_18.yy",},
     {"name":"fnt_pressStart2P_20","order":2,"path":"fonts/fnt_pressStart2P_20/fnt_pressStart2P_20.yy",},
     {"name":"fnt_pressStart2P_30","order":3,"path":"fonts/fnt_pressStart2P_30/fnt_pressStart2P_30.yy",},
     {"name":"fnt_pressStart2P_40","order":6,"path":"fonts/fnt_pressStart2P_40/fnt_pressStart2P_40.yy",},
@@ -210,6 +212,7 @@
     {"name":"snd_buyShopDebug","order":10,"path":"sounds/snd_buyShopDebug/snd_buyShopDebug.yy",},
     {"name":"snd_itemDeleteBang","order":1,"path":"sounds/snd_itemDeleteBang/snd_itemDeleteBang.yy",},
     {"name":"snd_itemGet","order":2,"path":"sounds/snd_itemGet/snd_itemGet.yy",},
+    {"name":"snd_shopBuy","order":14,"path":"sounds/snd_shopBuy/snd_shopBuy.yy",},
     {"name":"spr_background","order":10,"path":"sprites/spr_background/spr_background.yy",},
     {"name":"spr_backgroundDebug_1","order":4,"path":"sprites/spr_backgroundDebug_1/spr_backgroundDebug_1.yy",},
     {"name":"spr_ball_old","order":9,"path":"sprites/spr_ball_old/spr_ball_old.yy",},

@@ -45,6 +45,7 @@
     {"$GMFolder":"","%Name":"ball","folderPath":"folders/Sounds/ball.yy","name":"ball","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"bgm","folderPath":"folders/Sounds/bgm.yy","name":"bgm","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"dummy","folderPath":"folders/Sounds/dummy.yy","name":"dummy","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"option,shop","folderPath":"folders/Sounds/option,shop.yy","name":"option,shop","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"item","folderPath":"folders/Sounds/item.yy","name":"item","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"debugs","folderPath":"folders/Sprites/debugs.yy","name":"debugs","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -76,6 +77,7 @@
   "resources":[
     {"id":{"name":"fnt_maple","path":"fonts/fnt_maple/fnt_maple.yy",},},
     {"id":{"name":"fnt_pressStart2P_10","path":"fonts/fnt_pressStart2P_10/fnt_pressStart2P_10.yy",},},
+    {"id":{"name":"fnt_pressStart2P_18","path":"fonts/fnt_pressStart2P_18/fnt_pressStart2P_18.yy",},},
     {"id":{"name":"fnt_pressStart2P_20","path":"fonts/fnt_pressStart2P_20/fnt_pressStart2P_20.yy",},},
     {"id":{"name":"fnt_pressStart2P_30","path":"fonts/fnt_pressStart2P_30/fnt_pressStart2P_30.yy",},},
     {"id":{"name":"fnt_pressStart2P_40","path":"fonts/fnt_pressStart2P_40/fnt_pressStart2P_40.yy",},},
@@ -255,6 +257,7 @@
     {"id":{"name":"snd_itemDeleteDummy","path":"sounds/snd_itemDeleteDummy/snd_itemDeleteDummy.yy",},},
     {"id":{"name":"snd_itemDeleteTimer","path":"sounds/snd_itemDeleteTimer/snd_itemDeleteTimer.yy",},},
     {"id":{"name":"snd_itemGet","path":"sounds/snd_itemGet/snd_itemGet.yy",},},
+    {"id":{"name":"snd_shopBuy","path":"sounds/snd_shopBuy/snd_shopBuy.yy",},},
     {"id":{"name":"spr_arrow","path":"sprites/spr_arrow/spr_arrow.yy",},},
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},},
     {"id":{"name":"spr_backgroundDebug_1","path":"sprites/spr_backgroundDebug_1/spr_backgroundDebug_1.yy",},},
