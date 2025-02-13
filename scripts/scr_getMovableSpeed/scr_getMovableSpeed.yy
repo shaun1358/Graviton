@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_movableSetSpeed",
+  "%Name":"scr_getMovableSpeed",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_movableSetSpeed",
+  "name":"scr_getMovableSpeed",
   "parent":{
     "name":"game",
     "path":"folders/Scripts/game.yy",

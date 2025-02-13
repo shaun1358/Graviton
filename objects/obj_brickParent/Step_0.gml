@@ -2,16 +2,21 @@
 if (hit == 1) {
 	global.coinGame += 1;
 	global.coin += 1;
+	coinTotal += 1;
+	coinBonus -= 1;
 	//나중에 flash와 피격음도 추가 예정	
 	hitScale = 1.2;
 	hitAlpha = 2;
 	hit = 0;
+
 }
 
 //블록이 파괴될 경우
 if (hp <= 0) {
-	global.coinGame += 1;
-	global.coin += 1;
+	global.coinGame += ceil(coinBonus);
+	global.coin += ceil(coinBonus);
+	//show_debug_message("coinBonus : " + string(coinBonus));
+	show_debug_message("coinTotal + coinBonus : " + string(coinTotal + coinBonus));
 	global.scoreGame += brickScore;
 	if (room = room_gameElevator){
 		//item이 나올 확률 조절
@@ -23,7 +28,7 @@ if (hp <= 0) {
 		else if (item <= 8 * (1 + (global.statLuck / 10))) instance_create_layer(x, y, layer, obj_itemBlockRandomize);
 		else if (item <= 10 * (1 + (global.statLuck / 10))) instance_create_layer(x, y, layer, obj_itemDoubleBall);
 		else if (item <= 12 * (1 + (global.statLuck / 10))) instance_create_layer(x, y, layer, obj_itemWeight);
-		else if (item <= 40 * (1 + (global.statLuck / 10))) instance_create_layer(x, y, layer, obj_itemDevil);
+		else if (item <= 14 * (1 + (global.statLuck / 10))) instance_create_layer(x, y, layer, obj_itemDevil);
 
 	}
 	//블록 파괴 파티클 생성

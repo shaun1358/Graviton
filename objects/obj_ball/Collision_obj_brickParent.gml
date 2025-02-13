@@ -6,6 +6,8 @@ var _y2 = y;
 
 with (other) {
     // non-zero = hit
+	//coinBonus += (other.damage * other.damageMult * (1 + (global.statPower / 10))) - 1;
+	//coinTotal += (other.damage * other.damageMult * (1 + (global.statPower / 10))) - 1;
     hit = true;
     hp -= other.damage * other.damageMult * (1 + (global.statPower / 10));
     _x1 = x;

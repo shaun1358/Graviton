@@ -82,7 +82,7 @@ if (!isGameover) {
 	else risingSpeedOption = 1;
 	//모든 속도 비율을 섞은 다음 속도를 지정함
 	var _ratio = risingSpeedRatio * risingSpeedFreeze * risingSpeedOption;
-	scr_movableSetSpeed(RISING_SPEED * _ratio);
+	scr_setMovableSpeed(RISING_SPEED * _ratio);
 
 	if (controlPressing) {
 		//(x0, y0) 계산
@@ -205,7 +205,10 @@ switch(state) {
 }
 
 //상승속도 배수 조절 코드
+risingSpeedRatio = scr_getMovableSpeed(global.stage);
+/*
 if (global.stage <= 10) risingSpeedRatio = 1
 else if (global.stage <= 30) risingSpeedRatio = 1 + ((global.stage - 10) * 1 / 100);
 else if (global.stage <= 100) risingSpeedRatio = 1.2 + ((global.stage - 30) * 6 / 700);
 else risingSpeedRatio = 1.8 + ((global.stage - 100) * 10 / 1000);
+*/

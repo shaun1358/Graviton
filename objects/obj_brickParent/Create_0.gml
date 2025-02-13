@@ -38,3 +38,6 @@ hitAlpha = 1;
 image_xscale = hitScale * createScale;
 image_yscale = hitScale * createScale;
 image_alpha = createAlpha;
+
+coinTotal = 0;
+coinBonus = hp;
