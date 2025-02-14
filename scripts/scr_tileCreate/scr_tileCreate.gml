@@ -59,7 +59,7 @@ function scr_tileCreate(level, block_layer, blockHP)	{
 		new_object.hp = blockHP;
 		new_object.row = block_layer;
 		new_object.column = global.tile_order[c];
-		new_object.coinBonus = blockHP;
+		new_object.coinBonus = blockHP + 1;
 	        
 	}
 	

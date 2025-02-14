@@ -142,5 +142,6 @@ dangerLine = instance_create_layer(0, 0, "Effect", obj_dangerLine);
 mouseLock = false; // Initially unlocked
 
 global.coinGame = 0;
+coinScale = 1;
 
 dir = 0;

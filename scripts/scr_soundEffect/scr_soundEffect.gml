@@ -15,6 +15,7 @@
 
 function scr_soundEffect(sound, pitch, priority, loop){
     // Set the pitch of the sound
+	if audio_is_playing(sound) audio_stop_sound(sound);
     audio_sound_pitch(sound, pitch);
     
     // Play the sound with given parameters and global volume control

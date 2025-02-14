@@ -145,6 +145,8 @@ switch(state) {
 		
 	//공 발사중
 	case BALL_STATE_1_FIRING :
+		//상승속도 배수 조절 코드
+		risingSpeedRatio = scr_getMovableSpeed(global.stage);
 		var _canCreate = scr_tileCanCreate();
 		if (_canCreate) {
 			obj_ballGeneratorElevator.ballCount += 1;
@@ -182,6 +184,7 @@ switch(state) {
 		break;
 		
 	case BALL_STATE_3_GAMEOVER:
+		scr_setMovableSpeed(0);
 	    // Clean up any necessary game objects or variables
 	    with (obj_ball) {
 	        instance_destroy(); // Destroy remaining balls
@@ -203,11 +206,13 @@ switch(state) {
 	    break;
 }
 
-//상승속도 배수 조절 코드
-risingSpeedRatio = scr_getMovableSpeed(global.stage);
+
 /*
 if (global.stage <= 10) risingSpeedRatio = 1
 else if (global.stage <= 30) risingSpeedRatio = 1 + ((global.stage - 10) * 1 / 100);
 else if (global.stage <= 100) risingSpeedRatio = 1.2 + ((global.stage - 30) * 6 / 700);
 else risingSpeedRatio = 1.8 + ((global.stage - 100) * 10 / 1000);
 */
+
+coinScale = (1 + (coinScale * 5)) / 6;
+if (coinScale <= 1.01) coinScale = 1;

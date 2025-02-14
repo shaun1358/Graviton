@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_soundEffect",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"sound",
+    "path":"folders/Scripts/sound.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

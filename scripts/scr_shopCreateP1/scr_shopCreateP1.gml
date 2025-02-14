@@ -2,6 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_shopCreateP1() {
 	if not instance_exists(obj_shopParent) {
+		scr_soundEffect(snd_optionOn, 1, 1, false);
 		shopID = instance_create_layer(x, y, "Option", obj_shopPage1);
 		shopID.depth = 5;
 		var _x = shopID.x;

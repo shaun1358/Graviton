@@ -13,7 +13,7 @@
   "name":"snd_ballShot",
   "parent":{
     "name":"ball",
-    "path":"folders/Sounds/ball.yy",
+    "path":"folders/Sounds/game/ball.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

@@ -124,3 +124,4 @@ scoreDraw  = 0;
 scoreScale = 1;
 
 global.coinGame = 0;
+coinScale = 1;

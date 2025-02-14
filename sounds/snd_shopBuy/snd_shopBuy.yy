@@ -12,8 +12,8 @@
   "duration":0.651791,
   "name":"snd_shopBuy",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"option,shop",
+    "path":"folders/Sounds/option,shop.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"snd_shopBuy.wav",
   "type":0,
-  "volume":0.5,
+  "volume":0.46,
 }

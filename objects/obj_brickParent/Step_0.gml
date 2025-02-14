@@ -2,6 +2,8 @@
 if (hit == 1) {
 	global.coinGame += 1;
 	global.coin += 1;
+	if instance_exists(obj_gameClassic) obj_gameClassic.coinScale = 1.5;
+	if instance_exists(obj_gameElevator) obj_gameElevator.coinScale = 1.5;
 	coinTotal += 1;
 	coinBonus -= 1;
 	//나중에 flash와 피격음도 추가 예정	
@@ -15,11 +17,15 @@ if (hit == 1) {
 if (hp <= 0) {
 	global.coinGame += ceil(coinBonus);
 	global.coin += ceil(coinBonus);
+	if instance_exists(obj_gameClassic) obj_gameClassic.coinScale = 1.5;
+	if instance_exists(obj_gameElevator) obj_gameElevator.coinScale = 1.5;
 	//show_debug_message("coinBonus : " + string(coinBonus));
 	show_debug_message("brickParentStepcoinTotal + coinBonus : " + string(coinTotal + coinBonus));
 	global.scoreGame += brickScore;
 	if (room = room_gameElevator){
+		scr_generateItem();
 		//item이 나올 확률 조절
+		/*
 		item = random(100);
 		//if      (item <= 100) instance_create_layer(x, y, layer, obj_itemDoubleBall);
 		if      (item <= 1 * (1 + (global.statLuck / 20))) instance_create_layer(x, y, layer, obj_itemDamage);
@@ -29,6 +35,7 @@ if (hp <= 0) {
 		else if (item <= 5 * (1 + (global.statLuck / 20))) instance_create_layer(x, y, layer, obj_itemDoubleBall);
 		else if (item <= 6 * (1 + (global.statLuck / 20))) instance_create_layer(x, y, layer, obj_itemWeight);
 		else if (item <= 7 * (1 + (global.statLuck / 20))) instance_create_layer(x, y, layer, obj_itemDevil);
+		*/
 
 	}
 	//블록 파괴 파티클 생성
@@ -38,7 +45,7 @@ if (hp <= 0) {
 			sprite_index = other.sprite_index;
 		}
 	}
-	scr_generateParticle(obj_particleCoinDrop, 1, 90, 0, x, y);
+	scr_generateParticle(obj_particleCoinSplash, min(20, ceil(coinBonus)), 90, 0, x, y);
 	instance_destroy();
 }
 

@@ -11,3 +11,5 @@ scale_timer = 0;
 scale_period = 10;
 
 isPressed = false;
+
+_sound = 1;

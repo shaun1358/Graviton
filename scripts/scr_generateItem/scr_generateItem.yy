@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_generateItem",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_generateItem",
+  "parent":{
+    "name":"bricks",
+    "path":"folders/Scripts/bricks.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

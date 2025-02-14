@@ -11,9 +11,9 @@ draw_sprite_ext(spr_trophy, 0, (_width / 2) - (string_length(global.scoreClassic
 scr_drawSetText($F0D590, fnt_pressStart2P_20, fa_center, fa_middle);
 draw_text(_width / 2 + 10, _marginY + 180, global.scoreClassic);
 
-draw_sprite_ext(spr_coin, 0,  100, 190, 1.5, 1.5, 0, c_white, 1);
+draw_sprite_ext(spr_coin, 0,  100, 190, 1.5 * coinScale, 1.5 * coinScale, 0, c_white, 1);
 scr_drawSetText($F0D590, fnt_pressStart2P_20, fa_left, fa_middle);
-draw_text(140, 190, global.coinGame);
+draw_text_transformed(140, 190, global.coinGame, coinScale, coinScale, 0);
 
 draw_sprite(spr_gameBar, 0, _width / 2, _marginY + 240);
 

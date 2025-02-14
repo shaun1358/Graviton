@@ -161,3 +161,6 @@ switch(state) {
 
 	
 }
+
+coinScale = (1 + (coinScale * 5)) / 6;
+if (coinScale <= 1.01) coinScale = 1;
