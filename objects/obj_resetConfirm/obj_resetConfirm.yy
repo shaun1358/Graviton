@@ -1,14 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_optionBarE",
+  "%Name":"obj_resetConfirm",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":3,"eventType":13,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_optionBarE",
+  "name":"obj_resetConfirm",
   "overriddenProperties":[],
   "parent":{
     "name":"option",
@@ -35,10 +33,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_optionBar",
-    "path":"sprites/spr_optionBar/spr_optionBar.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

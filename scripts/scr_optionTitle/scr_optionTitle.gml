@@ -30,5 +30,9 @@ function scr_optionTitle() {
 			depth = 2;
 			owner = other.optionID;
 		}
+		with instance_create_layer(_x + 470, _y + 850, "Option", obj_optionCheckReset) {
+			depth = 2;
+			owner = other.optionID;
+		}
 	}
 }

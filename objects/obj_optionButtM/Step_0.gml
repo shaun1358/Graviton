@@ -1,4 +1,4 @@
-global.soundMusic = (x - 325 - owner.x) / 460;
+x = owner.x + 325 + global.soundMusic * 460;
 
 image_xscale = scale_press;
 image_yscale = scale_press;

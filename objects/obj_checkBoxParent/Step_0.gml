@@ -1,6 +1,3 @@
-x = owner.x + 325 + global.soundEffect * 460;
-
-
 image_xscale = scale_press;
 image_yscale = scale_press;
 
