@@ -22,7 +22,10 @@ view_set_camera(0, view_camera[0]);
 view_enabled = true;
 
 musicSource = -1;
-musicIndex = 0;
+musicIndex_main = 0;
+musicIndex_classic = 0;
+musicIndex_elevator = 0;
+
 
 bgm_main = [
     bgm_debug11
@@ -32,19 +35,19 @@ bgm_classic = [
     snd_bgm4,
     snd_bgm6,
     snd_bgm10,
-    snd_bgm11
+    snd_bgm11,
+	snd_bgm12
+
 ];
 
 bgm_elevator = [
     snd_bgm5,
     snd_bgm7,
     snd_bgm8,
-    snd_bgm9
+    snd_bgm13,
+	snd_bgm14,
+    snd_bgm15,
+
 ];
 
-// Shuffle the playlist
-scr_shuffleArray(bgm_main);
-// Shuffle the playlist
-scr_shuffleArray(bgm_classic);
-// Shuffle the playlist
-scr_shuffleArray(bgm_elevator);
+

@@ -134,7 +134,6 @@ for (var i = 0; i < array_length(obj_list); i++) {
     instance_create_layer(96, y_start + (spacing * i), "Option", obj_list[i]);
 }
 /* END OF ITEM FRAME */
-show_debug_message("gameElevatorStep"+string(obj_list));
 switch(state) {
 	//공 발사전
 	case BALL_STATE_0_IDLE :

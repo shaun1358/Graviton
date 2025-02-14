@@ -1,4 +1,4 @@
-if (targetLevel < 10) {
+if (isPressed && targetLevel < 10) {
 	if (global.coin >= scr_shopGetPriceStat(targetLevel)) {
 		global.coin -= scr_shopGetPriceStat(targetLevel);
 		targetLevel += 1;

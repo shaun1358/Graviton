@@ -16,7 +16,7 @@ if (hp <= 0) {
 	global.coinGame += ceil(coinBonus);
 	global.coin += ceil(coinBonus);
 	//show_debug_message("coinBonus : " + string(coinBonus));
-	show_debug_message("coinTotal + coinBonus : " + string(coinTotal + coinBonus));
+	show_debug_message("brickParentStepcoinTotal + coinBonus : " + string(coinTotal + coinBonus));
 	global.scoreGame += brickScore;
 	if (room = room_gameElevator){
 		//item이 나올 확률 조절

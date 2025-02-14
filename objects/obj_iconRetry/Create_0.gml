@@ -17,3 +17,4 @@ timer.color = make_color_rgb(144, 213, 240);
 
 
 timer.reverse = true;
+isPressed = false;

@@ -1,1 +1,2 @@
-scr_confirmReset();
+if(isPressed)
+	scr_confirmReset();

@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":168.07185,
+  "duration":0.0,
   "name":"snd_bgm3",
   "parent":{
     "name":"bgm",

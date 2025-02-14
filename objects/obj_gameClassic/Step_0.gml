@@ -64,7 +64,6 @@ switch(state) {
 			//동시에 obj_ballGenerator에 화살표 그리라고 지시
 			with (obj_ballGeneratorParent) {
 				var dir = point_direction(other.x0, other.y0, other.x1, other.y1);
-				show_debug_message(dir);
 				// only detect below the ball generator
 				ballDirection = clamp(180 + (dir - 240) * 3, 180, 360);
 				obj_laser.image_angle = ballDirection;

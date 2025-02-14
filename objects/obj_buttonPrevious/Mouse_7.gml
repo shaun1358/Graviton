@@ -1,5 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
+if(isPressed){
+	scr_shopDelete();
+	scr_shopCreateP1();
+}
 scale_state = 1;
-scr_shopDelete();
-scr_shopCreateP1();

@@ -47,13 +47,13 @@ if (audio_is_playing(musicSource)) {
 }
 
 if (room == room_gameElevator) {
-    if (!audio_is_playing(musicSource) || musicSource == -1) {
-        scr_playNextMusic(bgm_elevator);
+     if (!audio_is_playing(musicSource) || musicSource == -1) {
+        musicIndex_elevator = scr_playNextMusic(bgm_elevator, musicIndex_elevator);
     }
 }
-else if(room == room_gameClassic){
-	if (!audio_is_playing(musicSource) || musicSource == -1) {
-        scr_playNextMusic(bgm_classic);
+else if (room == room_gameClassic) {
+     if (!audio_is_playing(musicSource) || musicSource == -1) {
+        musicIndex_classic = scr_playNextMusic(bgm_classic, musicIndex_classic);
     }
 }
 else {

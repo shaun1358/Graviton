@@ -1,3 +1,4 @@
 event_inherited();
 
-instance_destroy(); // Destroy itself
+if(isPressed)
+	instance_destroy(); // Destroy itself
