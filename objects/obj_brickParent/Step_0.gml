@@ -57,3 +57,8 @@ hitAlpha = (1 + (3 * hitAlpha)) / 4;
 
 if (hitScale < 1.01) hitScale = 1;
 if (hitAlpha < 1.01) hitAlpha = 1;
+
+if place_meeting(x, y, obj_particleItemDelete2) {
+	hit = 1;
+	hp -= 10000;
+}
