@@ -442,6 +442,7 @@
     {"id":{"name":"spr_titleEffect2","path":"sprites/spr_titleEffect2/spr_titleEffect2.yy",},},
     {"id":{"name":"spr_trophy","path":"sprites/spr_trophy/spr_trophy.yy",},},
     {"id":{"name":"spr_trophyW","path":"sprites/spr_trophyW/spr_trophyW.yy",},},
+    {"id":{"name":"spr_vfx","path":"sprites/spr_vfx/spr_vfx.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

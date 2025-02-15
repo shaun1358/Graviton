@@ -377,5 +377,6 @@
     {"name":"spr_titleEffect2","order":8,"path":"sprites/spr_titleEffect2/spr_titleEffect2.yy",},
     {"name":"spr_trophy","order":4,"path":"sprites/spr_trophy/spr_trophy.yy",},
     {"name":"spr_trophyW","order":9,"path":"sprites/spr_trophyW/spr_trophyW.yy",},
+    {"name":"spr_vfx","order":11,"path":"sprites/spr_vfx/spr_vfx.yy",},
   ],
 }

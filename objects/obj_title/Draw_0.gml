@@ -5,7 +5,9 @@ if (room == room_title) {
     // Draw the title sprite with dynamic scaling + oscillation
 	var _y = 400 + sin(current_time * 0.002) * 15;
 	var _y2 = 400 + sin(current_time * 0.002 + 1) * 20;
+	var _alpha = sin(current_time * 0.001);
 
+	draw_sprite_ext(spr_vfx, 0, 0, 0, 1, 1, 0, c_white, _alpha);
 
 	draw_sprite_ext(spr_titleEffect1, 0, 150, _y2, 1.5, 1, 0, c_white, 0.8);
 	draw_sprite_ext(spr_titleEffect2, 0, 930, _y2, 1.5, 1, 0, c_white, 0.8);
