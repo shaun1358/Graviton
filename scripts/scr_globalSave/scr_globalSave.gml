@@ -9,6 +9,15 @@ function scr_globalSave() {
 	ini_write_real("Option", "particle"   , global.optionParticle);
 	
 	ini_write_real("Shop", "coin", global.coin);
+	ini_write_real("Shop", "BGClassicColor1",   global.skinBGClassicColor1);
+	ini_write_real("Shop", "BGClassicColor2",   global.skinBGClassicColor2);
+	ini_write_real("Shop", "BGElevatorColor1",  global.skinBGElevatorColor1);
+	ini_write_real("Shop", "BGElevatorColor2",  global.skinBGElevatorColor2);
+	ini_write_real("Shop", "BGClassicPattern",  global.skinBGClassicPattern);
+	ini_write_real("Shop", "BGElevatorPattern", global.skinBGElevatorPattern);
+	for (var i = 0; i < 32; i++) ini_write_real("Shop", "skinBGColor"   + string(i), global.skinBGColorOwn[i]);
+	for (var i = 0; i < 6;  i++) ini_write_real("Shop", "skinBGPattern" + string(i), global.skinBGPatternOwn[i]);
+	
 	
 	ini_write_real("Stat", "power", global.statPower);
 	ini_write_real("Stat", "ball" , global.statBall);

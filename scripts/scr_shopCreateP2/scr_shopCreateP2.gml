@@ -11,13 +11,17 @@ function scr_shopCreateP2() {
 			depth = 3;
 			owner = other.shopID;
 		}
+		for (var i = 0; i < 3; i++) {
+			for (var j = 0; j < 8; j++) {
+				with instance_create_layer(_x + 189 + (80 * j), _y + 499 + (80 * i), "Option", obj_shopColorSelect) {
+					target = (i * 8) + j;
+					depth = 3;
+					owner = other.shopID;
+				}
+			}
+		}
 		with instance_create_layer(_x + 470 - 140, _y + 885, "Option", obj_buttonPrevious) {
 			target = 1;
-			depth = 3;
-			owner = other.shopID;
-		}
-		with instance_create_layer(_x + 470 + 140, _y + 885, "Option", obj_buttonNext) {
-			target = 3;
 			depth = 3;
 			owner = other.shopID;
 		}

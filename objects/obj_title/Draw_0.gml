@@ -22,6 +22,9 @@ if (room == room_title) {
 	draw_text(160 - 2, 100 - 2, string(ceil(coinTo)));
     scr_drawSetText(#99FFFF, fnt_pressStart2P_30, fa_left, fa_middle);
 	draw_text(160, 100, string(ceil(coinTo)));
+	
+	
+	//draw_text(300, 300, global.skinBGColorOwn[10]);
 	//draw_text(360, 100, string(global.coin));
 	
 	

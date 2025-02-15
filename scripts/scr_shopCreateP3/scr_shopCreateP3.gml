@@ -16,10 +16,12 @@ function scr_shopCreateP3() {
 			depth = 3;
 			owner = other.shopID;
 		}
+		/*
 		with instance_create_layer(_x + 470 + 140, _y + 885, "Option", obj_buttonNext) {
 			target = 4;
 			depth = 3;
 			owner = other.shopID;
 		}
+		*/
 	}
 }

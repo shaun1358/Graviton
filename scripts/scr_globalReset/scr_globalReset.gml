@@ -26,8 +26,13 @@ function scr_globalReset() {
 	global.statLuck  = 0;
 	global.statItemd = 0;
 	
-	global.skinBackColor       = 0;
-	global.skinBackColorOwn    = 0;
-	global.skinBackPattern     = 0;
-	global.skinBackPatternOwn  = 0;
+	
+	global.skinBGClassicColor1   = 0;
+	global.skinBGClassicColor2   = 0;
+	global.skinBGElevatorColor1  = 0;
+	global.skinBGElevatorColor2  = 0;
+	global.skinBGClassicPattern  = 0;
+	global.skinBGElevatorPattern = 0;
+	for (var i = 0; i < 32; i++) global.skinBGColorOwn[i] = 0;
+	for (var i = 0; i < 6;  i++) global.skinBGPatternOwn[i] = 0;
 }
