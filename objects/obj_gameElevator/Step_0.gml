@@ -150,7 +150,8 @@ switch(state) {
 		var _canCreate = scr_tileCanCreate();
 		if (_canCreate) {
 			scr_tileCreate(global.stage, MAX_ROW, global.stage); // Create tiles
-	        global.stage++; // Advance the stage
+	        obj_ballGeneratorElevator.ballCount++;
+			global.stage++; // Advance the stage
 			instance_create_layer(_width + 100, scr_get_y_coordinate(7), "Brick", obj_brickGhost);
 		}
 		
