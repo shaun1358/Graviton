@@ -36,10 +36,10 @@ function scr_shopCreateP1() {
 			owner = other.shopID;
 			target = 5;
 		}
-		with instance_create_layer(_x + 470, _y + 880, "Option", obj_buttonNext) {
+		with instance_create_layer(_x + 470 + 140, _y + 885, "Option", obj_buttonNext) {
+			target = 2;
 			depth = 3;
 			owner = other.shopID;
-			target = 6;
 		}
 	}
 }

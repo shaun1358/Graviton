@@ -1,6 +1,6 @@
 if(isPressed){
-	scr_shopDelete();
-	scr_shopCreateP2();
+	show_debug_message(target);
+	scr_shopCreatePn(target);
 }
 
 scale_state = 1;

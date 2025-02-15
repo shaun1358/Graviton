@@ -1,5 +1,4 @@
 if(isPressed){
-	scr_shopDelete();
-	scr_shopCreateP1();
+	scr_shopCreatePn(target)
 }
 scale_state = 1;

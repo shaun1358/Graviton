@@ -38,8 +38,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_shopNextButton",
-    "path":"sprites/spr_shopNextButton/spr_shopNextButton.yy",
+    "name":"spr_shopButtonNext",
+    "path":"sprites/spr_shopButtonNext/spr_shopButtonNext.yy",
   },
   "spriteMaskId":null,
   "visible":true,

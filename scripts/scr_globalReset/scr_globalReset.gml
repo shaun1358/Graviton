@@ -25,4 +25,9 @@ function scr_globalReset() {
 	global.statDelay = 0;
 	global.statLuck  = 0;
 	global.statItemd = 0;
+	
+	global.skinBackColor       = 0;
+	global.skinBackColorOwn    = 0;
+	global.skinBackPattern     = 0;
+	global.skinBackPatternOwn  = 0;
 }
