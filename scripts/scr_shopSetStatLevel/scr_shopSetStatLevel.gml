@@ -6,6 +6,6 @@ function scr_shopSetStatLevel(type, level) {
 		case 3 : global.statDelay = level; break;
 		case 4 : global.statLuck  = level;  break;
 		case 5 : global.statItemd = level; break;
-		default: return 666; break;
+		default: return 666;
 	}
 }
