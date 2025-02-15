@@ -31,12 +31,12 @@ function scr_optionTitle() {
 			depth = 2;
 			owner = other.optionID;
 		}
-		with instance_create_layer(_x + 470, _y + 850, "Option", obj_optionCheckReset) {
-			depth = 2;
+		with instance_create_layer(_x + 470 + 150, _y + 850, "Option", obj_optionCheckReset) {
+			depth = 3;
 			owner = other.optionID;
 		}
-		with instance_create_layer(_x + 470, _y + 930, "Option", obj_optionCheckCredit) {
-			depth = 2;
+		with instance_create_layer(_x + 470 - 150, _y + 850, "Option", obj_optionCheckCredit) {
+			depth =3;
 			owner = other.optionID;
 		}
 	}
