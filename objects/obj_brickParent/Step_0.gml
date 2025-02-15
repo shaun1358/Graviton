@@ -20,7 +20,7 @@ if (hp <= 0) {
 	if instance_exists(obj_gameClassic) obj_gameClassic.coinScale = 1.5;
 	if instance_exists(obj_gameElevator) obj_gameElevator.coinScale = 1.5;
 	//show_debug_message("coinBonus : " + string(coinBonus));
-	show_debug_message("brickParentStepcoinTotal + coinBonus : " + string(coinTotal + coinBonus));
+	//show_debug_message("brickParentStepcoinTotal + coinBonus : " + string(coinTotal + coinBonus));
 	global.scoreGame += brickScore;
 	if (room = room_gameElevator){
 		scr_generateItem();

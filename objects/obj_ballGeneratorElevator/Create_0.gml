@@ -1,7 +1,7 @@
 event_inherited();
 
 option = false;
-ballCount = obj_gameElevator.ballCount + global.statBall;
+ballCount = global.stage + global.statBall;
 ballDelay = 120;
 ballDelay *= (20 - global.statDelay) / 20
 

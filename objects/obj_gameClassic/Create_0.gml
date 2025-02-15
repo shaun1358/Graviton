@@ -18,8 +18,6 @@ else {
 //2 = 공이 전부 소모가 됨. 블럭은 위로 한 칸 상승하고, 새로운 블록이 추가됨.
 state = 0;
 
-//ballCount = 현재 보유하고 있는 공의 개수
-ballCount = 1 + global.statBall;
 
 //플레이어 조작 관련 변수
 controlPressing  = 0;
@@ -109,13 +107,14 @@ global.const_SEED_STAGE_classic = [
 	{ stage:  60, seed_start:  6, seed_end: 10 },
 	{ stage: 100, seed_start: 11, seed_end: 19 },
 ];
-
 global.stage = 1;
 global.scoreGame = 0; //init score
 global.tile_order = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 global.easing_active = false;
 scr_tileCreate(global.stage, MAX_ROW - 1, 1);
 
+//ballCount = 현재 보유하고 있는 공의 개수
+ballCount = global.stage + global.statBall;
 //조작 가능 여부, 옵션이 있으면 0이 됨
 canControl = 1;
 
@@ -125,3 +124,5 @@ scoreScale = 1;
 
 global.coinGame = 0;
 coinScale = 1;
+dangerLine = instance_create_layer(0, -120, "Effect", obj_dangerLine);
+dangerLine.visible = false;

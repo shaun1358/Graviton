@@ -17,7 +17,7 @@ image_size = 1;
 //-> n 증가
 
 image_xscale = 0;
-for (var i = 0; i < 30; i++) {
+for (var i = 0; i < 15; i++) {
    image_xscale += image_size;
    if (place_meeting(x, y, obj_brickParent) || place_meeting(x, y, obj_border)){
       image_xscale -= image_size;
@@ -47,7 +47,6 @@ if(room == room_gameElevator && obj_gameElevator.itemDevil){
 		visible = other.visible;
 		direction = other.image_angle; 
 		x = other.x + (2000 * cos(other.image_angle * 2 * pi / 360) * other.image_xscale);
-		show_debug_message(string(visible));
 		y = other.y - (2000 * sin(other.image_angle * 2 * pi / 360) * other.image_xscale);
 	}
 

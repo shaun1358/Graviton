@@ -7,8 +7,8 @@
 /// - The updated musicIndex after playing the next track.
 
 function scr_playNextMusic(musicTrack, musicIndex) {
-	show_debug_message("scr_playNextMusic"+string(musicTrack));
-	show_debug_message("scr_playNextMusic"+string(musicIndex));
+	//show_debug_message("scr_playNextMusic"+string(musicTrack));
+	//show_debug_message("scr_playNextMusic"+string(musicIndex));
 
     // If the playlist is empty, return 0 (no music to play)
     if (array_length(musicTrack) == 0) {

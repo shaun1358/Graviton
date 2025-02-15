@@ -70,6 +70,7 @@ switch(state) {
 				drawArrow = 1;
 			}
 			
+			if instance_exists(obj_holdToStart) obj_holdToStart.phase = 1;
 		}
 		//마우스 or 손가락을 눌렀다가 놓으면
 		if (controlReleasing && canControl) {
@@ -78,7 +79,8 @@ switch(state) {
 
 			with (obj_ballGeneratorParent) {
 				ballCount = other.ballCount;
-				ballDelay = max(9 - floor(other.ballCount / 10), 3);
+				ballDelay = clamp(ceil(180/other.ballCount)-1, 2, 9);
+				//ballDelay = max(9 - floor(other.ballCount / 10), 3);
 				ballDelay *= (20 - global.statDelay) / 20
 				drawArrow = 0;
 			}
@@ -108,20 +110,30 @@ switch(state) {
 	//공 발사후
 	case BALL_STATE_2_FINISHED:
 	    var isGameover = false;
-
+		var isDanger = false;
 	    // Check each obj_brickParent instance
 	    with (obj_brickParent) {
-	        if (row == 0) {
-	            isGameover = true;
+			 if (row <= 2) {
+	            isDanger = true;
+				if (row == 0) {
+					isGameover = true;
+				}
 	        }
 	    }
-
+		
+		// danger line
+		if (isDanger) dangerLine.visible = true;
+		else dangerLine.visible = false;
+		
 	    // If game over condition is detected, handle it immediately
 	    if (isGameover) {
 	        state = BALL_STATE_3_GAMEOVER;
 	        break;
 	    }
-
+		
+		
+		
+		
 	    // Check if any blocks are still animating
 	    var animating = scr_tileElevate();
 

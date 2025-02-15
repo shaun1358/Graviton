@@ -56,6 +56,11 @@ else if (room == room_gameClassic) {
         musicIndex_classic = scr_playNextMusic(bgm_classic, musicIndex_classic);
     }
 }
+else if (room == room_credit) {
+     if (!audio_is_playing(musicSource) || musicSource == -1) {
+        musicIndex_credit = scr_playNextMusic(bgm_credit, musicIndex_credit);
+    }
+}
 else {
     if (audio_is_playing(musicSource)) {
         audio_stop_sound(musicSource);

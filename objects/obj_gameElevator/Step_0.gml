@@ -106,7 +106,7 @@ if (!isGameover) {
 	}
 	
 	//덴저존 표시해주는 코드
-	if (highestBrick < 900) dangerLine.visible = true;
+	if (highestBrick < 750) dangerLine.visible = true;
 	else dangerLine.visible = false;
 
 }
@@ -149,7 +149,6 @@ switch(state) {
 		risingSpeedRatio = scr_getMovableSpeed(global.stage);
 		var _canCreate = scr_tileCanCreate();
 		if (_canCreate) {
-			obj_ballGeneratorElevator.ballCount += 1;
 			scr_tileCreate(global.stage, MAX_ROW, global.stage); // Create tiles
 	        global.stage++; // Advance the stage
 			instance_create_layer(_width + 100, scr_get_y_coordinate(7), "Brick", obj_brickGhost);

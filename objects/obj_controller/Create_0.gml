@@ -22,13 +22,23 @@ view_set_camera(0, view_camera[0]);
 view_enabled = true;
 
 musicSource = -1;
-musicIndex_main = 0;
+musicIndex_credit = 0;
 musicIndex_classic = 0;
 musicIndex_elevator = 0;
 
 
-bgm_main = [
-    bgm_debug11
+bgm_credit = [
+    snd_bgm4,
+    snd_bgm6,
+    snd_bgm10,
+    snd_bgm11,
+	snd_bgm12,
+    snd_bgm5,
+    snd_bgm7,
+    snd_bgm8,
+    snd_bgm13,
+	snd_bgm14,
+    snd_bgm15,
 ];
 
 bgm_classic = [

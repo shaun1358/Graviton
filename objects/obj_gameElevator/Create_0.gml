@@ -42,7 +42,7 @@ risingSpeedFreeze = 1; //얼음 효과시 요게 0이 됨
 risingSpeedOption = 1; //옵션 키면 요게 0이 됨
 
 // gameover location
-#macro THRESHOLD_Y 600
+#macro THRESHOLD_Y 530
 
 
 instance_create_layer(_width / 2, scr_get_y_coordinate(7), "Brick", obj_canCreateTile);
@@ -137,7 +137,7 @@ scoreDraw  = 0;
 scoreScale = 1;
 
 highestBrick = 5000;
-dangerLine = instance_create_layer(0, 0, "Effect", obj_dangerLine);
+dangerLine = instance_create_layer(0, -120, "Effect", obj_dangerLine);
 /* for the bug fix of clicking */
 mouseLock = false; // Initially unlocked
 
