@@ -1,3 +1,4 @@
+event_inherited();
 drawX = x;
 drawY = y;
 drawAlpha = 1;
@@ -13,3 +14,4 @@ scale_timer = 0;
 scale_period = 10;
 
 isPressed = false;
+//show_debug_message("shopBuyColorConfirmCreate"+string(owner));

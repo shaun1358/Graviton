@@ -25,5 +25,16 @@ function scr_shopCreateP2() {
 			depth = 3;
 			owner = other.shopID;
 		}
+		with instance_create_layer(_x + 470 + 140, _y + 885, "Option", obj_buttonNext) {
+			target = 3;
+			depth = 3;
+			owner = other.shopID;
+		}
+		
+		with instance_create_layer(0, 0, "Option", obj_shopColorHighlight) {
+			target = global.skinBGClassicColor1;
+			depth = 2;
+			owner = other.shopID;
+		}
 	}
 }

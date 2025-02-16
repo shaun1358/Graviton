@@ -4,6 +4,8 @@ if(isPressed) {
 		global.coin -= price;
 		scr_generateParticle(obj_particleCoinSplash, 5, 90, 20, x, y);
 		scr_soundEffect(snd_shopBuy, 1, 1, false);
+		scr_globalSave();
+		instance_destroy();
 	}
 	else {
 		scr_soundEffect(snd_gameLose, 1, 1, false);

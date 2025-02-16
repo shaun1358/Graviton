@@ -10,7 +10,7 @@ if (room == room_title) {
 	draw_sprite_ext(spr_vfx, 0, 0, 0, 1, 1, 0, c_white, _alpha);
 
 	draw_sprite_ext(spr_titleEffect1, 0, 150, _y2, 1.5, 1, 0, c_white, 0.8);
-	draw_sprite_ext(spr_titleEffect2, 0, 930, _y2, 1.5, 1, 0, c_white, 0.8);
+	draw_sprite_ext(spr_titleEffect2, 0, 900, _y2, 1.5, 1, 0, c_white, 0.8);
 	draw_sprite_ext(spr_title, 0, 1080 / 2, _y, 1, 1, 0, c_white, 1);
 	
 	draw_sprite_ext(spr_coin, 0, 100, 100, 2, 2, 0, c_white, 1);

@@ -11,17 +11,28 @@ function scr_shopCreateP3() {
 			depth = 3;
 			owner = other.shopID;
 		}
+		
+		for (var i = 0; i < 2; i++) {
+			for (var j = 0; j < 3; j++) {
+				with instance_create_layer(_x + 270 + (200 * j), _y + 500 + (200 * i), "Option", obj_shopPatternSelect) {
+					target = (i * 3) + j;
+					depth = 3;
+					owner = other.shopID;
+				}
+			}
+		}
+		
 		with instance_create_layer(_x + 470 - 140, _y + 885, "Option", obj_buttonPrevious) {
 			target = 2;
 			depth = 3;
 			owner = other.shopID;
 		}
-		/*
-		with instance_create_layer(_x + 470 + 140, _y + 885, "Option", obj_buttonNext) {
-			target = 4;
-			depth = 3;
+		
+		
+		with instance_create_layer(0, 0, "Option", obj_shopPatternHighlight) {
+			target = global.skinBGClassicPattern;
+			depth = 2;
 			owner = other.shopID;
 		}
-		*/
 	}
 }

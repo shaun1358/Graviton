@@ -9,6 +9,4 @@ if (scale_state == 2 || (not device_mouse_check_button(0, mb_left) && scale_stat
 	}
 }
 
-if (global.skinBGColorOwn[target] == 1) own = 1;
-
-if (own == 1) image_alpha = 0;
+if (global.skinBGColorOwn[target] == 1) image_alpha = 0;

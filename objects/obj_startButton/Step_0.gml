@@ -30,7 +30,7 @@ switch(target) {
 		}
 		else {
 			x = 1080 / 2;
-			y = 1200;
+			y = 1140;
 		}
 		break;
 }
