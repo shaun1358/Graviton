@@ -1,6 +1,7 @@
 if(isPressed){
-	if(schema == "Classic")
-		schema = "Elevator";
+	scr_soundEffect(snd_optionOn, 1, 1, false);
+	if(global.shopSchema == "Classic")
+		global.shopSchema = "Elevator";
 	else
-		schema = "Classic";
+		global.shopSchema = "Classic";
 }

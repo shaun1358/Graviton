@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_shopP3",
-    "path":"sprites/spr_shopP3/spr_shopP3.yy",
+    "name":"spr_shopP4",
+    "path":"sprites/spr_shopP4/spr_shopP4.yy",
   },
   "spriteMaskId":null,
   "visible":true,

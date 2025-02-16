@@ -38,7 +38,9 @@ function scr_shopCreateP2() {
 		}
 		
 		with instance_create_layer(0, 0, "Option", obj_shopColorHighlight) {
-			target = global.skinBGClassicColor1;
+			//schema = global.shopSchema;
+			if      (global.shopSchema == "Classic")  target = global.skinBGClassicColor1;
+			else if (global.shopSchema == "Elevator") target = global.skinBGElevatorColor1;
 			page = 2;
 			depth = 2;
 			owner = other.shopID;

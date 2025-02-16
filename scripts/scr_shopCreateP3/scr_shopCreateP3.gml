@@ -39,7 +39,8 @@ function scr_shopCreateP3() {
 		
 		
 		with instance_create_layer(0, 0, "Option", obj_shopColorHighlight) {
-			target = global.skinBGClassicColor2;
+			if      (global.shopSchema == "Classic")  target = global.skinBGClassicColor2;
+			else if (global.shopSchema == "Elevator") target = global.skinBGElevatorColor2;
 			page = 3;
 			depth = 2;
 			owner = other.shopID;

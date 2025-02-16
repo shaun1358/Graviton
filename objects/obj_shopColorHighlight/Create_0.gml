@@ -5,7 +5,7 @@ image_alpha = 1;
 target = 0;
 
 page = 2;
-schema = "Classic"
+schema = global.shopSchema;
 scale_press = 1;
 scale_state = 0;
 scale_timer = 0;

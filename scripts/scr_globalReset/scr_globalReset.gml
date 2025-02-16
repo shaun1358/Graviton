@@ -26,6 +26,7 @@ function scr_globalReset() {
 	global.statLuck  = 0;
 	global.statItemd = 0;
 	
+	global.shopSchema = "Classic";
 	
 	global.skinBGClassicColor1   = 0;
 	global.skinBGClassicColor2   = 0;
@@ -35,4 +36,14 @@ function scr_globalReset() {
 	global.skinBGElevatorPattern = 0;
 	for (var i = 0; i < 32; i++) global.skinBGColorOwn[i] = 0;
 	for (var i = 0; i < 6;  i++) global.skinBGPatternOwn[i] = 0;
+	global.skinBGColorOwn[7]  = 1;
+	global.skinBGColorOwn[15] = 1;
+	global.skinBGClassicColor1 = 7;
+	global.skinBGClassicColor2 = 15;
+	global.skinBGElevatorColor1 = 7;
+	global.skinBGElevatorColor2 = 15;
+	
+	global.skinBGPatternOwn[0] = 1;
+	global.skinBGClassicPattern = 0;
+	global.skinBGElevatorPattern = 0;
 }

@@ -1,5 +1,4 @@
 if(isPressed){
-	
 	if global.skinBGColorOwn[target] { //owning
 		if(schema == "Classic")
 			if(page == 2)

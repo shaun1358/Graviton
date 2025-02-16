@@ -35,7 +35,8 @@ function scr_shopCreateP4() {
 		
 		
 		with instance_create_layer(0, 0, "Option", obj_shopPatternHighlight) {
-			target = global.skinBGClassicPattern;
+			if      (global.shopSchema == "Classic")  target = global.skinBGClassicPattern;
+			else if (global.shopSchema == "Elevator") target = global.skinBGElevatorPattern;
 			depth = 2;
 			owner = other.shopID;
 		}

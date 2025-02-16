@@ -14,11 +14,12 @@
   "frames":[
     {"$GMSpriteFrame":"","%Name":"12d6e95b-1072-4670-9745-2335ff4dd494","name":"12d6e95b-1072-4670-9745-2335ff4dd494","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
-  "gridX":10,
+  "gridX":462,
   "gridY":10,
   "height":1108,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"bb2de44a-c412-4ada-bcba-fdddd40aef03","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"bb2de44a-c412-4ada-bcba-fdddd40aef03","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"44c561c7-ad2c-421a-be0b-79ae800ebe0d","blendMode":0,"displayName":"default","isLocked":false,"name":"44c561c7-ad2c-421a-be0b-79ae800ebe0d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_shopP2",
