@@ -1,3 +1,5 @@
+event_inherited();
+
 if (y < yThresh) {
 	instance_destroy();
 }
