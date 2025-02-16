@@ -290,6 +290,7 @@
     {"name":"spr_checkBoxYes","order":14,"path":"sprites/spr_checkBoxYes/spr_checkBoxYes.yy",},
     {"name":"spr_coin","order":14,"path":"sprites/spr_coin/spr_coin.yy",},
     {"name":"spr_credit","order":6,"path":"sprites/spr_credit/spr_credit.yy",},
+    {"name":"spr_creditdummy","order":12,"path":"sprites/spr_creditdummy/spr_creditdummy.yy",},
     {"name":"spr_dangerLine","order":13,"path":"sprites/spr_dangerLine/spr_dangerLine.yy",},
     {"name":"spr_gameBar","order":11,"path":"sprites/spr_gameBar/spr_gameBar.yy",},
     {"name":"spr_gameIconHome","order":1,"path":"sprites/spr_gameIconHome/spr_gameIconHome.yy",},

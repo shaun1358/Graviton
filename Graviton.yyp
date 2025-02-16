@@ -346,6 +346,7 @@
     {"id":{"name":"spr_checkBoxYes","path":"sprites/spr_checkBoxYes/spr_checkBoxYes.yy",},},
     {"id":{"name":"spr_coin","path":"sprites/spr_coin/spr_coin.yy",},},
     {"id":{"name":"spr_credit","path":"sprites/spr_credit/spr_credit.yy",},},
+    {"id":{"name":"spr_creditdummy","path":"sprites/spr_creditdummy/spr_creditdummy.yy",},},
     {"id":{"name":"spr_creditText","path":"sprites/spr_creditText/spr_creditText.yy",},},
     {"id":{"name":"spr_dangerLine","path":"sprites/spr_dangerLine/spr_dangerLine.yy",},},
     {"id":{"name":"spr_gameBar","path":"sprites/spr_gameBar/spr_gameBar.yy",},},
