@@ -5,6 +5,7 @@ drawAlpha = 1;
 
 image_alpha = 0;
 
+schema = "Classic"
 target = 0;
 price = 2000;
 

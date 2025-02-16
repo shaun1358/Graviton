@@ -7,6 +7,11 @@ function scr_shopCreateP3() {
 		shopID.depth = 5;
 		var _x = shopID.x;
 		var _y = shopID.y;
+		with instance_create_layer(_x, _y, "Option", obj_shopTab) {
+			depth = 1;
+			owner = other.shopID;
+			page = 3;
+		}
 		with instance_create_layer(_x + 688 + 50, _y + 131 + 50, "Option", obj_shopExit) {
 			depth = 3;
 			owner = other.shopID;
@@ -14,7 +19,7 @@ function scr_shopCreateP3() {
 		
 		for (var i = 0; i < 2; i++) {
 			for (var j = 0; j < 3; j++) {
-				with instance_create_layer(_x + 270 + (200 * j), _y + 500 + (200 * i), "Option", obj_shopPatternSelect) {
+				with instance_create_layer(_x + 270 + (200 * j), _y + 530 + (200 * i), "Option", obj_shopPatternSelect) {
 					target = (i * 3) + j;
 					depth = 3;
 					owner = other.shopID;

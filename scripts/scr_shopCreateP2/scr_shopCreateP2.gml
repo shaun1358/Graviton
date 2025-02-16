@@ -7,13 +7,18 @@ function scr_shopCreateP2() {
 		shopID.depth = 5;
 		var _x = shopID.x;
 		var _y = shopID.y;
+		with instance_create_layer(_x, _y, "Option", obj_shopTab) {
+			depth = 1;
+			owner = other.shopID;
+			page = 2;
+		}
 		with instance_create_layer(_x + 688 + 50, _y + 131 + 50, "Option", obj_shopExit) {
 			depth = 3;
 			owner = other.shopID;
 		}
 		for (var i = 0; i < 3; i++) {
 			for (var j = 0; j < 8; j++) {
-				with instance_create_layer(_x + 189 + (80 * j), _y + 499 + (80 * i), "Option", obj_shopColorSelect) {
+				with instance_create_layer(_x + 190 + (80 * j), _y + 530 + (80 * i), "Option", obj_shopColorSelect) {
 					target = (i * 8) + j;
 					depth = 3;
 					owner = other.shopID;

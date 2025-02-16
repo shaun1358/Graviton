@@ -1,11 +1,16 @@
 if(isPressed){
 	
 	if global.skinBGColorOwn[target] { //owning
-		global.skinBGClassicColor1 = target;
+		if(schema == "Classic")
+			global.skinBGClassicColor1 = target;
+		else
+			global.skinBGElevatorColor1 = target;
+
 		with obj_shopColorHighlight{
 			target = other.target;
 			scale_state = 2;
 			scale_press = 1.2;
+			schema = other.schema;
 		}
 		scr_globalSave();
 	}

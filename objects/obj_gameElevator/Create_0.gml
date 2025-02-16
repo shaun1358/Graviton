@@ -1,3 +1,5 @@
+scr_setBackground();
+
 //위치 조정용 변수
 if instance_exists(obj_camera) {
 	_marginX = obj_camera.cameraMarginX;
