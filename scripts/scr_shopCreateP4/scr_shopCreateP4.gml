@@ -7,15 +7,37 @@ function scr_shopCreateP4() {
 		shopID.depth = 5;
 		var _x = shopID.x;
 		var _y = shopID.y;
-		with instance_create_layer(_x + 688 + 50, _y + 131 + 50, "Option", obj_shopExit) {
+		with instance_create_layer(_x, _y, "Option", obj_shopTab) {
+			depth = 1;
+			owner = other.shopID;
+			page = 4;
+		}
+		with instance_create_layer(_x + 688 + 50, _y + 131 + 110, "Option", obj_shopExit) {
 			depth = 3;
 			owner = other.shopID;
 		}
-		with instance_create_layer(_x + 470 - 140, _y + 885, "Option", obj_buttonPrevious) {
+		
+		for (var i = 0; i < 2; i++) {
+			for (var j = 0; j < 3; j++) {
+				with instance_create_layer(_x + 270 + (200 * j), _y + 530 + (200 * i), "Option", obj_shopPatternSelect) {
+					target = (i * 3) + j;
+					depth = 3;
+					owner = other.shopID;
+				}
+			}
+		}
+		
+		with instance_create_layer(_x + 470 - 140, _y + 915, "Option", obj_buttonPrevious) {
 			target = 3;
 			depth = 3;
 			owner = other.shopID;
 		}
-
+		
+		
+		with instance_create_layer(0, 0, "Option", obj_shopPatternHighlight) {
+			target = global.skinBGClassicPattern;
+			depth = 2;
+			owner = other.shopID;
+		}
 	}
 }

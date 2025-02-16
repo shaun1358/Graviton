@@ -2,16 +2,26 @@ if(isPressed){
 	
 	if global.skinBGColorOwn[target] { //owning
 		if(schema == "Classic")
-			global.skinBGClassicColor1 = target;
+			if(page == 2)
+				global.skinBGClassicColor1 = target;
+			else
+				global.skinBGClassicColor2 = target;
 		else
-			global.skinBGElevatorColor1 = target;
+			if(page == 2)
+				global.skinBGElevatorColor1 = target;
+			else
+				global.skinBGElevatorColor2 = target;
 
+		//show_debug_message("shopcolorselectLR"+schema+string(page));
 		with obj_shopColorHighlight{
+			page = other.page;
 			target = other.target;
 			scale_state = 2;
 			scale_press = 1.2;
 			schema = other.schema;
 		}
+
+
 		scr_globalSave();
 	}
 	else { // not owning

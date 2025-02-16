@@ -12,7 +12,7 @@ function scr_shopCreateP2() {
 			owner = other.shopID;
 			page = 2;
 		}
-		with instance_create_layer(_x + 688 + 50, _y + 131 + 50, "Option", obj_shopExit) {
+		with instance_create_layer(_x + 688 + 50, _y + 131 + 110, "Option", obj_shopExit) {
 			depth = 3;
 			owner = other.shopID;
 		}
@@ -20,17 +20,18 @@ function scr_shopCreateP2() {
 			for (var j = 0; j < 8; j++) {
 				with instance_create_layer(_x + 190 + (80 * j), _y + 530 + (80 * i), "Option", obj_shopColorSelect) {
 					target = (i * 8) + j;
+					page = 2;
 					depth = 3;
 					owner = other.shopID;
 				}
 			}
 		}
-		with instance_create_layer(_x + 470 - 140, _y + 885, "Option", obj_buttonPrevious) {
+		with instance_create_layer(_x + 470 - 140, _y + 915, "Option", obj_buttonPrevious) {
 			target = 1;
 			depth = 3;
 			owner = other.shopID;
 		}
-		with instance_create_layer(_x + 470 + 140, _y + 885, "Option", obj_buttonNext) {
+		with instance_create_layer(_x + 470 + 140, _y + 915, "Option", obj_buttonNext) {
 			target = 3;
 			depth = 3;
 			owner = other.shopID;
@@ -38,6 +39,7 @@ function scr_shopCreateP2() {
 		
 		with instance_create_layer(0, 0, "Option", obj_shopColorHighlight) {
 			target = global.skinBGClassicColor1;
+			page = 2;
 			depth = 2;
 			owner = other.shopID;
 		}

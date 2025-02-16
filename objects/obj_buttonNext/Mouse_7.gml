@@ -1,5 +1,5 @@
 if(isPressed){
-	show_debug_message(target);
+	//show_debug_message(target);
 	scr_shopCreatePn(target);
 }
 
