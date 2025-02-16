@@ -1,10 +1,10 @@
-event_inherited();
-
 if (y < yThresh) {
 	instance_destroy();
 }
 
-
+image_xscale = createXscale;
+createXscale = cos((createTimer / 60) * pi);
+createTimer = (120 + (createTimer * 19)) / 20; 
 
 // Check if we pick up the item
 if place_meeting(x, y, obj_ball)
@@ -28,7 +28,7 @@ if place_meeting(x, y, obj_ball)
         ds_list_clear(ball_list);
     }
 
-    show_debug_message("itemdoubleballstep " + string(ball_list));
+    show_debug_message("itemdoubleballstep");
 
     // Store references to all existing balls
     with (obj_ball) {
