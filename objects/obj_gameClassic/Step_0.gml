@@ -122,8 +122,8 @@ switch(state) {
 	    }
 		
 		// danger line
-		if (isDanger) dangerLine.visible = true;
-		else dangerLine.visible = false;
+		if (isDanger) dangerLine.alphaVisible = 1;
+		else dangerLine.alphaVisible = 0;
 		
 	    // If game over condition is detected, handle it immediately
 	    if (isGameover) {

@@ -127,4 +127,3 @@ scoreScale = 1;
 global.coinGame = 0;
 coinScale = 1;
 dangerLine = instance_create_layer(0, -120, "Effect", obj_dangerLine);
-dangerLine.visible = false;

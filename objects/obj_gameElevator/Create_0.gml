@@ -139,7 +139,7 @@ scoreDraw  = 0;
 scoreScale = 1;
 
 highestBrick = 5000;
-dangerLine = instance_create_layer(0, -120, "Effect", obj_dangerLine);
+instance_create_layer(0, -120, "Effect", obj_dangerLine);
 /* for the bug fix of clicking */
 mouseLock = false; // Initially unlocked
 

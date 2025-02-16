@@ -1,3 +1,17 @@
+image_alpha = alphaBase + (alphaSize * sin(alphaTimer / alphaPeriod));
+
+if (alphaVisible == 1) {
+	alphaSize = 0.3
+	alphaBase = (0.7 + (11 * alphaBase)) / 12;
+}
+else {
+	alphaSize = 0;
+	alphaBase = (0 + (5 * alphaBase)) / 6;
+}
+alphaTimer++;
+
+
+/*
 // Change opacity over time
 blink_alpha += blink_speed * blink_direction;
 

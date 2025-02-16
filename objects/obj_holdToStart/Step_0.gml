@@ -10,4 +10,4 @@ if (phase == 1) {
 
 if (draw_alpha <= 0) instance_destroy();
 
-scr_generateParticle(obj_particleHold, 1, 0, 0, x, y);
+//scr_generateParticle(obj_particleHold, 1, 0, 0, x, y);

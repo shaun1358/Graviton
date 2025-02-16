@@ -106,8 +106,8 @@ if (!isGameover) {
 	}
 	
 	//덴저존 표시해주는 코드
-	if (highestBrick < 750) dangerLine.visible = true;
-	else dangerLine.visible = false;
+	if (highestBrick < 750) obj_dangerLine.alphaVisible = 1;
+	else obj_dangerLine.alphaVisible = 0;
 
 }
 
