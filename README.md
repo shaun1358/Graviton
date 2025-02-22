@@ -54,6 +54,7 @@
 
 ### **🔹 Android Version**  
 1. Download the latest release from the [Releases Page](https://github.com/shaun1358/Graviton/releases).
+   
 📌 Planned for release on **Google Play Store** (coming soon!).  
 
 ---
@@ -63,7 +64,8 @@
 2. 압축을 해제한 후 `Graviton.exe`를 실행하세요.  
 
 ### **🔹 Android 버전**  
-1. [Releases Page](https://github.com/shaun1358/Graviton/releases)에서 최신 버전을 다운로드하세요.  
+1. [Releases Page](https://github.com/shaun1358/Graviton/releases)에서 최신 버전을 다운로드하세요.
+
 📌 **Google Play Store**에서 출시 예정! (곧 공개됩니다.)  
 
 ---
@@ -141,7 +143,6 @@
 
 ---
 
-### **🏆 개발 팀**  
 **Team Graviton**  
 - **김선호** – 리드 개발자 & 게임 디자이너
 - **이동혁** – 게임 디자이너 & 프로그래머  
