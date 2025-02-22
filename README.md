@@ -4,7 +4,7 @@
 [![GitHub license](https://img.shields.io/github/license/shaun1358/Graviton?style=flat-square)](LICENSE)  
 
 <p align="center">
-  <img src="https://github.com/shaun1358/Graviton/blob/main/sprites/spr_title/24f41e6c-6127-4adc-a625-c5d770f7018f.png" width="400" alt="Project Graviton Title">
+  <img src="readme/title.png" width="400" alt="Project Graviton Title">
 </p>
 
 🔥 **A fast-paced, gravity-driven twist on the classic brick-breaking genre!**  
@@ -43,8 +43,8 @@
 ## 📸 Gameplay Screenshots / 게임 플레이 스크린샷  
 
 <p align="center">
-  <img src="https://github.com/shaun1358/Graviton/blob/GIT-heyok-readme/screenshot1.png" alt="Gameplay Screenshot 1" width="45%">
-  <img src="https://github.com/shaun1358/Graviton/blob/GIT-heyok-readme/screenshot2.png" alt="Gameplay Screenshot 2" width="45%">
+  <img src="readme/screenshot1.png" alt="Gameplay Screenshot 1" width="45%">
+  <img src="readme/screenshot2.png" alt="Gameplay Screenshot 2" width="45%">
 </p>
 ## 📥 Installation / 설치 방법  
 
