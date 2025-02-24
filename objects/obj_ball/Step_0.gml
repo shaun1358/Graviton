@@ -3,7 +3,9 @@ image_xscale = ((image_xscale * 5) + scaleTo) / 6;
 image_yscale = image_xscale;
 
 //중력 적용 코드
-if (gravtApply == 1) {
+if (phy_speed_y < 0) gravtApply = 1;
+
+if (gravtApply == 1 && not instance_exists(obj_optionParent)) {
 	physics_apply_impulse(x, y, 0, gravtPower);
 	phy_linear_damping = linearDamping;
 }
@@ -37,6 +39,5 @@ else {
 	phy_linear_damping = linearDamping;
 	if (phy_speed_x != 0) xspdTemp = phy_speed_x;
 	if (phy_speed_y != 0) yspdTemp = phy_speed_y;
-	phy_speed_x = xspdTemp;
-	phy_speed_y = yspdTemp;
+
 }
